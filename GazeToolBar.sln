@@ -12,8 +12,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EyeXFramework", "EyeXFramew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Karna.Magnification", "Karna.Magnification\Karna.Magnification.csproj", "{23E96E6A-2CC7-4514-A8DB-E0605B4EFDE9}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{30D9EF15-53D5-4152-B5A4-6D1D7758254D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,12 +58,6 @@ Global
 		{23E96E6A-2CC7-4514-A8DB-E0605B4EFDE9}.Release|x64.Build.0 = Release|Any CPU
 		{23E96E6A-2CC7-4514-A8DB-E0605B4EFDE9}.Release|x86.ActiveCfg = Release|Any CPU
 		{23E96E6A-2CC7-4514-A8DB-E0605B4EFDE9}.Release|x86.Build.0 = Release|Any CPU
-		{30D9EF15-53D5-4152-B5A4-6D1D7758254D}.Debug|Any CPU.ActiveCfg = Debug
-		{30D9EF15-53D5-4152-B5A4-6D1D7758254D}.Debug|x64.ActiveCfg = Debug
-		{30D9EF15-53D5-4152-B5A4-6D1D7758254D}.Debug|x86.ActiveCfg = Debug
-		{30D9EF15-53D5-4152-B5A4-6D1D7758254D}.Release|Any CPU.ActiveCfg = Release
-		{30D9EF15-53D5-4152-B5A4-6D1D7758254D}.Release|x64.ActiveCfg = Release
-		{30D9EF15-53D5-4152-B5A4-6D1D7758254D}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
