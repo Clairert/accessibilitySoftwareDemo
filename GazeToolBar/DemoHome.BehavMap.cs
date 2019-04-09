@@ -41,6 +41,24 @@ namespace GazeToolBar
             bhavFORMMap.Add(button4, new GazeAwareBehavior(button4_Click) { DelayMilliseconds = buttonClickDelay });
             bhavFORMMap.Add(panel4, new GazeAwareBehavior(OnGazeChangeBTColour));
 
+            bhavFORMMap.Add(PeopleBack, new GazeAwareBehavior(PeopleBack_Click) { DelayMilliseconds = buttonClickDelay });
+            bhavFORMMap.Add(PeopleButtonPanel1, new GazeAwareBehavior(OnGazeChangeBTColour));
+
+            bhavFORMMap.Add(People1, new GazeAwareBehavior(People1_Click) { DelayMilliseconds = buttonClickDelay });
+            bhavFORMMap.Add(PeopleButtonPanel2, new GazeAwareBehavior(OnGazeChangeBTColour));
+
+            bhavFORMMap.Add(People2, new GazeAwareBehavior(People2_Click) { DelayMilliseconds = buttonClickDelay });
+            bhavFORMMap.Add(PeopleButtonPanel3, new GazeAwareBehavior(OnGazeChangeBTColour));
+
+            bhavFORMMap.Add(People3, new GazeAwareBehavior(People3_Click) { DelayMilliseconds = buttonClickDelay });
+            bhavFORMMap.Add(PeopleButtonPanel4, new GazeAwareBehavior(OnGazeChangeBTColour));
+
+            bhavFORMMap.Add(People4, new GazeAwareBehavior(People4_Click) { DelayMilliseconds = buttonClickDelay });
+            bhavFORMMap.Add(PeopleButtonPanel5, new GazeAwareBehavior(OnGazeChangeBTColour));
+
+            bhavFORMMap.Add(ProgrammeBack, new GazeAwareBehavior(ProgrammeBackButton_Click) { DelayMilliseconds = buttonClickDelay });
+            bhavFORMMap.Add(ProgrammeButtonPanel1, new GazeAwareBehavior(OnGazeChangeBTColour));
+
         }
 
         //toggle border on and off on gaze to gaze to give feed back.
