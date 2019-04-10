@@ -145,7 +145,8 @@ namespace GazeToolBar
 
             //Making invisible panels
             //brushColours.Visible = false;
-            //panel20.Visible = false;//brushSize
+            panel20.Visible = false;//brushSize
+            
 
             //Save Button
             panel24.Height = Convert.ToInt32(height * 0.12);
