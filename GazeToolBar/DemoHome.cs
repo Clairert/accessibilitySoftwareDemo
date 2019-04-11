@@ -41,7 +41,7 @@ namespace GazeToolBar
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            showProject();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -54,6 +54,7 @@ namespace GazeToolBar
             setupMasterPanel();
             MasterPeoplePanel.Location = new Point(5000, 5000);
             MasterProgrammePanel.Location = new Point(5000, 5000);
+            MasterProjectPanel.Location = new Point(5000, 5000);
         }
 
         private void showPeople()
@@ -61,6 +62,7 @@ namespace GazeToolBar
             setupMasterPeoplePanel();
             MasterPanel.Location = new Point(5000, 5000);
             MasterProgrammePanel.Location = new Point(5000, 5000);
+            MasterProjectPanel.Location = new Point(5000, 5000);
         }
 
         private void showProgramme()
@@ -68,6 +70,15 @@ namespace GazeToolBar
             setupMasterProgrammePanel();
             MasterPeoplePanel.Location = new Point(5000, 5000);
             MasterPanel.Location = new Point(5000, 5000);
+            MasterProjectPanel.Location = new Point(5000, 5000);
+        }
+
+        private void showProject()
+        {
+            setupMasterProjectPanel();
+            MasterPeoplePanel.Location = new Point(5000, 5000);
+            MasterPanel.Location = new Point(5000, 5000);
+            MasterProgrammePanel.Location = new Point(5000, 5000);
         }
 
         private void setupMasterPanel()
@@ -98,6 +109,7 @@ namespace GazeToolBar
 
             pictureBox2.Location = new Point((MasterPanel.Width / 2) - pictureBox2.Size.Width / 2, (MasterPanel.Height / 2) - pictureBox2.Size.Height / 2);
         }
+
 
         private void setupMasterPeoplePanel()
         {
@@ -297,6 +309,109 @@ namespace GazeToolBar
 
         }
 
+        private void setupMasterProjectPanel()
+        {
+            double top = ClientSize.Height * 0.25;
+            double right = ClientSize.Width * 0.75;
+            double left = ClientSize.Width * 0.25;
+            double bottom = ClientSize.Height * 0.75;
+
+            double step = 0.05;
+            int buttonHeight = Convert.ToInt32((bottom * 0.75) / 4);
+            int buttonWidth = Convert.ToInt32(left * 0.75);
+            int buttonLeft = Convert.ToInt32(left * 0.12);
+
+
+            //Back button - top,Left section
+
+
+
+            MasterProjectPanel.Top = 0;
+            MasterProjectPanel.Left = 0;
+            MasterProjectPanel.Height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
+            MasterProjectPanel.Width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
+
+
+            //Back button - top,Left section
+            ProjectButtonPanel1.Height = buttonHeight;
+            ProjectButtonPanel1.Width = buttonWidth;
+            ProjectButtonPanel1.Top = Convert.ToInt32(top * 0.1);
+            ProjectButtonPanel1.Left = buttonLeft;
+
+            ProjectBack.Location = new Point(2, 2);
+            ProjectBack.Height = ProjectButtonPanel1.Height - 4;
+            ProjectBack.Width = ProjectButtonPanel1.Width - 4;
+            ProjectBack.Text = "Back";
+
+
+
+            //Buttons on bottom half of screen - bottom,left section
+
+            ProjectButtonPanel2.Height = buttonHeight;
+            ProjectButtonPanel2.Width = buttonWidth;
+            ProjectButtonPanel2.Top = Convert.ToInt32((bottom * step) + top);
+            ProjectButtonPanel2.Left = buttonLeft;
+
+            ProjectButton1.Location = new Point(2, 2);
+            ProjectButton1.Height = ProjectButtonPanel2.Height - 4;
+            ProjectButton1.Width = ProjectButtonPanel2.Width - 4;
+            ProjectButton1.Text = "Project1";
+            step += 0.25;
+
+
+
+            ProjectButtonPanel3.Height = buttonHeight;
+            ProjectButtonPanel3.Width = buttonWidth;
+            ProjectButtonPanel3.Top = Convert.ToInt32((bottom * step) + top);
+            ProjectButtonPanel3.Left = buttonLeft;
+
+            ProjectButton2.Location = new Point(2, 2);
+            ProjectButton2.Height = ProjectButtonPanel3.Height - 4;
+            ProjectButton2.Width = ProjectButtonPanel3.Width - 4;
+            ProjectButton2.Text = "Project2";
+            step += 0.25;
+
+
+
+            ProjectButtonPanel4.Height = buttonHeight;
+            ProjectButtonPanel4.Width = buttonWidth;
+            ProjectButtonPanel4.Top = Convert.ToInt32((bottom * step) + top);
+            ProjectButtonPanel4.Left = buttonLeft;
+
+
+            ProjectButton3.Location = new Point(2, 2);
+            ProjectButton3.Height = ProjectButtonPanel4.Height - 4;
+            ProjectButton3.Width = ProjectButtonPanel4.Width - 4;
+            ProjectButton3.Text = "Project3";
+            step += 0.25;
+
+
+
+            ProjectButtonPanel5.Height = buttonHeight;
+            ProjectButtonPanel5.Width = buttonWidth;
+            ProjectButtonPanel5.Top = Convert.ToInt32((bottom * step) + top);
+            ProjectButtonPanel5.Left = buttonLeft;
+
+
+            ProjectButton4.Location = new Point(2, 2);
+            ProjectButton4.Height = ProjectButtonPanel5.Height - 4;
+            ProjectButton4.Width = ProjectButtonPanel5.Width - 4;
+            ProjectButton4.Text = "Project4";
+
+            //title - top,right section
+            ProjectLabel.Text = "Section Title";
+            ProjectLabel.Font = new Font(ProjectLabel.Font.FontFamily, Convert.ToInt32(right) / 20);
+            ProjectLabel.Left = ((Convert.ToInt32(right) - ProjectLabel.Width) / 2) + Convert.ToInt32(left);
+
+            //Panel
+            ProjectInfoPanel.Top = Convert.ToInt32(top);
+            ProjectInfoPanel.Left = Convert.ToInt32(left + (right * 0.025));
+            ProjectInfoPanel.Height = Convert.ToInt32(bottom - (bottom * 0.05));
+            ProjectInfoPanel.Width = Convert.ToInt32(right - (right * 0.05));
+
+
+        }
+
         private void setupPanels()
         {
 
@@ -353,6 +468,31 @@ namespace GazeToolBar
         }
 
         private void DemoHome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProjectBack_Click(object sender, EventArgs e)
+        {
+            showMaster();
+        }
+
+        private void ProjectButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProjectButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProjectButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProjectButton4_Click(object sender, EventArgs e)
         {
 
         }
