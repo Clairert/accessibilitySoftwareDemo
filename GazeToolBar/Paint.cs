@@ -7,21 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EyeXFramework.Forms;
+
 
 namespace GazeToolBar
 {
     public partial class Paint : Form
     {
+        Graphics graphic;
+        int count = 0;
+        Point[] points;
+        List<Point> pointList;
+        bool drawing;
+        //FixationSmootherAverage eyeFollower;
+        FixationDetection eyeFollower;
+        //CustomFixationDataStream eyeFollower;
+        private ZoomMagnifier magnifier;
+        private static FormsEyeXHost eyeXHost;
         public Paint()
         {
             InitializeComponent();
-
+            eyeXHost = new FormsEyeXHost();
+            //eyeFollower = new FixationSmootherAverage(30);
+            eyeFollower = new FixationDetection(eyeXHost);
+            //eyeFollower = new CustomFixationDataStream(eyeXHost);
+            //eyeXHost.Start();
             dynamicResize();
-
-
-
-
-
+            points = new Point[] { };
+            pointList = new List<Point>();
+            drawing = false;
+            canvasPanel.Paint += new PaintEventHandler(canvasPanel_Paint);
+            graphic = CreateGraphics();
         }
 
 
@@ -144,7 +160,8 @@ namespace GazeToolBar
             label5.Left = ((setttingpanel / 2) + setttingpanel - (label5.Width / 2));
 
             //Making invisible panels
-            //brushColours.Visible = false;
+            brushPanel.Visible = false;
+            brushColours.Visible = false;
             panel20.Visible = false;//brushSize
             
 
@@ -156,6 +173,12 @@ namespace GazeToolBar
             button40.Height = panel24.Height - 6;
             button40.Width = panel24.Width - 6;
             button40.Font = new Font(button41.Font.FontFamily, width / 40);
+
+
+            canvasPanel.Width = Convert.ToInt32(width * 0.7);
+            canvasPanel.Height = Convert.ToInt32(height * 0.7);
+            canvasPanel.Top = Convert.ToInt32(height * 0.15);
+            canvasPanel.Left = Convert.ToInt32(width * 0.15);
 
         }
 
@@ -169,12 +192,66 @@ namespace GazeToolBar
 
         private void canvasPanel_Paint(object sender, PaintEventArgs e)
         {
+            var g = e.Graphics;
+            Brush brush = new SolidBrush(Color.DarkGreen);
+
+            g.FillRectangle(brush, new Rectangle(new Point(3,3),new Size(canvasPanel.Width-6,canvasPanel.Height-6)));
+
+            Pen pen = new Pen(Color.Black, 3);
+
+            //Draw lines to screen.
+            if ((pointList.Count > 1)&&(pointList.Count<20))
+            {
+                points = new Point[pointList.Count];
+                Console.WriteLine("NewList");
+                for (int i = 0; i < pointList.Count; i++)
+                {
+                    points[i] = pointList[i];
+                    Console.WriteLine(points[i]);
+                }
+                //g.DrawPath(pen,)
+                g.DrawLines(pen, points);
+                //Console.WriteLine("paintLine");
+            }
+            if (pointList.Count >= 20)
+            {
+                Console.WriteLine("full");
+                pointList = new List<Point>();
+            }
 
         }
 
         private void brushColours_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (drawing)
+            {
+                Point newPoint = eyeFollower.getXY();
+
+                pointList.Add(new Point(newPoint.X - canvasPanel.Left, newPoint.Y-canvasPanel.Top));
+                //Console.WriteLine(eyeFollower.getXY());
+            }
+            canvasPanel.Paint += new PaintEventHandler(canvasPanel_Paint);
+            canvasPanel.Refresh();
+        }
+
+        private void canvasPanel_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (!drawing)
+            {
+                pointList = new List<Point>();
+                eyeFollower.StartDetectingFixation();
+                drawing = true;
+            }
+            else
+            {
+                eyeFollower = new FixationDetection(eyeXHost);
+                drawing = false;
+            }
         }
     }
 }

@@ -8,6 +8,7 @@ using Tobii.EyeX.Framework;
 using Tobii.EyeX.Client;
 using System.Threading;
 using EyeXFramework.Forms;
+using System.Drawing;
 
 /*
  *  Class: CustomFixationDataStream
@@ -233,6 +234,9 @@ namespace GazeToolBar
 
             return returnSmoothPoint;
         }
+
+
+
 
     }
 }
