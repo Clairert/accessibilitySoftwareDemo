@@ -109,6 +109,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button16 = new System.Windows.Forms.Button();
             this.brushPanel.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel20.SuspendLayout();
@@ -155,9 +156,9 @@
             // canvasPanel
             // 
             this.canvasPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.canvasPanel.Location = new System.Drawing.Point(91, 143);
+            this.canvasPanel.Location = new System.Drawing.Point(66, 5);
             this.canvasPanel.Name = "canvasPanel";
-            this.canvasPanel.Size = new System.Drawing.Size(1055, 396);
+            this.canvasPanel.Size = new System.Drawing.Size(17, 64);
             this.canvasPanel.TabIndex = 1;
             this.canvasPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.canvasPanel_Paint);
             this.canvasPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.canvasPanel_MouseClick);
@@ -904,8 +905,17 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(24, 123);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(136, 76);
+            this.button16.TabIndex = 10;
+            this.button16.Text = "Paint";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // Paint
             // 
@@ -913,6 +923,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1239, 605);
             this.ControlBox = false;
+            this.Controls.Add(this.button16);
             this.Controls.Add(this.backgroundPanel);
             this.Controls.Add(this.brushPanel);
             this.Controls.Add(this.button6);
@@ -1048,5 +1059,6 @@
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button16;
     }
 }
