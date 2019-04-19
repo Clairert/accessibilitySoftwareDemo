@@ -34,7 +34,9 @@ namespace GazeToolBar
                 onStartUp = AutoStart.IsOn();
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Paint());//(new DemoHome());//(new InformationPage());
+                FormsEyeXHost eyeXHost = new FormsEyeXHost();
+                eyeXHost.Start();
+                Application.Run(new Paint(eyeXHost));//(new DemoHome());//(new InformationPage());
                 mutex.ReleaseMutex();
             }
             else

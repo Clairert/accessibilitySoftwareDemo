@@ -35,10 +35,12 @@ namespace GazeToolBar
 
 
 
-        public Paint()
+        public Paint(FormsEyeXHost EyeXHost)
         {
+            eyeXHost = EyeXHost;
             InitializeComponent();
-            eyeXHost = new FormsEyeXHost();
+            connectBehaveMap();
+
             //eyeFollower = new FixationSmootherAverage(30);
             eyeFollower = new FixationDetection(eyeXHost);
             //eyeFollower = new CustomFixationDataStream(eyeXHost);
@@ -57,7 +59,7 @@ namespace GazeToolBar
 
 
             graphics = CreateGraphics();
-            bufferImage = new Bitmap(Convert.ToInt32(width * 0.7), Convert.ToInt32(height * 0.7));
+            bufferImage = new Bitmap(Convert.ToInt32(width * 0.9), Convert.ToInt32(height * 0.9));
             bufferGraphics = Graphics.FromImage(bufferImage);
 
             points = new Point[] { };
@@ -176,12 +178,12 @@ namespace GazeToolBar
             panel9.Left = 0;
             panel22.Left = setttingpanel+ setttingpanel;
             //Button with painbrush Colour
-            button41.Height = Convert.ToInt32(panel20.Height * 0.25);
-            button41.Width = Convert.ToInt32(panel20.Height * 0.25);
-            panel23.Height = button41.Height + 6;
-            panel23.Width = button41.Width + 6;
-            panel23.Left = ((setttingpanel / 2) + setttingpanel - (panel23.Width / 2));
-            panel23.Top = ((panel20.Height / 2) - (panel23.Height / 2));
+            colourChangeButton.Height = Convert.ToInt32(panel20.Height * 0.25);
+            colourChangeButton.Width = Convert.ToInt32(panel20.Height * 0.25);
+            colourChangePanel.Height = colourChangeButton.Height + 6;
+            colourChangePanel.Width = colourChangeButton.Width + 6;
+            colourChangePanel.Left = ((setttingpanel / 2) + setttingpanel - (colourChangePanel.Width / 2));
+            colourChangePanel.Top = ((panel20.Height / 2) - (colourChangePanel.Height / 2));
 
 
 
@@ -211,11 +213,11 @@ namespace GazeToolBar
             label5.Left = ((setttingpanel / 2) + setttingpanel - (label5.Width / 2));
 
             //Making invisible panels
-            brushPanel.Visible = false;
-            brushColours.Visible = false;
-            panel20.Visible = false;//brushSize
-            backgroundPanel.Visible = false;
-            
+            brushPanel.Left = ClientSize.Width + 2000;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = ClientSize.Width + 2000;//brushSize
+            backgroundPanel.Left = ClientSize.Width + 2000;
+
 
             //Save Button
             panel24.Height = Convert.ToInt32(height * 0.12);
@@ -224,7 +226,7 @@ namespace GazeToolBar
             panel24.Top = 20;
             button40.Height = panel24.Height - 6;
             button40.Width = panel24.Width - 6;
-            button40.Font = new Font(button41.Font.FontFamily, width / 40);
+            button40.Font = new Font(colourChangeButton.Font.FontFamily, width / 40);
 
             //Resizing Background colour options
             colourPanelwidth = Convert.ToInt32((backgroundPanel.Width - (backgroundPanel.Width * 0.3)) / 6);
@@ -271,14 +273,16 @@ namespace GazeToolBar
             //Brush brush = new SolidBrush(Color.DarkGreen);
 
             //g.FillRectangle(brush, new Rectangle(new Point(3,3),new Size(canvasPanel.Width-6,canvasPanel.Height-6)));
-            int height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
-            int width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
+            //int height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
+            //int width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
+            int height = Convert.ToInt32(ClientSize.Height);
+            int width = Convert.ToInt32(ClientSize.Width);
             //canvasPanel.Width = Convert.ToInt32(width * 0.7);
             //canvasPanel.Height = Convert.ToInt32(height * 0.7);
             //canvasPanel.Top = Convert.ToInt32(height * 0.15);
             //canvasPanel.Left = Convert.ToInt32(width * 0.15);
             Pen pen = new Pen(Color.Black, 3);
-            bufferGraphics.FillRectangle(backgroundColor, Convert.ToInt32(width * 0.1), Convert.ToInt32(height * 0.1), Convert.ToInt32(width * 0.8), Convert.ToInt32(height * 0.8));
+            bufferGraphics.FillRectangle(backgroundColor, Convert.ToInt32(width * 0.1), Convert.ToInt32(height * 0.15), Convert.ToInt32(width * 0.9), Convert.ToInt32(height * 0.9));
             SolidBrush brush = new SolidBrush(brushColour);
             ////Draw lines to screen.
             //if ((pointList.Count > 1) && (pointList.Count < 20))
@@ -357,54 +361,63 @@ namespace GazeToolBar
 
         private void button3_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Visible = true;
+            backgroundPanel.Left = 0;
+            buttonPanel.Left = ClientSize.Width + 2000;
         }
 
         private void backgroundColour1_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Visible = false;
+            backgroundPanel.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour1.BackColor);
         }
 
         private void backgroundColour2_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Visible = false;
+            backgroundPanel.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour2.BackColor);
         }
 
         private void backgroundColour3_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Visible = false;
+            backgroundPanel.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour3.BackColor);
         }
 
         private void backgroundColour4_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Visible = false;
+            backgroundPanel.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour4.BackColor);
         }
 
         private void backgroundColour5_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Visible = false;
+            backgroundPanel.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour5.BackColor);
         }
 
         private void backgroundColour6_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Visible = false;
+            backgroundPanel.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour6.BackColor);
         }
 
         private void backgroundColour7_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Visible = false;
+            backgroundPanel.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour7.BackColor);
         }
 
         private void backgroundColour8_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Visible = false;
+            backgroundPanel.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour8.BackColor);
         }
 
@@ -416,70 +429,76 @@ namespace GazeToolBar
 
 
             //Small
-        private void button34_Click(object sender, EventArgs e)
+        private void smallBrush_Click(object sender, EventArgs e)
         {
             newSize = "small";
-            panel21.BackColor = Color.Blue;
-            panel25.BackColor = button40.BackColor;
-            panel26.BackColor = button40.BackColor;
+            smallBrushPanel.BackColor = Color.Blue;
+            largeBrushPanel.BackColor = button1.BackColor;
+            medBrushPanel.BackColor = button1.BackColor;
         }
 
-        private void button35_Click(object sender, EventArgs e)
+        private void medBrush_Click(object sender, EventArgs e)
         {
             newSize = "medium";
-            panel26.BackColor = Color.Blue;
-            panel21.BackColor = button40.BackColor;
-            panel25.BackColor = button40.BackColor;
+            medBrushPanel.BackColor = Color.Blue;
+            smallBrushPanel.BackColor = button1.BackColor;
+            largeBrushPanel.BackColor = button1.BackColor;
         }
 
-        private void button36_Click(object sender, EventArgs e)
+        private void largeBrush_Click(object sender, EventArgs e)
         {
             newSize = "large";
-            panel25.BackColor = Color.Blue;
-            panel21.BackColor = button40.BackColor;
-            panel26.BackColor = button40.BackColor;
+            largeBrushPanel.BackColor = Color.Blue;
+            smallBrushPanel.BackColor = button1.BackColor;
+            medBrushPanel.BackColor = button1.BackColor;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            switch(selectedSize)
+            buttonPanel.Left = ClientSize.Width + 2000;
+            switch (selectedSize)
             {
                 case "large":
-                    panel25.BackColor = Color.Blue;
-                    panel21.BackColor = button40.BackColor;
-                    panel26.BackColor = button40.BackColor;
+                    largeBrushPanel.BackColor = Color.Blue;
+                    smallBrushPanel.BackColor = button1.BackColor;
+                    medBrushPanel.BackColor = button1.BackColor;
                     break;
                 case "medium":
-                    panel26.BackColor = Color.Blue;
-                    panel21.BackColor = button40.BackColor;
-                    panel25.BackColor = button40.BackColor;
+                    medBrushPanel.BackColor = Color.Blue;
+                    smallBrushPanel.BackColor = button1.BackColor;
+                    largeBrushPanel.BackColor = button1.BackColor;
 
                     break;
                 case "small":
-                    panel21.BackColor = Color.Blue;
-                    panel25.BackColor = button40.BackColor;
-                    panel26.BackColor = button40.BackColor;
+                    smallBrushPanel.BackColor = Color.Blue;
+                    largeBrushPanel.BackColor = button1.BackColor;
+                    medBrushPanel.BackColor = button1.BackColor;
                     break;
 
             }
-            brushPanel.Visible = true;
-            panel20.Visible = true;
+            brushPanel.Left = 0;
+            panel20.Left = 0;
             newSize = selectedSize;
-            button41.BackColor = brushColour;
+            colourChangeButton.BackColor = brushColour;
 
-
+            
         }
 
         private void button40_Click(object sender, EventArgs e)
         {
             selectedSize = newSize;
-            brushPanel.Visible = false;
-            brushColours.Visible = false;
+            //brushPanel.Visible = false;
+            brushPanel.Left = ClientSize.Width + 2000;
+            //brushColours.Visible = false;
+            brushColours.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = 0;
         }
 
         private void button41_Click(object sender, EventArgs e)
         {
+            brushColours.Left = 0;
             brushColours.Visible = true;
+            panel20.Left = ClientSize.Width + 2000;
         }
 
 
@@ -488,127 +507,154 @@ namespace GazeToolBar
         private void colourOptionButton1_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton1.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton2_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton2.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton3_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton3.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton4_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton4.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton16_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton16.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton5_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton5.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton6_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton6.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton7_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton7.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton8_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton8.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton9_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton9.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton10_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton10.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton11_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton11.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
+        }
+
+        private void colourOptionButton12_Click(object sender, EventArgs e)
+        {
+            brushColour = colourOptionButton12.BackColor;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton13_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton13.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton14_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton14.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton15_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton15.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton17_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton17.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
         private void colourOptionButton18_Click(object sender, EventArgs e)
         {
             brushColour = colourOptionButton18.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+            colourChangeButton.BackColor = brushColour;
+            brushColours.Left = ClientSize.Width + 2000;
+            panel20.Left = 0;
         }
 
-        private void button24_Click(object sender, EventArgs e)
+
+
+        private void button5_Click(object sender, EventArgs e)
         {
-            brushColour = colourOptionButton12.BackColor;
-            button41.BackColor = brushColour;
-            brushColours.Visible = false;
+
         }
+
+
     }
 }

@@ -193,6 +193,9 @@
     <Compile Include="IFixationSmoother.cs" />
     <Compile Include="KeyboardHook.cs" />
     <Compile Include="KeyConverter.cs" />
+    <Compile Include="Paint.BehavMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Paint.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,9 +244,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InformationPage.resx">
       <DependentUpon>InformationPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Keyboard.BehavMap.resx">
-      <DependentUpon>Keyboard.BehavMap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paint.resx">
       <DependentUpon>Paint.cs</DependentUpon>
