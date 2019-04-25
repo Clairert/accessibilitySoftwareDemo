@@ -112,6 +112,7 @@
             this.button2Panel = new System.Windows.Forms.Panel();
             this.button3Panel = new System.Windows.Forms.Panel();
             this.buttonPanel = new System.Windows.Forms.Panel();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.brushPanel.SuspendLayout();
             this.brushColours.SuspendLayout();
             this.colourOptionPanel1.SuspendLayout();
@@ -967,6 +968,11 @@
             this.buttonPanel.Size = new System.Drawing.Size(1184, 117);
             this.buttonPanel.TabIndex = 13;
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 1;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Paint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1107,5 +1113,6 @@
         private System.Windows.Forms.Panel button2Panel;
         private System.Windows.Forms.Panel button3Panel;
         private System.Windows.Forms.Panel buttonPanel;
+        private System.Windows.Forms.Timer timer2;
     }
 }

@@ -14,10 +14,14 @@ namespace GazeToolBar
 {
     public partial class Paint : Form
     {
-        Graphics graphic;
-        int count = 0;
-        Point[] points;
-        List<Point> pointList;
+        private Graphics graphic;
+        private int count = 0;
+        private Point[] points;
+        private List<Point> pointList;
+
+
+        private List<PaintLines> lines;
+        private PaintLines newLine;
         bool drawing;
         //FixationSmootherAverage eyeFollower;
         FixationDetection eyeFollower;
@@ -64,6 +68,7 @@ namespace GazeToolBar
 
             points = new Point[] { };
             pointList = new List<Point>();
+            lines = new List<PaintLines>();
             drawing = false;
             //canvasPanel.Paint += new PaintEventHandler(canvasPanel_Paint);
             //canvasPanel.Paint += new PaintEventHandler(canvasPanel_Paint);
@@ -270,41 +275,50 @@ namespace GazeToolBar
 
         private void paintLines()
         {
-            //Brush brush = new SolidBrush(Color.DarkGreen);
-
-            //g.FillRectangle(brush, new Rectangle(new Point(3,3),new Size(canvasPanel.Width-6,canvasPanel.Height-6)));
-            //int height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
-            //int width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
             int height = Convert.ToInt32(ClientSize.Height);
             int width = Convert.ToInt32(ClientSize.Width);
-            //canvasPanel.Width = Convert.ToInt32(width * 0.7);
-            //canvasPanel.Height = Convert.ToInt32(height * 0.7);
-            //canvasPanel.Top = Convert.ToInt32(height * 0.15);
-            //canvasPanel.Left = Convert.ToInt32(width * 0.15);
-            Pen pen = new Pen(Color.Black, 3);
             bufferGraphics.FillRectangle(backgroundColor, Convert.ToInt32(width * 0.1), Convert.ToInt32(height * 0.15), Convert.ToInt32(width * 0.9), Convert.ToInt32(height * 0.9));
-            SolidBrush brush = new SolidBrush(brushColour);
-            ////Draw lines to screen.
-            //if ((pointList.Count > 1) && (pointList.Count < 20))
-            if (pointList.Count > 1)
+            foreach(PaintLines line in lines)
             {
-                //points = new Point[pointList.Count];
-                //Console.WriteLine("NewList");
-                for (int i = 0; i < pointList.Count; i++)
-                {
-                    bufferGraphics.FillEllipse(brush, new Rectangle(pointList[i], new Size(brushSize, brushSize)));
-                    //points[i] = pointList[i];
-                    //Console.WriteLine(points[i]);
-                }
-                //g.DrawPath(pen,)
-                //bufferGraphics.DrawLines(pen, points);
-                //Console.WriteLine("paintLine");
+                line.drawLine();
             }
-            //if (pointList.Count >= 20)
-            //{
-            //    Console.WriteLine("full");
-            //    pointList = new List<Point>();
-            //}
+
+
+
+            //Old Line Code
+            ////////Brush brush = new SolidBrush(Color.DarkGreen);
+
+            ////////g.FillRectangle(brush, new Rectangle(new Point(3,3),new Size(canvasPanel.Width-6,canvasPanel.Height-6)));
+            ////////int height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
+            ////////int width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
+
+            ////////canvasPanel.Width = Convert.ToInt32(width * 0.7);
+            ////////canvasPanel.Height = Convert.ToInt32(height * 0.7);
+            ////////canvasPanel.Top = Convert.ToInt32(height * 0.15);
+            ////////canvasPanel.Left = Convert.ToInt32(width * 0.15);
+            //////Pen pen = new Pen(Color.Black, 3);
+            //////SolidBrush brush = new SolidBrush(brushColour);
+            //////////Draw lines to screen.
+            ////////if ((pointList.Count > 1) && (pointList.Count < 20))
+            //////if (pointList.Count > 1)
+            //////{
+            //////    //points = new Point[pointList.Count];
+            //////    //Console.WriteLine("NewList");
+            //////    for (int i = 0; i < pointList.Count; i++)
+            //////    {
+            //////        bufferGraphics.FillEllipse(brush, new Rectangle(pointList[i], new Size(brushSize, brushSize)));
+            //////        //points[i] = pointList[i];
+            //////        //Console.WriteLine(points[i]);
+            //////    }
+            //////    //g.DrawPath(pen,)
+            //////    //bufferGraphics.DrawLines(pen, points);
+            //////    //Console.WriteLine("paintLine");
+            //////}
+            ////////if (pointList.Count >= 20)
+            ////////{
+            ////////    Console.WriteLine("full");
+            ////////    pointList = new List<Point>();
+            ////////}
             
         }
 
@@ -315,18 +329,32 @@ namespace GazeToolBar
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (drawing)
-            {
-                Point newPoint = eyeFollower.getXY();
+            //if (drawing)
+            //{
+            //    Point newPoint = eyeFollower.getXY();
 
-                pointList.Add(new Point(newPoint.X, newPoint.Y));
-                //pointList.Add(new Point(newPoint.X, newPoint.Y));
-                //Console.WriteLine(eyeFollower.getXY());
-            }
+            //    pointList.Add(new Point(newPoint.X, newPoint.Y));
+            //    //pointList.Add(new Point(newPoint.X, newPoint.Y));
+            //    //Console.WriteLine(eyeFollower.getXY());
+            //}
             paintLines();
             //bufferGraphics.FillRectangle(Brushes.Green, 0, 0, ClientSize.Width, ClientSize.Height);
             graphics.DrawImage(bufferImage, 0, 0);
             
+        }
+
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (drawing)
+            {
+
+                Point newPoint = eyeFollower.getXY();
+                newLine.addPoint(newPoint.X, newPoint.Y);
+                //pointList.Add(new Point(newPoint.X, newPoint.Y));
+                //pointList.Add(new Point(newPoint.X, newPoint.Y));
+                //Console.WriteLine(eyeFollower.getXY());
+            }
         }
 
         private void canvasPanel_MouseClick(object sender, MouseEventArgs e)
@@ -338,14 +366,19 @@ namespace GazeToolBar
         {
             if (!drawing)
             {
+                //Start a new Line
+                newLine = new PaintLines(brushSize, brushColour, bufferGraphics);
                 //pointList = new List<Point>();
                 eyeFollower.StartDetectingFixation();
                 drawing = true;
+                timer2.Enabled = true;
             }
             else
             {
+                lines.Add(newLine);
                 eyeFollower = new FixationDetection(eyeXHost);
                 drawing = false;
+                timer2.Enabled = false;
             }
         }
 
@@ -654,7 +687,6 @@ namespace GazeToolBar
         {
 
         }
-
 
     }
 }
