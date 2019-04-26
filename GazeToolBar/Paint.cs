@@ -36,11 +36,13 @@ namespace GazeToolBar
         private string selectedSize;
         private string newSize;
         private Color brushColour;
+        private DemoHome parent;
 
 
 
-        public Paint(FormsEyeXHost EyeXHost)
+        public Paint(FormsEyeXHost EyeXHost, DemoHome parent)
         {
+            this.parent = parent;
             eyeXHost = EyeXHost;
             InitializeComponent();
             connectBehaveMap();
@@ -612,5 +614,10 @@ namespace GazeToolBar
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            parent.showMaster();
+            this.Close();
+        }
     }
 }

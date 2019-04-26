@@ -112,9 +112,9 @@
             this.button2Panel = new System.Windows.Forms.Panel();
             this.button3Panel = new System.Windows.Forms.Panel();
             this.buttonPanel = new System.Windows.Forms.Panel();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.button5Panel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button5Panel = new System.Windows.Forms.Panel();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.brushPanel.SuspendLayout();
             this.brushColours.SuspendLayout();
             this.colourOptionPanel1.SuspendLayout();
@@ -150,8 +150,8 @@
             this.button2Panel.SuspendLayout();
             this.button3Panel.SuspendLayout();
             this.buttonPanel.SuspendLayout();
-            this.button5Panel.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.button5Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -162,6 +162,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // canvasPanel
             // 
@@ -969,10 +970,13 @@
             this.buttonPanel.Size = new System.Drawing.Size(1184, 117);
             this.buttonPanel.TabIndex = 13;
             // 
-            // timer2
+            // panel1
             // 
-            this.timer2.Interval = 1;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.panel1.Controls.Add(this.button16);
+            this.panel1.Location = new System.Drawing.Point(911, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(188, 100);
+            this.panel1.TabIndex = 14;
             // 
             // button5Panel
             // 
@@ -982,13 +986,10 @@
             this.button5Panel.Size = new System.Drawing.Size(142, 82);
             this.button5Panel.TabIndex = 13;
             // 
-            // panel1
+            // timer2
             // 
-            this.panel1.Controls.Add(this.button16);
-            this.panel1.Location = new System.Drawing.Point(911, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 100);
-            this.panel1.TabIndex = 14;
+            this.timer2.Interval = 1;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Paint
             // 
@@ -1043,8 +1044,8 @@
             this.button2Panel.ResumeLayout(false);
             this.button3Panel.ResumeLayout(false);
             this.buttonPanel.ResumeLayout(false);
-            this.button5Panel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.button5Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
