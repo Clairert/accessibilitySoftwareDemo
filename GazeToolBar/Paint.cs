@@ -375,25 +375,28 @@ namespace GazeToolBar
         private void smallBrush_Click(object sender, EventArgs e)
         {
             newSize = "small";
-            smallBrushPanel.BackColor = Color.Blue;
-            largeBrushPanel.BackColor = button1.BackColor;
-            medBrushPanel.BackColor = button1.BackColor;
+            smallBrushPanel.BackColor = Color.FromArgb(115, 220, 255);
+            largeBrushPanel.BackColor = Color.LightGray;
+            medBrushPanel.BackColor = Color.LightGray;
+            brushSize = 20;
         }
 
         private void medBrush_Click(object sender, EventArgs e)
         {
             newSize = "medium";
-            medBrushPanel.BackColor = Color.Blue;
-            smallBrushPanel.BackColor = button1.BackColor;
-            largeBrushPanel.BackColor = button1.BackColor;
+            medBrushPanel.BackColor = Color.FromArgb(115, 220, 255);
+            smallBrushPanel.BackColor = Color.LightGray;
+            largeBrushPanel.BackColor = Color.LightGray;
+            brushSize = 40;
         }
 
         private void largeBrush_Click(object sender, EventArgs e)
         {
             newSize = "large";
-            largeBrushPanel.BackColor = Color.Blue;
-            smallBrushPanel.BackColor = button1.BackColor;
-            medBrushPanel.BackColor = button1.BackColor;
+            largeBrushPanel.BackColor = Color.FromArgb(115, 220, 255);
+            smallBrushPanel.BackColor = Color.LightGray;
+            medBrushPanel.BackColor = Color.LightGray;
+            brushSize = 60;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -403,21 +406,21 @@ namespace GazeToolBar
             switch (selectedSize)
             {
                 case "large":
-                    largeBrushPanel.BackColor = Color.Blue;
-                    smallBrushPanel.BackColor = button1.BackColor;
-                    medBrushPanel.BackColor = button1.BackColor;
+                    largeBrushPanel.BackColor = Color.FromArgb(115, 220, 255);
+                    smallBrushPanel.BackColor = Color.LightGray;
+                    medBrushPanel.BackColor = Color.LightGray;
                     brushSize = 60;
                     break;
                 case "medium":
-                    medBrushPanel.BackColor = Color.Blue;
-                    smallBrushPanel.BackColor = button1.BackColor;
-                    largeBrushPanel.BackColor = button1.BackColor;
+                    medBrushPanel.BackColor = Color.FromArgb(115, 220, 255);
+                    smallBrushPanel.BackColor = Color.LightGray;
+                    largeBrushPanel.BackColor = Color.LightGray;
                     brushSize = 40;
                     break;
                 case "small":
-                    smallBrushPanel.BackColor = Color.Blue;
-                    largeBrushPanel.BackColor = button1.BackColor;
-                    medBrushPanel.BackColor = button1.BackColor;
+                    smallBrushPanel.BackColor = Color.FromArgb(115, 220, 255);
+                    largeBrushPanel.BackColor = Color.LightGray;
+                    medBrushPanel.BackColor = Color.LightGray;
                     brushSize = 20;
                     break;
 

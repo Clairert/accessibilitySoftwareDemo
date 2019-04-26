@@ -117,7 +117,7 @@ namespace GazeToolBar
             var sentButton = s as Panel;
             if (sentButton != null)
             {
-                sentButton.BackColor = (e.HasGaze) ? Color.FromArgb(115, 220, 255) : Color.White;
+                sentButton.BackColor = (e.HasGaze) ? Color.FromArgb(115, 220, 255) : Color.LightGray;
             }
         }
 
