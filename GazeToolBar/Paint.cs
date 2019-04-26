@@ -14,19 +14,16 @@ namespace GazeToolBar
 {
     public partial class Paint : Form
     {
-        private Graphics graphic;
-        private int count = 0;
-        private Point[] points;
         private List<Point> pointList;
 
-
+        private int canvasTop;
+        private int canvasLeft;
+        private int canvasHeight;
+        private int canvasWidth;
         private List<PaintLines> lines;
         private PaintLines newLine;
         bool drawing;
-        //FixationSmootherAverage eyeFollower;
         FixationDetection eyeFollower;
-        //CustomFixationDataStream eyeFollower;
-        private ZoomMagnifier magnifier;
         private static FormsEyeXHost eyeXHost;
         private Graphics graphics;
         private Graphics bufferGraphics;
@@ -45,9 +42,7 @@ namespace GazeToolBar
             InitializeComponent();
             connectBehaveMap();
 
-            //eyeFollower = new FixationSmootherAverage(30);
             eyeFollower = new FixationDetection(eyeXHost);
-            //eyeFollower = new CustomFixationDataStream(eyeXHost);
             //eyeXHost.Start();
             dynamicResize();
 
@@ -56,29 +51,24 @@ namespace GazeToolBar
 
             int height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
             int width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
-            //canvasPanel.Width = Convert.ToInt32(width * 0.7);
-            //canvasPanel.Height = Convert.ToInt32(height * 0.7);
-            //canvasPanel.Top = Convert.ToInt32(height * 0.15);
-            //canvasPanel.Left = Convert.ToInt32(width * 0.15);
-
-
+            canvasTop = Convert.ToInt32(height * 0.15);
+            canvasLeft = Convert.ToInt32(width * 0.1);
+            canvasWidth = Convert.ToInt32(width * 0.9);
+            canvasHeight = Convert.ToInt32(height * 0.9);
             graphics = CreateGraphics();
             bufferImage = new Bitmap(Convert.ToInt32(width * 0.9), Convert.ToInt32(height * 0.9));
             bufferGraphics = Graphics.FromImage(bufferImage);
 
-            points = new Point[] { };
             pointList = new List<Point>();
             lines = new List<PaintLines>();
             drawing = false;
-            //canvasPanel.Paint += new PaintEventHandler(canvasPanel_Paint);
-            //canvasPanel.Paint += new PaintEventHandler(canvasPanel_Paint);
-            //graphic = CreateGraphics();
+            newLine = new PaintLines(brushSize, brushColour, bufferGraphics);
             backgroundColor = new SolidBrush(Color.Green);
-            brushSize = 20;
+            brushSize = 40;
             selectedSize = "medium";
             newSize = "";
             brushColour = colourOptionButton12.BackColor;
-
+            
         }
 
 
@@ -89,9 +79,6 @@ namespace GazeToolBar
             int half = width / 2;
             int third = width / 3;
             int setttingpanel = third;
-
-
-
 
             //Resize panels
             //Settings Panel
@@ -148,10 +135,6 @@ namespace GazeToolBar
             }
 
             //Resizing Buttons and panels in brush settings(sizes)
-
-
-
-
             int sizePanelwidth = Convert.ToInt32 (setttingpanel * 0.5);
             int sizePanelheight = Convert.ToInt32((panel20.Height - (panel20.Height * 0.3)) / 5);
 
@@ -190,26 +173,14 @@ namespace GazeToolBar
             colourChangePanel.Left = ((setttingpanel / 2) + setttingpanel - (colourChangePanel.Width / 2));
             colourChangePanel.Top = ((panel20.Height / 2) - (colourChangePanel.Height / 2));
 
-
-
-
-
-
-
-
-
             //Labels
-
             label1.Font = new Font(label1.Font.FontFamily, width / 20);
             label1.Left = ((half) - (label1.Width / 2));
 
             label2.Font = new Font(label2.Font.FontFamily, width / 20);
             label2.Left = (half- (label2.Width / 2));
 
-
-
             //Brush Settings
-
             label3.Font = new Font(label3.Font.FontFamily, width / 40);
             label3.Left = ((setttingpanel / 2)- (label3.Width / 2));
             label4.Font = new Font(label4.Font.FontFamily, width / 40);
@@ -255,92 +226,26 @@ namespace GazeToolBar
                 }
             }
 
-
         }
-
-
-
-
-
-
-        private void canvasPanel_Paint(object sender, PaintEventArgs e)
-        {
-            //var g = e.Graphics;
-            //g.DrawImage(bufferImage, 0, 0);
-
-        }
-
-
 
 
         private void paintLines()
         {
             int height = Convert.ToInt32(ClientSize.Height);
             int width = Convert.ToInt32(ClientSize.Width);
-            bufferGraphics.FillRectangle(backgroundColor, Convert.ToInt32(width * 0.1), Convert.ToInt32(height * 0.15), Convert.ToInt32(width * 0.9), Convert.ToInt32(height * 0.9));
+            bufferGraphics.FillRectangle(backgroundColor, canvasLeft, canvasTop, canvasWidth, canvasHeight);
             foreach(PaintLines line in lines)
             {
                 line.drawLine();
             }
-
-
-
-            //Old Line Code
-            ////////Brush brush = new SolidBrush(Color.DarkGreen);
-
-            ////////g.FillRectangle(brush, new Rectangle(new Point(3,3),new Size(canvasPanel.Width-6,canvasPanel.Height-6)));
-            ////////int height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
-            ////////int width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
-
-            ////////canvasPanel.Width = Convert.ToInt32(width * 0.7);
-            ////////canvasPanel.Height = Convert.ToInt32(height * 0.7);
-            ////////canvasPanel.Top = Convert.ToInt32(height * 0.15);
-            ////////canvasPanel.Left = Convert.ToInt32(width * 0.15);
-            //////Pen pen = new Pen(Color.Black, 3);
-            //////SolidBrush brush = new SolidBrush(brushColour);
-            //////////Draw lines to screen.
-            ////////if ((pointList.Count > 1) && (pointList.Count < 20))
-            //////if (pointList.Count > 1)
-            //////{
-            //////    //points = new Point[pointList.Count];
-            //////    //Console.WriteLine("NewList");
-            //////    for (int i = 0; i < pointList.Count; i++)
-            //////    {
-            //////        bufferGraphics.FillEllipse(brush, new Rectangle(pointList[i], new Size(brushSize, brushSize)));
-            //////        //points[i] = pointList[i];
-            //////        //Console.WriteLine(points[i]);
-            //////    }
-            //////    //g.DrawPath(pen,)
-            //////    //bufferGraphics.DrawLines(pen, points);
-            //////    //Console.WriteLine("paintLine");
-            //////}
-            ////////if (pointList.Count >= 20)
-            ////////{
-            ////////    Console.WriteLine("full");
-            ////////    pointList = new List<Point>();
-            ////////}
-            
+            newLine.drawLine();
         }
 
-        private void brushColours_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //if (drawing)
-            //{
-            //    Point newPoint = eyeFollower.getXY();
-
-            //    pointList.Add(new Point(newPoint.X, newPoint.Y));
-            //    //pointList.Add(new Point(newPoint.X, newPoint.Y));
-            //    //Console.WriteLine(eyeFollower.getXY());
-            //}
             paintLines();
-            //bufferGraphics.FillRectangle(Brushes.Green, 0, 0, ClientSize.Width, ClientSize.Height);
             graphics.DrawImage(bufferImage, 0, 0);
-            
         }
 
 
@@ -348,19 +253,14 @@ namespace GazeToolBar
         {
             if (drawing)
             {
-
                 Point newPoint = eyeFollower.getXY();
-                newLine.addPoint(newPoint.X, newPoint.Y);
-                //pointList.Add(new Point(newPoint.X, newPoint.Y));
-                //pointList.Add(new Point(newPoint.X, newPoint.Y));
-                //Console.WriteLine(eyeFollower.getXY());
+                if ((newPoint.X >= (canvasTop - brushSize)) && (newPoint.X + brushSize <= (canvasTop + canvasHeight)))
+                {
+                    newLine.addPoint(newPoint.X, newPoint.Y);
+                }
             }
         }
 
-        private void canvasPanel_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
 
         private void button16_Click(object sender, EventArgs e)
         {
@@ -368,24 +268,20 @@ namespace GazeToolBar
             {
                 //Start a new Line
                 newLine = new PaintLines(brushSize, brushColour, bufferGraphics);
-                //pointList = new List<Point>();
                 eyeFollower.StartDetectingFixation();
                 drawing = true;
                 timer2.Enabled = true;
+                button16.BackColor = Color.Aqua;
             }
             else
             {
                 lines.Add(newLine);
-                eyeFollower = new FixationDetection(eyeXHost);
+                //eyeFollower = new FixationDetection(eyeXHost);
                 drawing = false;
                 timer2.Enabled = false;
+                button16.BackColor = Color.LightGray;
             }
         }
-
-
-
-
-
 
 
 
@@ -461,7 +357,7 @@ namespace GazeToolBar
         /////////////////////////////Brush Size///////////////////////////////////
 
 
-            //Small
+        //Small
         private void smallBrush_Click(object sender, EventArgs e)
         {
             newSize = "small";
@@ -495,17 +391,19 @@ namespace GazeToolBar
                     largeBrushPanel.BackColor = Color.Blue;
                     smallBrushPanel.BackColor = button1.BackColor;
                     medBrushPanel.BackColor = button1.BackColor;
+                    brushSize = 60;
                     break;
                 case "medium":
                     medBrushPanel.BackColor = Color.Blue;
                     smallBrushPanel.BackColor = button1.BackColor;
                     largeBrushPanel.BackColor = button1.BackColor;
-
+                    brushSize = 40;
                     break;
                 case "small":
                     smallBrushPanel.BackColor = Color.Blue;
                     largeBrushPanel.BackColor = button1.BackColor;
                     medBrushPanel.BackColor = button1.BackColor;
+                    brushSize = 20;
                     break;
 
             }
@@ -685,7 +583,11 @@ namespace GazeToolBar
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            //newLine = new PaintLines(brushSize, brushColour, bufferGraphics);
+            if (lines.Count >= 1)
+            {
+                lines.RemoveAt(lines.Count - 1);
+            }
         }
 
     }

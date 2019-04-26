@@ -113,6 +113,8 @@
             this.button3Panel = new System.Windows.Forms.Panel();
             this.buttonPanel = new System.Windows.Forms.Panel();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.button5Panel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.brushPanel.SuspendLayout();
             this.brushColours.SuspendLayout();
             this.colourOptionPanel1.SuspendLayout();
@@ -148,6 +150,8 @@
             this.button2Panel.SuspendLayout();
             this.button3Panel.SuspendLayout();
             this.buttonPanel.SuspendLayout();
+            this.button5Panel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -166,8 +170,6 @@
             this.canvasPanel.Name = "canvasPanel";
             this.canvasPanel.Size = new System.Drawing.Size(10, 15);
             this.canvasPanel.TabIndex = 1;
-            this.canvasPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.canvasPanel_Paint);
-            this.canvasPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.canvasPanel_MouseClick);
             // 
             // button2
             // 
@@ -191,7 +193,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(742, 19);
+            this.button4.Location = new System.Drawing.Point(1365, 13);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(143, 76);
             this.button4.TabIndex = 4;
@@ -200,7 +202,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(589, 17);
+            this.button5.Location = new System.Drawing.Point(3, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(136, 76);
             this.button5.TabIndex = 5;
@@ -245,7 +247,6 @@
             this.brushColours.Name = "brushColours";
             this.brushColours.Size = new System.Drawing.Size(131, 104);
             this.brushColours.TabIndex = 14;
-            this.brushColours.Paint += new System.Windows.Forms.PaintEventHandler(this.brushColours_Paint);
             // 
             // colourOptionPanel1
             // 
@@ -927,13 +928,14 @@
             // timer1
             // 
             this.timer1.Enabled = true;
+            this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(956, 18);
+            this.button16.Location = new System.Drawing.Point(3, 3);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(74, 69);
+            this.button16.Size = new System.Drawing.Size(182, 94);
             this.button16.TabIndex = 10;
             this.button16.Text = "Paint";
             this.button16.UseVisualStyleBackColor = true;
@@ -957,12 +959,11 @@
             // 
             // buttonPanel
             // 
+            this.buttonPanel.Controls.Add(this.panel1);
+            this.buttonPanel.Controls.Add(this.button5Panel);
             this.buttonPanel.Controls.Add(this.button1);
             this.buttonPanel.Controls.Add(this.button3Panel);
-            this.buttonPanel.Controls.Add(this.button16);
             this.buttonPanel.Controls.Add(this.button2Panel);
-            this.buttonPanel.Controls.Add(this.button5);
-            this.buttonPanel.Controls.Add(this.button4);
             this.buttonPanel.Location = new System.Drawing.Point(17, 1);
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.Size = new System.Drawing.Size(1184, 117);
@@ -972,6 +973,22 @@
             // 
             this.timer2.Interval = 1;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // button5Panel
+            // 
+            this.button5Panel.Controls.Add(this.button5);
+            this.button5Panel.Location = new System.Drawing.Point(579, 14);
+            this.button5Panel.Name = "button5Panel";
+            this.button5Panel.Size = new System.Drawing.Size(142, 82);
+            this.button5Panel.TabIndex = 13;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button16);
+            this.panel1.Location = new System.Drawing.Point(911, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(188, 100);
+            this.panel1.TabIndex = 14;
             // 
             // Paint
             // 
@@ -983,6 +1000,7 @@
             this.Controls.Add(this.backgroundPanel);
             this.Controls.Add(this.brushPanel);
             this.Controls.Add(this.canvasPanel);
+            this.Controls.Add(this.button4);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "Paint";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1025,6 +1043,8 @@
             this.button2Panel.ResumeLayout(false);
             this.button3Panel.ResumeLayout(false);
             this.buttonPanel.ResumeLayout(false);
+            this.button5Panel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1114,5 +1134,7 @@
         private System.Windows.Forms.Panel button3Panel;
         private System.Windows.Forms.Panel buttonPanel;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Panel button5Panel;
+        private System.Windows.Forms.Panel panel1;
     }
 }
