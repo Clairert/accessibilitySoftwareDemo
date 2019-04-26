@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EyeXFramework;
 using EyeXFramework.Forms;
 using GazeToolBar.Properties;
+using Tobii.EyeX.Framework;
 
 namespace GazeToolBar
 {
@@ -23,7 +25,8 @@ namespace GazeToolBar
         private List<PaintLines> lines;
         private PaintLines newLine;
         bool drawing;
-        FixationDetection eyeFollower;
+        //FixationDetection eyeFollower;
+        CustomFixationDataStream eyeFollower;
         private static FormsEyeXHost eyeXHost;
         private Graphics graphics;
         private Graphics bufferGraphics;
@@ -42,7 +45,11 @@ namespace GazeToolBar
             InitializeComponent();
             connectBehaveMap();
 
-            eyeFollower = new FixationDetection(eyeXHost);
+            //eyeFollower = new FixationDetection(eyeXHost);\
+            eyeFollower = new CustomFixationDataStream(eyeXHost);
+            //eyeXHost.CreateGazePointDataStream(GazePointDataMode.LightlyFiltered);
+            //eyeXHost.GazeTracking;
+            //eyeFollower = new GazePointDataStream(GazePointDataMode.LightlyFiltered);
             //eyeXHost.Start();
             dynamicResize();
 
@@ -253,7 +260,10 @@ namespace GazeToolBar
         {
             if (drawing)
             {
-                Point newPoint = eyeFollower.getXY();
+                Point newPoint = new Point(Convert.ToInt32(eyeFollower.gPAverage.X), Convert.ToInt32(eyeFollower.gPAverage.Y));
+                //eyeXHost.CreateEyePositionDataStream();
+
+                //Point newPoint = eyeFollower.getXY();
                 if ((newPoint.X >= (canvasTop - brushSize)) && (newPoint.X + brushSize <= (canvasTop + canvasHeight)))
                 {
                     newLine.addPoint(newPoint.X, newPoint.Y);
@@ -268,7 +278,8 @@ namespace GazeToolBar
             {
                 //Start a new Line
                 newLine = new PaintLines(brushSize, brushColour, bufferGraphics);
-                eyeFollower.StartDetectingFixation();
+                //eyeFollower.StartDetectingFixation();
+                //eyeFollower.ResetFixationDetectionState();
                 drawing = true;
                 timer2.Enabled = true;
                 button16.BackColor = Color.Aqua;
@@ -290,6 +301,7 @@ namespace GazeToolBar
 
         private void button3_Click(object sender, EventArgs e)
         {
+            drawing = false;
             backgroundPanel.Left = 0;
             buttonPanel.Left = ClientSize.Width + 2000;
         }
@@ -384,6 +396,7 @@ namespace GazeToolBar
 
         private void button2_Click(object sender, EventArgs e)
         {
+            drawing = false;
             buttonPanel.Left = ClientSize.Width + 2000;
             switch (selectedSize)
             {
@@ -583,11 +596,20 @@ namespace GazeToolBar
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //newLine = new PaintLines(brushSize, brushColour, bufferGraphics);
-            if (lines.Count >= 1)
+            if(!drawing)
             {
-                lines.RemoveAt(lines.Count - 1);
+                if (lines.Count >= 1)
+                {
+                    lines.RemoveAt(lines.Count - 1);
+                }
             }
+            else
+            {
+                drawing = false;
+                newLine = new PaintLines(brushSize, brushColour, bufferGraphics);
+            }
+
+
         }
 
     }
