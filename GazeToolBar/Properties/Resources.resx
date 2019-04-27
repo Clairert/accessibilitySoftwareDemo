@@ -178,4 +178,46 @@
   <data name="Mic-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Mic-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Adon_Moskal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adon_Moskal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adon_Moskal_Text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adon_Moskal_Text.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BIT_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BIT_Image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BIT_Programme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BIT_Programme.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Certificate_Programme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Certificate_Programme.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CIT_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CIT Image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dale_Parsons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dale_Parsons.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dale_Parsons_Text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dale_Parsons_Text.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="David_Rozado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\David_Rozado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="David_Rozado_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\David_Rozado_text.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Graduate_Diploma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graduate_Diploma.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Graduate_Diploma1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graduate_Diploma.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Krissi_Wood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Krissi_Wood.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Krissi_Wood_Text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Krissi_Wood_Text.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
 </root>

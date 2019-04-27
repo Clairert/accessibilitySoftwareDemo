@@ -8,6 +8,7 @@ using Tobii.EyeX.Framework;
 using Tobii.EyeX.Client;
 using System.Threading;
 using EyeXFramework.Forms;
+using System.Drawing;
 
 /*
  *  Class: CustomFixationDataStream
@@ -54,7 +55,7 @@ namespace GazeToolBar
         EFixationStreamEventType fixationState;
 
         //Global variable containing the current gaze average location.
-        GazePoint gPAverage;
+        public GazePoint gPAverage;
 
         //Deceleration of event that is raised when fixation occurs.
         public delegate void CustomFixationEventHandler(object o, CustomFixationEventArgs e);
@@ -233,6 +234,9 @@ namespace GazeToolBar
 
             return returnSmoothPoint;
         }
+
+
+
 
     }
 }

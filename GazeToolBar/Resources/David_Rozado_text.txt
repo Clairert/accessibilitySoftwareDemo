@@ -1,0 +1,4 @@
+David Rozado
+Principal Lecturer
+David.Rozado@op.ac.nz
+David Rozado holds a B.Sc. in Information Systems from Boston University, a M.Sc. in Bioinformatics from the Free University of Berlin and a Ph.D in Computer Science from the Autonomous University of Madrid. David joined Otago Polytechnic early in 2015. His main areas of research are Machine Learning and Accessibility software for users with motor impairment. He currently teaches Data Science &amp; Machine Intelligence, Algorithms &amp; Data Structures, and final year Project.

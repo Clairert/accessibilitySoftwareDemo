@@ -45,9 +45,21 @@
             this.PeopleBack = new System.Windows.Forms.Button();
             this.PeopleLabel = new System.Windows.Forms.Label();
             this.PeopleInfoPanel = new System.Windows.Forms.Panel();
-            this.PeopleRichTextBox2 = new System.Windows.Forms.RichTextBox();
             this.PeopleRichTextbox1 = new System.Windows.Forms.RichTextBox();
             this.MasterProgrammePanel = new System.Windows.Forms.Panel();
+            this.ProgrammeButtonPanel5 = new System.Windows.Forms.Panel();
+            this.Programme4 = new System.Windows.Forms.Button();
+            this.ProgrammeButtonPanel4 = new System.Windows.Forms.Panel();
+            this.Programme3 = new System.Windows.Forms.Button();
+            this.ProgrammeButtonPanel3 = new System.Windows.Forms.Panel();
+            this.Programme2 = new System.Windows.Forms.Button();
+            this.ProgrammeButtonPanel2 = new System.Windows.Forms.Panel();
+            this.Programme1 = new System.Windows.Forms.Button();
+            this.ProgrammeButtonPanel1 = new System.Windows.Forms.Panel();
+            this.ProgrammeBack = new System.Windows.Forms.Button();
+            this.ProgrammeLabel = new System.Windows.Forms.Label();
+            this.ProgrammeInfoPanel = new System.Windows.Forms.Panel();
+            this.ProgrammeRichTextBox = new System.Windows.Forms.RichTextBox();
             this.MasterProjectPanel = new System.Windows.Forms.Panel();
             this.ProjectButtonPanel5 = new System.Windows.Forms.Panel();
             this.ProjectButton4 = new System.Windows.Forms.Button();
@@ -61,22 +73,7 @@
             this.ProjectBack = new System.Windows.Forms.Button();
             this.ProjectLabel = new System.Windows.Forms.Label();
             this.ProjectInfoPanel = new System.Windows.Forms.Panel();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.ProgrammeButtonPanel5 = new System.Windows.Forms.Panel();
-            this.Programme4 = new System.Windows.Forms.Button();
-            this.ProgrammeButtonPanel4 = new System.Windows.Forms.Panel();
-            this.Programme3 = new System.Windows.Forms.Button();
-            this.ProgrammeButtonPanel3 = new System.Windows.Forms.Panel();
-            this.Programme2 = new System.Windows.Forms.Button();
-            this.ProgrammeButtonPanel2 = new System.Windows.Forms.Panel();
-            this.Programme1 = new System.Windows.Forms.Button();
-            this.ProgrammeButtonPanel1 = new System.Windows.Forms.Panel();
-            this.ProgrammeBack = new System.Windows.Forms.Button();
-            this.ProgrammeLabel = new System.Windows.Forms.Label();
-            this.ProgrammeInfoPanel = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.ProjectRichTextBox = new System.Windows.Forms.RichTextBox();
             this.MasterPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -86,7 +83,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.People = new System.Windows.Forms.Button();
+            this.ProjectPictureBox = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ProgrammePictureBox = new System.Windows.Forms.PictureBox();
+            this.peoplePictureBox1 = new System.Windows.Forms.PictureBox();
             this.MasterPeoplePanel.SuspendLayout();
             this.PeopleButtonPanel5.SuspendLayout();
             this.PeopleButtonPanel4.SuspendLayout();
@@ -95,6 +95,12 @@
             this.PeopleButtonPanel1.SuspendLayout();
             this.PeopleInfoPanel.SuspendLayout();
             this.MasterProgrammePanel.SuspendLayout();
+            this.ProgrammeButtonPanel5.SuspendLayout();
+            this.ProgrammeButtonPanel4.SuspendLayout();
+            this.ProgrammeButtonPanel3.SuspendLayout();
+            this.ProgrammeButtonPanel2.SuspendLayout();
+            this.ProgrammeButtonPanel1.SuspendLayout();
+            this.ProgrammeInfoPanel.SuspendLayout();
             this.MasterProjectPanel.SuspendLayout();
             this.ProjectButtonPanel5.SuspendLayout();
             this.ProjectButtonPanel4.SuspendLayout();
@@ -102,18 +108,15 @@
             this.ProjectButtonPanel2.SuspendLayout();
             this.ProjectButtonPanel1.SuspendLayout();
             this.ProjectInfoPanel.SuspendLayout();
-            this.ProgrammeButtonPanel5.SuspendLayout();
-            this.ProgrammeButtonPanel4.SuspendLayout();
-            this.ProgrammeButtonPanel3.SuspendLayout();
-            this.ProgrammeButtonPanel2.SuspendLayout();
-            this.ProgrammeButtonPanel1.SuspendLayout();
-            this.ProgrammeInfoPanel.SuspendLayout();
             this.MasterPanel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProjectPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProgrammePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MasterPeoplePanel
@@ -125,9 +128,9 @@
             this.MasterPeoplePanel.Controls.Add(this.PeopleButtonPanel1);
             this.MasterPeoplePanel.Controls.Add(this.PeopleLabel);
             this.MasterPeoplePanel.Controls.Add(this.PeopleInfoPanel);
-            this.MasterPeoplePanel.Location = new System.Drawing.Point(12, 469);
+            this.MasterPeoplePanel.Location = new System.Drawing.Point(19, 150);
             this.MasterPeoplePanel.Name = "MasterPeoplePanel";
-            this.MasterPeoplePanel.Size = new System.Drawing.Size(39, 35);
+            this.MasterPeoplePanel.Size = new System.Drawing.Size(49, 60);
             this.MasterPeoplePanel.TabIndex = 9;
             // 
             // PeopleButtonPanel5
@@ -252,24 +255,20 @@
             // 
             // PeopleInfoPanel
             // 
-            this.PeopleInfoPanel.BackColor = System.Drawing.Color.White;
-            this.PeopleInfoPanel.Controls.Add(this.PeopleRichTextBox2);
+            this.PeopleInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.PeopleInfoPanel.Controls.Add(this.peoplePictureBox1);
             this.PeopleInfoPanel.Controls.Add(this.PeopleRichTextbox1);
             this.PeopleInfoPanel.Location = new System.Drawing.Point(449, 394);
             this.PeopleInfoPanel.Name = "PeopleInfoPanel";
             this.PeopleInfoPanel.Size = new System.Drawing.Size(653, 287);
             this.PeopleInfoPanel.TabIndex = 12;
             // 
-            // PeopleRichTextBox2
-            // 
-            this.PeopleRichTextBox2.Location = new System.Drawing.Point(355, 16);
-            this.PeopleRichTextBox2.Name = "PeopleRichTextBox2";
-            this.PeopleRichTextBox2.Size = new System.Drawing.Size(258, 254);
-            this.PeopleRichTextBox2.TabIndex = 1;
-            this.PeopleRichTextBox2.Text = "";
-            // 
             // PeopleRichTextbox1
             // 
+            this.PeopleRichTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.PeopleRichTextbox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PeopleRichTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PeopleRichTextbox1.ForeColor = System.Drawing.SystemColors.Info;
             this.PeopleRichTextbox1.Location = new System.Drawing.Point(32, 16);
             this.PeopleRichTextbox1.Name = "PeopleRichTextbox1";
             this.PeopleRichTextbox1.Size = new System.Drawing.Size(258, 254);
@@ -285,10 +284,152 @@
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeButtonPanel1);
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeLabel);
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeInfoPanel);
-            this.MasterProgrammePanel.Location = new System.Drawing.Point(12, 411);
+            this.MasterProgrammePanel.Location = new System.Drawing.Point(19, 93);
             this.MasterProgrammePanel.Name = "MasterProgrammePanel";
-            this.MasterProgrammePanel.Size = new System.Drawing.Size(39, 39);
+            this.MasterProgrammePanel.Size = new System.Drawing.Size(49, 51);
             this.MasterProgrammePanel.TabIndex = 10;
+            // 
+            // ProgrammeButtonPanel5
+            // 
+            this.ProgrammeButtonPanel5.Controls.Add(this.Programme4);
+            this.ProgrammeButtonPanel5.Location = new System.Drawing.Point(125, 467);
+            this.ProgrammeButtonPanel5.Name = "ProgrammeButtonPanel5";
+            this.ProgrammeButtonPanel5.Size = new System.Drawing.Size(123, 58);
+            this.ProgrammeButtonPanel5.TabIndex = 25;
+            // 
+            // Programme4
+            // 
+            this.Programme4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(200)))), ((int)(((byte)(84)))));
+            this.Programme4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Programme4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Programme4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
+            this.Programme4.Location = new System.Drawing.Point(3, 3);
+            this.Programme4.Name = "Programme4";
+            this.Programme4.Size = new System.Drawing.Size(75, 23);
+            this.Programme4.TabIndex = 11;
+            this.Programme4.Text = "button5";
+            this.Programme4.UseVisualStyleBackColor = false;
+            this.Programme4.Click += new System.EventHandler(this.ProgrammeButton4_Click);
+            // 
+            // ProgrammeButtonPanel4
+            // 
+            this.ProgrammeButtonPanel4.Controls.Add(this.Programme3);
+            this.ProgrammeButtonPanel4.Location = new System.Drawing.Point(125, 415);
+            this.ProgrammeButtonPanel4.Name = "ProgrammeButtonPanel4";
+            this.ProgrammeButtonPanel4.Size = new System.Drawing.Size(123, 45);
+            this.ProgrammeButtonPanel4.TabIndex = 24;
+            // 
+            // Programme3
+            // 
+            this.Programme3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(200)))), ((int)(((byte)(84)))));
+            this.Programme3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Programme3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Programme3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
+            this.Programme3.Location = new System.Drawing.Point(3, 5);
+            this.Programme3.Name = "Programme3";
+            this.Programme3.Size = new System.Drawing.Size(75, 23);
+            this.Programme3.TabIndex = 10;
+            this.Programme3.Text = "button1";
+            this.Programme3.UseVisualStyleBackColor = false;
+            this.Programme3.Click += new System.EventHandler(this.ProgrammeButton3_Click);
+            // 
+            // ProgrammeButtonPanel3
+            // 
+            this.ProgrammeButtonPanel3.Controls.Add(this.Programme2);
+            this.ProgrammeButtonPanel3.Location = new System.Drawing.Point(128, 356);
+            this.ProgrammeButtonPanel3.Name = "ProgrammeButtonPanel3";
+            this.ProgrammeButtonPanel3.Size = new System.Drawing.Size(120, 52);
+            this.ProgrammeButtonPanel3.TabIndex = 23;
+            // 
+            // Programme2
+            // 
+            this.Programme2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(200)))), ((int)(((byte)(84)))));
+            this.Programme2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Programme2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Programme2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
+            this.Programme2.Location = new System.Drawing.Point(3, 3);
+            this.Programme2.Name = "Programme2";
+            this.Programme2.Size = new System.Drawing.Size(75, 23);
+            this.Programme2.TabIndex = 9;
+            this.Programme2.Text = "button6";
+            this.Programme2.UseVisualStyleBackColor = false;
+            this.Programme2.Click += new System.EventHandler(this.ProgrammeButton2_Click);
+            // 
+            // ProgrammeButtonPanel2
+            // 
+            this.ProgrammeButtonPanel2.Controls.Add(this.Programme1);
+            this.ProgrammeButtonPanel2.Location = new System.Drawing.Point(125, 298);
+            this.ProgrammeButtonPanel2.Name = "ProgrammeButtonPanel2";
+            this.ProgrammeButtonPanel2.Size = new System.Drawing.Size(123, 51);
+            this.ProgrammeButtonPanel2.TabIndex = 22;
+            // 
+            // Programme1
+            // 
+            this.Programme1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(200)))), ((int)(((byte)(84)))));
+            this.Programme1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Programme1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Programme1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
+            this.Programme1.Location = new System.Drawing.Point(3, 3);
+            this.Programme1.Name = "Programme1";
+            this.Programme1.Size = new System.Drawing.Size(75, 23);
+            this.Programme1.TabIndex = 8;
+            this.Programme1.Text = "button7";
+            this.Programme1.UseVisualStyleBackColor = false;
+            this.Programme1.Click += new System.EventHandler(this.ProgrammeButton1_Click);
+            // 
+            // ProgrammeButtonPanel1
+            // 
+            this.ProgrammeButtonPanel1.Controls.Add(this.ProgrammeBack);
+            this.ProgrammeButtonPanel1.Location = new System.Drawing.Point(122, 242);
+            this.ProgrammeButtonPanel1.Name = "ProgrammeButtonPanel1";
+            this.ProgrammeButtonPanel1.Size = new System.Drawing.Size(126, 50);
+            this.ProgrammeButtonPanel1.TabIndex = 21;
+            // 
+            // ProgrammeBack
+            // 
+            this.ProgrammeBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(243)))), ((int)(((byte)(129)))));
+            this.ProgrammeBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProgrammeBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProgrammeBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
+            this.ProgrammeBack.Location = new System.Drawing.Point(3, 3);
+            this.ProgrammeBack.Name = "ProgrammeBack";
+            this.ProgrammeBack.Size = new System.Drawing.Size(75, 23);
+            this.ProgrammeBack.TabIndex = 7;
+            this.ProgrammeBack.Text = "Back";
+            this.ProgrammeBack.UseVisualStyleBackColor = false;
+            this.ProgrammeBack.Click += new System.EventHandler(this.ProgrammeBackButton_Click);
+            // 
+            // ProgrammeLabel
+            // 
+            this.ProgrammeLabel.AutoSize = true;
+            this.ProgrammeLabel.ForeColor = System.Drawing.Color.White;
+            this.ProgrammeLabel.Location = new System.Drawing.Point(763, 84);
+            this.ProgrammeLabel.Name = "ProgrammeLabel";
+            this.ProgrammeLabel.Size = new System.Drawing.Size(55, 13);
+            this.ProgrammeLabel.TabIndex = 20;
+            this.ProgrammeLabel.Text = "Page Title";
+            // 
+            // ProgrammeInfoPanel
+            // 
+            this.ProgrammeInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProgrammeInfoPanel.Controls.Add(this.ProgrammePictureBox);
+            this.ProgrammeInfoPanel.Controls.Add(this.ProgrammeRichTextBox);
+            this.ProgrammeInfoPanel.Location = new System.Drawing.Point(420, 420);
+            this.ProgrammeInfoPanel.Name = "ProgrammeInfoPanel";
+            this.ProgrammeInfoPanel.Size = new System.Drawing.Size(653, 287);
+            this.ProgrammeInfoPanel.TabIndex = 19;
+            // 
+            // ProgrammeRichTextBox
+            // 
+            this.ProgrammeRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProgrammeRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ProgrammeRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProgrammeRichTextBox.ForeColor = System.Drawing.SystemColors.Info;
+            this.ProgrammeRichTextBox.Location = new System.Drawing.Point(32, 16);
+            this.ProgrammeRichTextBox.Name = "ProgrammeRichTextBox";
+            this.ProgrammeRichTextBox.Size = new System.Drawing.Size(258, 254);
+            this.ProgrammeRichTextBox.TabIndex = 0;
+            this.ProgrammeRichTextBox.Text = "";
             // 
             // MasterProjectPanel
             // 
@@ -299,9 +440,9 @@
             this.MasterProjectPanel.Controls.Add(this.ProjectButtonPanel1);
             this.MasterProjectPanel.Controls.Add(this.ProjectLabel);
             this.MasterProjectPanel.Controls.Add(this.ProjectInfoPanel);
-            this.MasterProjectPanel.Location = new System.Drawing.Point(12, 351);
+            this.MasterProjectPanel.Location = new System.Drawing.Point(19, 216);
             this.MasterProjectPanel.Name = "MasterProjectPanel";
-            this.MasterProjectPanel.Size = new System.Drawing.Size(47, 41);
+            this.MasterProjectPanel.Size = new System.Drawing.Size(49, 55);
             this.MasterProjectPanel.TabIndex = 12;
             // 
             // ProjectButtonPanel5
@@ -418,7 +559,7 @@
             // 
             this.ProjectLabel.AutoSize = true;
             this.ProjectLabel.ForeColor = System.Drawing.Color.White;
-            this.ProjectLabel.Location = new System.Drawing.Point(774, 146);
+            this.ProjectLabel.Location = new System.Drawing.Point(774, 84);
             this.ProjectLabel.Name = "ProjectLabel";
             this.ProjectLabel.Size = new System.Drawing.Size(55, 13);
             this.ProjectLabel.TabIndex = 27;
@@ -426,175 +567,25 @@
             // 
             // ProjectInfoPanel
             // 
-            this.ProjectInfoPanel.BackColor = System.Drawing.Color.White;
-            this.ProjectInfoPanel.Controls.Add(this.richTextBox3);
-            this.ProjectInfoPanel.Controls.Add(this.richTextBox4);
+            this.ProjectInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProjectInfoPanel.Controls.Add(this.ProjectPictureBox);
+            this.ProjectInfoPanel.Controls.Add(this.ProjectRichTextBox);
             this.ProjectInfoPanel.Location = new System.Drawing.Point(431, 456);
             this.ProjectInfoPanel.Name = "ProjectInfoPanel";
             this.ProjectInfoPanel.Size = new System.Drawing.Size(653, 287);
             this.ProjectInfoPanel.TabIndex = 26;
             // 
-            // richTextBox3
+            // ProjectRichTextBox
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(355, 16);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(258, 254);
-            this.richTextBox3.TabIndex = 1;
-            this.richTextBox3.Text = "";
-            // 
-            // richTextBox4
-            // 
-            this.richTextBox4.Location = new System.Drawing.Point(32, 16);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(258, 254);
-            this.richTextBox4.TabIndex = 0;
-            this.richTextBox4.Text = "";
-            // 
-            // ProgrammeButtonPanel5
-            // 
-            this.ProgrammeButtonPanel5.Controls.Add(this.Programme4);
-            this.ProgrammeButtonPanel5.Location = new System.Drawing.Point(125, 467);
-            this.ProgrammeButtonPanel5.Name = "ProgrammeButtonPanel5";
-            this.ProgrammeButtonPanel5.Size = new System.Drawing.Size(123, 58);
-            this.ProgrammeButtonPanel5.TabIndex = 25;
-            // 
-            // Programme4
-            // 
-            this.Programme4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(200)))), ((int)(((byte)(84)))));
-            this.Programme4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Programme4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Programme4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.Programme4.Location = new System.Drawing.Point(3, 3);
-            this.Programme4.Name = "Programme4";
-            this.Programme4.Size = new System.Drawing.Size(75, 23);
-            this.Programme4.TabIndex = 11;
-            this.Programme4.Text = "button5";
-            this.Programme4.UseVisualStyleBackColor = false;
-            this.Programme4.Click += new System.EventHandler(this.ProgrammeButton4_Click);
-            // 
-            // ProgrammeButtonPanel4
-            // 
-            this.ProgrammeButtonPanel4.Controls.Add(this.Programme3);
-            this.ProgrammeButtonPanel4.Location = new System.Drawing.Point(125, 415);
-            this.ProgrammeButtonPanel4.Name = "ProgrammeButtonPanel4";
-            this.ProgrammeButtonPanel4.Size = new System.Drawing.Size(123, 45);
-            this.ProgrammeButtonPanel4.TabIndex = 24;
-            // 
-            // Programme3
-            // 
-            this.Programme3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(200)))), ((int)(((byte)(84)))));
-            this.Programme3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Programme3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Programme3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.Programme3.Location = new System.Drawing.Point(3, 5);
-            this.Programme3.Name = "Programme3";
-            this.Programme3.Size = new System.Drawing.Size(75, 23);
-            this.Programme3.TabIndex = 10;
-            this.Programme3.Text = "button1";
-            this.Programme3.UseVisualStyleBackColor = false;
-            this.Programme3.Click += new System.EventHandler(this.ProgrammeButton3_Click);
-            // 
-            // ProgrammeButtonPanel3
-            // 
-            this.ProgrammeButtonPanel3.Controls.Add(this.Programme2);
-            this.ProgrammeButtonPanel3.Location = new System.Drawing.Point(128, 356);
-            this.ProgrammeButtonPanel3.Name = "ProgrammeButtonPanel3";
-            this.ProgrammeButtonPanel3.Size = new System.Drawing.Size(120, 52);
-            this.ProgrammeButtonPanel3.TabIndex = 23;
-            // 
-            // Programme2
-            // 
-            this.Programme2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(200)))), ((int)(((byte)(84)))));
-            this.Programme2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Programme2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Programme2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.Programme2.Location = new System.Drawing.Point(3, 3);
-            this.Programme2.Name = "Programme2";
-            this.Programme2.Size = new System.Drawing.Size(75, 23);
-            this.Programme2.TabIndex = 9;
-            this.Programme2.Text = "button6";
-            this.Programme2.UseVisualStyleBackColor = false;
-            this.Programme2.Click += new System.EventHandler(this.ProgrammeButton2_Click);
-            // 
-            // ProgrammeButtonPanel2
-            // 
-            this.ProgrammeButtonPanel2.Controls.Add(this.Programme1);
-            this.ProgrammeButtonPanel2.Location = new System.Drawing.Point(125, 298);
-            this.ProgrammeButtonPanel2.Name = "ProgrammeButtonPanel2";
-            this.ProgrammeButtonPanel2.Size = new System.Drawing.Size(123, 51);
-            this.ProgrammeButtonPanel2.TabIndex = 22;
-            // 
-            // Programme1
-            // 
-            this.Programme1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(200)))), ((int)(((byte)(84)))));
-            this.Programme1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Programme1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Programme1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.Programme1.Location = new System.Drawing.Point(3, 3);
-            this.Programme1.Name = "Programme1";
-            this.Programme1.Size = new System.Drawing.Size(75, 23);
-            this.Programme1.TabIndex = 8;
-            this.Programme1.Text = "button7";
-            this.Programme1.UseVisualStyleBackColor = false;
-            this.Programme1.Click += new System.EventHandler(this.ProgrammeButton1_Click);
-            // 
-            // ProgrammeButtonPanel1
-            // 
-            this.ProgrammeButtonPanel1.Controls.Add(this.ProgrammeBack);
-            this.ProgrammeButtonPanel1.Location = new System.Drawing.Point(122, 242);
-            this.ProgrammeButtonPanel1.Name = "ProgrammeButtonPanel1";
-            this.ProgrammeButtonPanel1.Size = new System.Drawing.Size(126, 50);
-            this.ProgrammeButtonPanel1.TabIndex = 21;
-            // 
-            // ProgrammeBack
-            // 
-            this.ProgrammeBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(243)))), ((int)(((byte)(129)))));
-            this.ProgrammeBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProgrammeBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProgrammeBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(48)))), ((int)(((byte)(88)))));
-            this.ProgrammeBack.Location = new System.Drawing.Point(3, 3);
-            this.ProgrammeBack.Name = "ProgrammeBack";
-            this.ProgrammeBack.Size = new System.Drawing.Size(75, 23);
-            this.ProgrammeBack.TabIndex = 7;
-            this.ProgrammeBack.Text = "Back";
-            this.ProgrammeBack.UseVisualStyleBackColor = false;
-            this.ProgrammeBack.Click += new System.EventHandler(this.ProgrammeBackButton_Click);
-            // 
-            // ProgrammeLabel
-            // 
-            this.ProgrammeLabel.AutoSize = true;
-            this.ProgrammeLabel.ForeColor = System.Drawing.Color.White;
-            this.ProgrammeLabel.Location = new System.Drawing.Point(763, 110);
-            this.ProgrammeLabel.Name = "ProgrammeLabel";
-            this.ProgrammeLabel.Size = new System.Drawing.Size(55, 13);
-            this.ProgrammeLabel.TabIndex = 20;
-            this.ProgrammeLabel.Text = "Page Title";
-            // 
-            // ProgrammeInfoPanel
-            // 
-            this.ProgrammeInfoPanel.BackColor = System.Drawing.Color.White;
-            this.ProgrammeInfoPanel.Controls.Add(this.richTextBox1);
-            this.ProgrammeInfoPanel.Controls.Add(this.richTextBox2);
-            this.ProgrammeInfoPanel.Location = new System.Drawing.Point(420, 420);
-            this.ProgrammeInfoPanel.Name = "ProgrammeInfoPanel";
-            this.ProgrammeInfoPanel.Size = new System.Drawing.Size(653, 287);
-            this.ProgrammeInfoPanel.TabIndex = 19;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(355, 16);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(258, 254);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(32, 16);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(258, 254);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
+            this.ProjectRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProjectRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ProjectRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProjectRichTextBox.ForeColor = System.Drawing.SystemColors.Info;
+            this.ProjectRichTextBox.Location = new System.Drawing.Point(32, 16);
+            this.ProjectRichTextBox.Name = "ProjectRichTextBox";
+            this.ProjectRichTextBox.Size = new System.Drawing.Size(258, 254);
+            this.ProjectRichTextBox.TabIndex = 0;
+            this.ProjectRichTextBox.Text = "";
             // 
             // MasterPanel
             // 
@@ -696,6 +687,14 @@
             this.People.UseVisualStyleBackColor = false;
             this.People.Click += new System.EventHandler(this.People_Click);
             // 
+            // ProjectPictureBox
+            // 
+            this.ProjectPictureBox.Location = new System.Drawing.Point(376, 30);
+            this.ProjectPictureBox.Name = "ProjectPictureBox";
+            this.ProjectPictureBox.Size = new System.Drawing.Size(168, 203);
+            this.ProjectPictureBox.TabIndex = 1;
+            this.ProjectPictureBox.TabStop = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -706,12 +705,30 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // ProgrammePictureBox
+            // 
+            this.ProgrammePictureBox.Location = new System.Drawing.Point(297, 50);
+            this.ProgrammePictureBox.Name = "ProgrammePictureBox";
+            this.ProgrammePictureBox.Size = new System.Drawing.Size(153, 188);
+            this.ProgrammePictureBox.TabIndex = 1;
+            this.ProgrammePictureBox.TabStop = false;
+            // 
+            // peoplePictureBox1
+            // 
+            this.peoplePictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("peoplePictureBox1.InitialImage")));
+            this.peoplePictureBox1.Location = new System.Drawing.Point(347, 32);
+            this.peoplePictureBox1.Name = "peoplePictureBox1";
+            this.peoplePictureBox1.Size = new System.Drawing.Size(146, 232);
+            this.peoplePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.peoplePictureBox1.TabIndex = 1;
+            this.peoplePictureBox1.TabStop = false;
+            // 
             // DemoHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
-            this.ClientSize = new System.Drawing.Size(1904, 972);
+            this.ClientSize = new System.Drawing.Size(1444, 904);
             this.ControlBox = false;
             this.Controls.Add(this.MasterProjectPanel);
             this.Controls.Add(this.MasterPanel);
@@ -731,6 +748,12 @@
             this.PeopleInfoPanel.ResumeLayout(false);
             this.MasterProgrammePanel.ResumeLayout(false);
             this.MasterProgrammePanel.PerformLayout();
+            this.ProgrammeButtonPanel5.ResumeLayout(false);
+            this.ProgrammeButtonPanel4.ResumeLayout(false);
+            this.ProgrammeButtonPanel3.ResumeLayout(false);
+            this.ProgrammeButtonPanel2.ResumeLayout(false);
+            this.ProgrammeButtonPanel1.ResumeLayout(false);
+            this.ProgrammeInfoPanel.ResumeLayout(false);
             this.MasterProjectPanel.ResumeLayout(false);
             this.MasterProjectPanel.PerformLayout();
             this.ProjectButtonPanel5.ResumeLayout(false);
@@ -739,18 +762,15 @@
             this.ProjectButtonPanel2.ResumeLayout(false);
             this.ProjectButtonPanel1.ResumeLayout(false);
             this.ProjectInfoPanel.ResumeLayout(false);
-            this.ProgrammeButtonPanel5.ResumeLayout(false);
-            this.ProgrammeButtonPanel4.ResumeLayout(false);
-            this.ProgrammeButtonPanel3.ResumeLayout(false);
-            this.ProgrammeButtonPanel2.ResumeLayout(false);
-            this.ProgrammeButtonPanel1.ResumeLayout(false);
-            this.ProgrammeInfoPanel.ResumeLayout(false);
             this.MasterPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ProjectPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProgrammePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -766,7 +786,6 @@
         private System.Windows.Forms.Button People2;
         private System.Windows.Forms.Button People1;
         private System.Windows.Forms.Button PeopleBack;
-        private System.Windows.Forms.RichTextBox PeopleRichTextBox2;
         private System.Windows.Forms.RichTextBox PeopleRichTextbox1;
         private System.Windows.Forms.Panel PeopleButtonPanel5;
         private System.Windows.Forms.Panel PeopleButtonPanel4;
@@ -786,8 +805,7 @@
         private System.Windows.Forms.Button ProgrammeBack;
         private System.Windows.Forms.Label ProgrammeLabel;
         private System.Windows.Forms.Panel ProgrammeInfoPanel;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox ProgrammeRichTextBox;
         private System.Windows.Forms.Panel MasterPanel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button4;
@@ -811,7 +829,9 @@
         private System.Windows.Forms.Button ProjectBack;
         private System.Windows.Forms.Label ProjectLabel;
         private System.Windows.Forms.Panel ProjectInfoPanel;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox ProjectRichTextBox;
+        private System.Windows.Forms.PictureBox peoplePictureBox1;
+        private System.Windows.Forms.PictureBox ProgrammePictureBox;
+        private System.Windows.Forms.PictureBox ProjectPictureBox;
     }
 }

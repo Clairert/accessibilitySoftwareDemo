@@ -63,6 +63,50 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Adon_Moskal {
+            get {
+                object obj = ResourceManager.GetObject("Adon_Moskal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Adon Moskal
+        ///Senior Lecturer
+        ///Adon.Moskal@op.ac.nz
+        ///My profile....
+        /// </summary>
+        internal static string Adon_Moskal_Text {
+            get {
+                return ResourceManager.GetString("Adon_Moskal_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BIT_Image {
+            get {
+                object obj = ResourceManager.GetObject("BIT_Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BIT
+        ///
+        ///Pursuing a career in Information Technology and keen to advance your skills and deepen your understanding of this diverse industry?
+        ///Discover the power of computing technology and how it can help you develop real world solutions and innovations with this stimulating, hands-on programme. Every industry, organisation and business in the world relies on computer technology in one way or another and the right qualification will create numerous employment opportunities for you, both here and overseas. The [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BIT_Programme {
+            get {
+                return ResourceManager.GetString("BIT_Programme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap button_down {
             get {
                 object obj = ResourceManager.GetObject("button_down", resourceCulture);
@@ -96,6 +140,28 @@ namespace GazeToolBar.Properties {
         internal static System.Drawing.Bitmap button_up {
             get {
                 object obj = ResourceManager.GetObject("button_up", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Certificate in IT
+        ///
+        ///Want to continue developing solid foundational IT skills whilst gaining valuable practical experience? Decided you want to pursue a computing career in the IT industry and wondering what your next step should be?
+        ///Then this is the programme for you! There are currently far more IT-related jobs than there are graduates and employers are desperate for individuals with a good awareness of the industry and a willingness to continue developing new skills. IT is a global industry and the righ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Certificate_Programme {
+            get {
+                return ResourceManager.GetString("Certificate_Programme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CIT_Image {
+            get {
+                object obj = ResourceManager.GetObject("CIT_Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +249,50 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dale_Parsons {
+            get {
+                object obj = ResourceManager.GetObject("Dale_Parsons", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  Dale Parsons
+        ///Principal Lecturer
+        ///Dale.Parsons@op.ac.nz
+        ///Dale is a Principal Lecturer in the School of Information Technology. She teaches programming in the Bachelor of Information Technology. Her main area of research is in Computing Education..
+        /// </summary>
+        internal static string Dale_Parsons_Text {
+            get {
+                return ResourceManager.GetString("Dale_Parsons_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap David_Rozado {
+            get {
+                object obj = ResourceManager.GetObject("David_Rozado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to David Rozado
+        ///Principal Lecturer
+        ///David.Rozado@op.ac.nz
+        ///David Rozado holds a B.Sc. in Information Systems from Boston University, a M.Sc. in Bioinformatics from the Free University of Berlin and a Ph.D in Computer Science from the Autonomous University of Madrid. David joined Otago Polytechnic early in 2015. His main areas of research are Machine Learning and Accessibility software for users with motor impairment. He currently teaches Data Science &amp;amp; Machine Intelligence, Algorithms &amp;amp; Data Structure [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string David_Rozado_text {
+            get {
+                return ResourceManager.GetString("David_Rozado_text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Double_Click_icon {
             get {
                 object obj = ResourceManager.GetObject("Double_Click_icon", resourceCulture);
@@ -201,12 +311,56 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Graduate Diploma
+        ///
+        ///Achieved a degree in another discipline and now searching for a way to intensively develop your computing skills? Are you an IT graduate who is seeking to increase your knowledge in specialist areas?
+        ///Look no further! Study IT in this flexible programme which is the perfect way to add computing skills to your CV while engaged in full-time employment. Enhance your knowledge and skills in your own domain of study, or develop expertise in a new but complementary area of information technolo [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Graduate_Diploma {
+            get {
+                return ResourceManager.GetString("Graduate_Diploma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Graduate_Diploma1 {
+            get {
+                object obj = ResourceManager.GetObject("Graduate_Diploma1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Keyboard_icon {
             get {
                 object obj = ResourceManager.GetObject("Keyboard_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Krissi_Wood {
+            get {
+                object obj = ResourceManager.GetObject("Krissi_Wood", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Krissi Wood
+        ///Lecturer
+        ///Krissi.Wood@op.ac.nz
+        ///Krissi is a BIT graduate from 2005, who has returned to the Polytechnic after a number of years in Industry. She is a lecturer in the School of Information Technology, where she teaches Programming, PC Maintenance and Web programming in first year and Databases in second year. Her main area of research is in Computing Education; and the focus for 2012 was pair programming and version control software..
+        /// </summary>
+        internal static string Krissi_Wood_Text {
+            get {
+                return ResourceManager.GetString("Krissi_Wood_Text", resourceCulture);
             }
         }
         
