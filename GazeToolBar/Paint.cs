@@ -37,6 +37,7 @@ namespace GazeToolBar
         private string newSize;
         private Color brushColour;
         private DemoHome parent;
+        private bool shape;
 
 
 
@@ -67,11 +68,11 @@ namespace GazeToolBar
             graphics = CreateGraphics();
             bufferImage = new Bitmap(Convert.ToInt32(width * 0.9), Convert.ToInt32(height * 0.9));
             bufferGraphics = Graphics.FromImage(bufferImage);
-
+            shape = true;
             pointList = new List<Point>();
             lines = new List<PaintLines>();
             drawing = false;
-            newLine = new PaintLines(brushSize, brushColour, bufferGraphics);
+            newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
             backgroundColor = new SolidBrush(Color.Green);
             brushSize = 40;
             selectedSize = "medium";
@@ -234,6 +235,7 @@ namespace GazeToolBar
                     down = down + (2 * colourPanelheight);
                 }
             }
+            button37.BackColor = Color.FromArgb(115, 220, 255);
 
         }
 
@@ -279,7 +281,7 @@ namespace GazeToolBar
             if (!drawing)
             {
                 //Start a new Line
-                newLine = new PaintLines(brushSize, brushColour, bufferGraphics);
+                newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
                 //eyeFollower.StartDetectingFixation();
                 //eyeFollower.ResetFixationDetectionState();
                 drawing = true;
@@ -611,7 +613,7 @@ namespace GazeToolBar
             else
             {
                 drawing = false;
-                newLine = new PaintLines(brushSize, brushColour, bufferGraphics);
+                newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
             }
 
 
@@ -621,6 +623,22 @@ namespace GazeToolBar
         {
             parent.showMaster();
             this.Close();
+        }
+
+        //Square
+        private void button39_Click(object sender, EventArgs e)
+        {
+            shape = false;
+            button37.BackColor = Color.LightGray;
+            button39.BackColor = Color.FromArgb(115, 220, 255);
+        }
+
+        //circle
+        private void button37_Click(object sender, EventArgs e)
+        {
+            shape = true;
+            button39.BackColor = Color.LightGray;
+            button37.BackColor = Color.FromArgb(115, 220, 255);
         }
     }
 }

@@ -605,7 +605,7 @@
             this.MasterPanel.Controls.Add(this.pictureBox2);
             this.MasterPanel.Location = new System.Drawing.Point(19, 12);
             this.MasterPanel.Name = "MasterPanel";
-            this.MasterPanel.Size = new System.Drawing.Size(29, 29);
+            this.MasterPanel.Size = new System.Drawing.Size(32, 21);
             this.MasterPanel.TabIndex = 11;
             // 
             // panel4
@@ -626,7 +626,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(522, 281);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Possible Other";
+            this.button4.Text = "Paint";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 

@@ -14,11 +14,13 @@ namespace GazeToolBar
         private int brushSize;
         private SolidBrush brush;
         private Pen pen;
+        private bool shape;
 
-        public PaintLines(int brushSize, Color brushColour, Graphics graphics)
+        public PaintLines(int brushSize, Color brushColour, Graphics graphics, bool shape)
         {
             this.graphics = graphics;
             this.brushSize = brushSize;
+            this.shape = shape;
             pointList = new List<Point>();
             brush = new SolidBrush(brushColour);
             pen = new Pen(brush,brushSize);
@@ -37,10 +39,27 @@ namespace GazeToolBar
                 for (int i = 0; i < pointList.Count-1; i++)
                 {
                     //graphics.DrawLine(pen, pointList[i], pointList[i + 1]);
-                    graphics.FillEllipse(brush, new Rectangle(pointList[i], new Size(brushSize, brushSize)));
+                    if(shape)
+                    {
+                        drawCircle(pointList[i]);
+                    }
+                    else
+                    {
+                        drawSquare(pointList[i]);
+                    }
                 }
             }
 
+        }
+
+        public void drawCircle(Point drawPoint)
+        {
+            graphics.FillEllipse(brush, new Rectangle(drawPoint, new Size(brushSize, brushSize)));
+        }
+
+        public void drawSquare(Point drawPoint)
+        {
+            graphics.FillRectangle(brush, new Rectangle(drawPoint, new Size(brushSize, brushSize)));
         }
 
 
