@@ -643,6 +643,7 @@ namespace GazeToolBar
 
         private void button4_Click(object sender, EventArgs e)
         {
+            newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
             lines = new List<PaintLines>();
         }
     }
