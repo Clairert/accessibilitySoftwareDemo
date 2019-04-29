@@ -66,7 +66,7 @@ namespace GazeToolBar
         public void showMaster()
         {
             setupMasterPanel();
-            setupMasterPanel();
+            setupMasterPanel(); //fixes bug :/
             paint.Location = new Point(5000, 5000);
             MasterPeoplePanel.Location = new Point(5000, 5000);
             MasterProgrammePanel.Location = new Point(5000, 5000);
