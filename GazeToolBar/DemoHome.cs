@@ -66,6 +66,7 @@ namespace GazeToolBar
         public void showMaster()
         {
             setupMasterPanel();
+            setupMasterPanel();
             paint.Location = new Point(5000, 5000);
             MasterPeoplePanel.Location = new Point(5000, 5000);
             MasterProgrammePanel.Location = new Point(5000, 5000);
@@ -126,6 +127,7 @@ namespace GazeToolBar
             panel4.Left = (ClientSize.Width - 50) - panelWidth;
 
             pictureBox2.Location = new Point((MasterPanel.Width / 2) - pictureBox2.Size.Width / 2, (MasterPanel.Height / 2) - pictureBox2.Size.Height / 2);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
 
@@ -214,7 +216,7 @@ namespace GazeToolBar
             People4.Text = "Person4";
 
             //title - top,right section
-            PeopleLabel.Text = "Section Title";
+            PeopleLabel.Text = "People";
             PeopleLabel.Font = new Font(PeopleLabel.Font.FontFamily, Convert.ToInt32(right) / 20);
             PeopleLabel.Left = ((Convert.ToInt32(right) - PeopleLabel.Width) / 2) + Convert.ToInt32(left);
 
@@ -325,7 +327,7 @@ namespace GazeToolBar
             Programme4.Text = "Programme4";
 
             //title - top,right section
-            ProgrammeLabel.Text = "Section Title";
+            ProgrammeLabel.Text = "Programmes";
             ProgrammeLabel.Font = new Font(ProgrammeLabel.Font.FontFamily, Convert.ToInt32(right) / 20);
             ProgrammeLabel.Left = ((Convert.ToInt32(right) - ProgrammeLabel.Width) / 2) + Convert.ToInt32(left);
 
@@ -439,7 +441,7 @@ namespace GazeToolBar
             ProjectButton4.Text = "Project4";
 
             //title - top,right section
-            ProjectLabel.Text = "Section Title";
+            ProjectLabel.Text = "Projects";
             ProjectLabel.Font = new Font(ProjectLabel.Font.FontFamily, Convert.ToInt32(right) / 20);
             ProjectLabel.Left = ((Convert.ToInt32(right) - ProjectLabel.Width) / 2) + Convert.ToInt32(left);
 
@@ -460,6 +462,7 @@ namespace GazeToolBar
             ProjectPictureBox.Location = new Point((ProjectInfoPanel.Width / 4 * 3) + 2, 2);
             ProjectPictureBox.Width = (ProjectInfoPanel.Width / 4);
             ProjectPictureBox.Image = GazeToolBar.Properties.Resources.David_Rozado;
+
 
 
         }
@@ -485,6 +488,8 @@ namespace GazeToolBar
             peoplePictureBox1.Location = new Point((PeopleInfoPanel.Width / 4 * 3) + 2, 2);
             peoplePictureBox1.Width = (PeopleInfoPanel.Width / 4);
             peoplePictureBox1.Image = GazeToolBar.Properties.Resources.David_Rozado;
+
+            
         }
 
         private void People2_Click(object sender, EventArgs e)
