@@ -13,7 +13,7 @@ namespace GazeToolBar
 {
     public partial class DemoHome : Form
     {
-        int buttonClickDelay = 500;
+        int buttonClickDelay = 1000;
         public void connectBehaveMap()
         {
             eyeXHost.Connect(bhavFORMMap);

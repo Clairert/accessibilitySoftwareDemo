@@ -23,7 +23,7 @@ namespace GazeToolBar
             this.shape = shape;
             pointList = new List<Point>();
             brush = new SolidBrush(brushColour);
-            pen = new Pen(brush,brushSize);
+            pen = new Pen(brush, brushSize);
         }
 
 
@@ -31,15 +31,15 @@ namespace GazeToolBar
         {
             pointList.Add(new Point(x, y));
         }
-        
+
         public void drawLine()
         {
             if (pointList.Count > 1)
             {
-                for (int i = 0; i < pointList.Count-1; i++)
+                for (int i = 0; i < pointList.Count - 1; i++)
                 {
                     //graphics.DrawLine(pen, pointList[i], pointList[i + 1]);
-                    if(shape)
+                    if (shape)
                     {
                         drawCircle(pointList[i]);
                     }

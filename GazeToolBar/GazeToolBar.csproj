@@ -321,7 +321,7 @@
     <None Include="Images\Scroll-icon.png" />
     <Content Include="Images\settings-icon-selected.fw.png" />
     <Content Include="Images\settings-icon.png" />
-    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\DavidRozado.bmp" />
     <None Include="Resources\crosshair_2.png" />
     <None Include="Resources\button_right.png" />
     <None Include="Resources\button_up.png" />
@@ -334,6 +334,20 @@
     <None Include="Resources\crosshair_4.png" />
     <None Include="Resources\crosshair_3.png" />
     <None Include="Resources\crosshair_8.png" />
+    <None Include="Resources\David_Rozado.jpg" />
+    <None Include="Resources\David_Rozado_text.txt" />
+    <None Include="Resources\Krissi_Wood_Text.txt" />
+    <None Include="Resources\Krissi_Wood.jpg" />
+    <None Include="Resources\Dale_Parsons_Text.txt" />
+    <None Include="Resources\Dale_Parsons.gif" />
+    <None Include="Resources\Adon_Moskal.jpg" />
+    <None Include="Resources\Adon_Moskal_Text.txt" />
+    <None Include="Resources\BIT_Programme.txt" />
+    <None Include="Resources\Certificate_Programme.txt" />
+    <None Include="Resources\Graduate_Diploma.txt" />
+    <None Include="Resources\BIT_Image.jpg" />
+    <None Include="Resources\CIT Image.jpg" />
+    <None Include="Resources\Graduate_Diploma.JPG" />
     <Content Include="Tobii.EyeX.Client.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

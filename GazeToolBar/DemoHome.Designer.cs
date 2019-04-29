@@ -45,7 +45,7 @@
             this.PeopleBack = new System.Windows.Forms.Button();
             this.PeopleLabel = new System.Windows.Forms.Label();
             this.PeopleInfoPanel = new System.Windows.Forms.Panel();
-            this.PeopleRichTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.peoplePictureBox1 = new System.Windows.Forms.PictureBox();
             this.PeopleRichTextbox1 = new System.Windows.Forms.RichTextBox();
             this.MasterProgrammePanel = new System.Windows.Forms.Panel();
             this.ProgrammeButtonPanel5 = new System.Windows.Forms.Panel();
@@ -60,8 +60,8 @@
             this.ProgrammeBack = new System.Windows.Forms.Button();
             this.ProgrammeLabel = new System.Windows.Forms.Label();
             this.ProgrammeInfoPanel = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.ProgrammePictureBox = new System.Windows.Forms.PictureBox();
+            this.ProgrammeRichTextBox = new System.Windows.Forms.RichTextBox();
             this.MasterProjectPanel = new System.Windows.Forms.Panel();
             this.ProjectButtonPanel5 = new System.Windows.Forms.Panel();
             this.ProjectButton4 = new System.Windows.Forms.Button();
@@ -75,8 +75,8 @@
             this.ProjectBack = new System.Windows.Forms.Button();
             this.ProjectLabel = new System.Windows.Forms.Label();
             this.ProjectInfoPanel = new System.Windows.Forms.Panel();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
+            this.ProjectPictureBox = new System.Windows.Forms.PictureBox();
+            this.ProjectRichTextBox = new System.Windows.Forms.RichTextBox();
             this.MasterPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -94,6 +94,7 @@
             this.PeopleButtonPanel2.SuspendLayout();
             this.PeopleButtonPanel1.SuspendLayout();
             this.PeopleInfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplePictureBox1)).BeginInit();
             this.MasterProgrammePanel.SuspendLayout();
             this.ProgrammeButtonPanel5.SuspendLayout();
             this.ProgrammeButtonPanel4.SuspendLayout();
@@ -101,6 +102,7 @@
             this.ProgrammeButtonPanel2.SuspendLayout();
             this.ProgrammeButtonPanel1.SuspendLayout();
             this.ProgrammeInfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProgrammePictureBox)).BeginInit();
             this.MasterProjectPanel.SuspendLayout();
             this.ProjectButtonPanel5.SuspendLayout();
             this.ProjectButtonPanel4.SuspendLayout();
@@ -108,6 +110,7 @@
             this.ProjectButtonPanel2.SuspendLayout();
             this.ProjectButtonPanel1.SuspendLayout();
             this.ProjectInfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProjectPictureBox)).BeginInit();
             this.MasterPanel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -125,9 +128,9 @@
             this.MasterPeoplePanel.Controls.Add(this.PeopleButtonPanel1);
             this.MasterPeoplePanel.Controls.Add(this.PeopleLabel);
             this.MasterPeoplePanel.Controls.Add(this.PeopleInfoPanel);
-            this.MasterPeoplePanel.Location = new System.Drawing.Point(9, 287);
+            this.MasterPeoplePanel.Location = new System.Drawing.Point(19, 150);
             this.MasterPeoplePanel.Name = "MasterPeoplePanel";
-            this.MasterPeoplePanel.Size = new System.Drawing.Size(42, 42);
+            this.MasterPeoplePanel.Size = new System.Drawing.Size(49, 60);
             this.MasterPeoplePanel.TabIndex = 9;
             // 
             // PeopleButtonPanel5
@@ -252,24 +255,30 @@
             // 
             // PeopleInfoPanel
             // 
-            this.PeopleInfoPanel.BackColor = System.Drawing.Color.White;
-            this.PeopleInfoPanel.Controls.Add(this.PeopleRichTextBox2);
+            this.PeopleInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.PeopleInfoPanel.Controls.Add(this.peoplePictureBox1);
             this.PeopleInfoPanel.Controls.Add(this.PeopleRichTextbox1);
             this.PeopleInfoPanel.Location = new System.Drawing.Point(449, 394);
             this.PeopleInfoPanel.Name = "PeopleInfoPanel";
             this.PeopleInfoPanel.Size = new System.Drawing.Size(653, 287);
             this.PeopleInfoPanel.TabIndex = 12;
             // 
-            // PeopleRichTextBox2
+            // peoplePictureBox1
             // 
-            this.PeopleRichTextBox2.Location = new System.Drawing.Point(355, 16);
-            this.PeopleRichTextBox2.Name = "PeopleRichTextBox2";
-            this.PeopleRichTextBox2.Size = new System.Drawing.Size(258, 254);
-            this.PeopleRichTextBox2.TabIndex = 1;
-            this.PeopleRichTextBox2.Text = "";
+            this.peoplePictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("peoplePictureBox1.InitialImage")));
+            this.peoplePictureBox1.Location = new System.Drawing.Point(347, 32);
+            this.peoplePictureBox1.Name = "peoplePictureBox1";
+            this.peoplePictureBox1.Size = new System.Drawing.Size(146, 232);
+            this.peoplePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.peoplePictureBox1.TabIndex = 1;
+            this.peoplePictureBox1.TabStop = false;
             // 
             // PeopleRichTextbox1
             // 
+            this.PeopleRichTextbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.PeopleRichTextbox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PeopleRichTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PeopleRichTextbox1.ForeColor = System.Drawing.SystemColors.Info;
             this.PeopleRichTextbox1.Location = new System.Drawing.Point(32, 16);
             this.PeopleRichTextbox1.Name = "PeopleRichTextbox1";
             this.PeopleRichTextbox1.Size = new System.Drawing.Size(258, 254);
@@ -285,9 +294,9 @@
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeButtonPanel1);
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeLabel);
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeInfoPanel);
-            this.MasterProgrammePanel.Location = new System.Drawing.Point(12, 411);
+            this.MasterProgrammePanel.Location = new System.Drawing.Point(19, 93);
             this.MasterProgrammePanel.Name = "MasterProgrammePanel";
-            this.MasterProgrammePanel.Size = new System.Drawing.Size(39, 39);
+            this.MasterProgrammePanel.Size = new System.Drawing.Size(49, 51);
             this.MasterProgrammePanel.TabIndex = 10;
             // 
             // ProgrammeButtonPanel5
@@ -404,7 +413,7 @@
             // 
             this.ProgrammeLabel.AutoSize = true;
             this.ProgrammeLabel.ForeColor = System.Drawing.Color.White;
-            this.ProgrammeLabel.Location = new System.Drawing.Point(763, 110);
+            this.ProgrammeLabel.Location = new System.Drawing.Point(763, 84);
             this.ProgrammeLabel.Name = "ProgrammeLabel";
             this.ProgrammeLabel.Size = new System.Drawing.Size(55, 13);
             this.ProgrammeLabel.TabIndex = 20;
@@ -412,29 +421,34 @@
             // 
             // ProgrammeInfoPanel
             // 
-            this.ProgrammeInfoPanel.BackColor = System.Drawing.Color.White;
-            this.ProgrammeInfoPanel.Controls.Add(this.richTextBox1);
-            this.ProgrammeInfoPanel.Controls.Add(this.richTextBox2);
+            this.ProgrammeInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProgrammeInfoPanel.Controls.Add(this.ProgrammePictureBox);
+            this.ProgrammeInfoPanel.Controls.Add(this.ProgrammeRichTextBox);
             this.ProgrammeInfoPanel.Location = new System.Drawing.Point(420, 420);
             this.ProgrammeInfoPanel.Name = "ProgrammeInfoPanel";
             this.ProgrammeInfoPanel.Size = new System.Drawing.Size(653, 287);
             this.ProgrammeInfoPanel.TabIndex = 19;
             // 
-            // richTextBox1
+            // ProgrammePictureBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(355, 16);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(258, 254);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.ProgrammePictureBox.Location = new System.Drawing.Point(297, 50);
+            this.ProgrammePictureBox.Name = "ProgrammePictureBox";
+            this.ProgrammePictureBox.Size = new System.Drawing.Size(153, 188);
+            this.ProgrammePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ProgrammePictureBox.TabIndex = 1;
+            this.ProgrammePictureBox.TabStop = false;
             // 
-            // richTextBox2
+            // ProgrammeRichTextBox
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(32, 16);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(258, 254);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
+            this.ProgrammeRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProgrammeRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ProgrammeRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProgrammeRichTextBox.ForeColor = System.Drawing.SystemColors.Info;
+            this.ProgrammeRichTextBox.Location = new System.Drawing.Point(32, 16);
+            this.ProgrammeRichTextBox.Name = "ProgrammeRichTextBox";
+            this.ProgrammeRichTextBox.Size = new System.Drawing.Size(258, 254);
+            this.ProgrammeRichTextBox.TabIndex = 0;
+            this.ProgrammeRichTextBox.Text = "";
             // 
             // MasterProjectPanel
             // 
@@ -445,9 +459,9 @@
             this.MasterProjectPanel.Controls.Add(this.ProjectButtonPanel1);
             this.MasterProjectPanel.Controls.Add(this.ProjectLabel);
             this.MasterProjectPanel.Controls.Add(this.ProjectInfoPanel);
-            this.MasterProjectPanel.Location = new System.Drawing.Point(9, 356);
+            this.MasterProjectPanel.Location = new System.Drawing.Point(19, 216);
             this.MasterProjectPanel.Name = "MasterProjectPanel";
-            this.MasterProjectPanel.Size = new System.Drawing.Size(42, 36);
+            this.MasterProjectPanel.Size = new System.Drawing.Size(49, 53);
             this.MasterProjectPanel.TabIndex = 12;
             // 
             // ProjectButtonPanel5
@@ -564,7 +578,7 @@
             // 
             this.ProjectLabel.AutoSize = true;
             this.ProjectLabel.ForeColor = System.Drawing.Color.White;
-            this.ProjectLabel.Location = new System.Drawing.Point(774, 146);
+            this.ProjectLabel.Location = new System.Drawing.Point(774, 84);
             this.ProjectLabel.Name = "ProjectLabel";
             this.ProjectLabel.Size = new System.Drawing.Size(55, 13);
             this.ProjectLabel.TabIndex = 27;
@@ -572,29 +586,34 @@
             // 
             // ProjectInfoPanel
             // 
-            this.ProjectInfoPanel.BackColor = System.Drawing.Color.White;
-            this.ProjectInfoPanel.Controls.Add(this.richTextBox3);
-            this.ProjectInfoPanel.Controls.Add(this.richTextBox4);
+            this.ProjectInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProjectInfoPanel.Controls.Add(this.ProjectPictureBox);
+            this.ProjectInfoPanel.Controls.Add(this.ProjectRichTextBox);
             this.ProjectInfoPanel.Location = new System.Drawing.Point(431, 456);
             this.ProjectInfoPanel.Name = "ProjectInfoPanel";
             this.ProjectInfoPanel.Size = new System.Drawing.Size(653, 287);
             this.ProjectInfoPanel.TabIndex = 26;
             // 
-            // richTextBox3
+            // ProjectPictureBox
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(355, 16);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(258, 254);
-            this.richTextBox3.TabIndex = 1;
-            this.richTextBox3.Text = "";
+            this.ProjectPictureBox.Location = new System.Drawing.Point(376, 30);
+            this.ProjectPictureBox.Name = "ProjectPictureBox";
+            this.ProjectPictureBox.Size = new System.Drawing.Size(168, 203);
+            this.ProjectPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ProjectPictureBox.TabIndex = 1;
+            this.ProjectPictureBox.TabStop = false;
             // 
-            // richTextBox4
+            // ProjectRichTextBox
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(32, 16);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(258, 254);
-            this.richTextBox4.TabIndex = 0;
-            this.richTextBox4.Text = "";
+            this.ProjectRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProjectRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ProjectRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProjectRichTextBox.ForeColor = System.Drawing.SystemColors.Info;
+            this.ProjectRichTextBox.Location = new System.Drawing.Point(32, 16);
+            this.ProjectRichTextBox.Name = "ProjectRichTextBox";
+            this.ProjectRichTextBox.Size = new System.Drawing.Size(258, 254);
+            this.ProjectRichTextBox.TabIndex = 0;
+            this.ProjectRichTextBox.Text = "";
             // 
             // MasterPanel
             // 
@@ -605,7 +624,7 @@
             this.MasterPanel.Controls.Add(this.pictureBox2);
             this.MasterPanel.Location = new System.Drawing.Point(19, 12);
             this.MasterPanel.Name = "MasterPanel";
-            this.MasterPanel.Size = new System.Drawing.Size(32, 21);
+            this.MasterPanel.Size = new System.Drawing.Size(49, 75);
             this.MasterPanel.TabIndex = 11;
             // 
             // panel4
@@ -729,6 +748,7 @@
             this.PeopleButtonPanel2.ResumeLayout(false);
             this.PeopleButtonPanel1.ResumeLayout(false);
             this.PeopleInfoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.peoplePictureBox1)).EndInit();
             this.MasterProgrammePanel.ResumeLayout(false);
             this.MasterProgrammePanel.PerformLayout();
             this.ProgrammeButtonPanel5.ResumeLayout(false);
@@ -737,6 +757,7 @@
             this.ProgrammeButtonPanel2.ResumeLayout(false);
             this.ProgrammeButtonPanel1.ResumeLayout(false);
             this.ProgrammeInfoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ProgrammePictureBox)).EndInit();
             this.MasterProjectPanel.ResumeLayout(false);
             this.MasterProjectPanel.PerformLayout();
             this.ProjectButtonPanel5.ResumeLayout(false);
@@ -745,6 +766,7 @@
             this.ProjectButtonPanel2.ResumeLayout(false);
             this.ProjectButtonPanel1.ResumeLayout(false);
             this.ProjectInfoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ProjectPictureBox)).EndInit();
             this.MasterPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -766,7 +788,6 @@
         private System.Windows.Forms.Button People2;
         private System.Windows.Forms.Button People1;
         private System.Windows.Forms.Button PeopleBack;
-        private System.Windows.Forms.RichTextBox PeopleRichTextBox2;
         private System.Windows.Forms.RichTextBox PeopleRichTextbox1;
         private System.Windows.Forms.Panel PeopleButtonPanel5;
         private System.Windows.Forms.Panel PeopleButtonPanel4;
@@ -786,8 +807,7 @@
         private System.Windows.Forms.Button ProgrammeBack;
         private System.Windows.Forms.Label ProgrammeLabel;
         private System.Windows.Forms.Panel ProgrammeInfoPanel;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox ProgrammeRichTextBox;
         private System.Windows.Forms.Panel MasterPanel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button4;
@@ -811,7 +831,9 @@
         private System.Windows.Forms.Button ProjectBack;
         private System.Windows.Forms.Label ProjectLabel;
         private System.Windows.Forms.Panel ProjectInfoPanel;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.RichTextBox ProjectRichTextBox;
+        private System.Windows.Forms.PictureBox peoplePictureBox1;
+        private System.Windows.Forms.PictureBox ProgrammePictureBox;
+        private System.Windows.Forms.PictureBox ProjectPictureBox;
     }
 }

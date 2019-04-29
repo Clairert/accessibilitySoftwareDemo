@@ -78,7 +78,7 @@ namespace GazeToolBar
             selectedSize = "medium";
             newSize = "";
             brushColour = colourOptionButton12.BackColor;
-            
+
         }
 
 
@@ -130,7 +130,7 @@ namespace GazeToolBar
                 pane.Left = left;
                 pane.Width = colourPanelwidth;
                 countLeft++;
-                left += (colourPanelwidth*2);
+                left += (colourPanelwidth * 2);
                 if (countLeft > 5)
                 {
                     countLeft = 0;
@@ -145,36 +145,36 @@ namespace GazeToolBar
             }
 
             //Resizing Buttons and panels in brush settings(sizes)
-            int sizePanelwidth = Convert.ToInt32 (setttingpanel * 0.5);
+            int sizePanelwidth = Convert.ToInt32(setttingpanel * 0.5);
             int sizePanelheight = Convert.ToInt32((panel20.Height - (panel20.Height * 0.3)) / 5);
 
             left = 0;
             foreach (Panel pane in panel20.Controls.OfType<Panel>())
             {
-                    pane.Height = Convert.ToInt32(height - (height * 0.2));
-                    pane.Width = setttingpanel;
-                    pane.Top = Convert.ToInt32(height * 0.1);
-                    countLeft = 0;
-                    down = Convert.ToInt32(panel20.Height * 0.075);
-                        foreach (Panel pane2 in pane.Controls.OfType<Panel>())
-                        {
-                                pane2.Height = sizePanelheight;
-                                pane2.Top = down;
-                                pane2.Width = sizePanelwidth;
-                                pane2.Left = ((setttingpanel / 2) - (pane2.Width / 2));
-                                down += (sizePanelheight * 2);
-                                foreach (Button button in pane2.Controls.OfType<Button>())
-                                {
+                pane.Height = Convert.ToInt32(height - (height * 0.2));
+                pane.Width = setttingpanel;
+                pane.Top = Convert.ToInt32(height * 0.1);
+                countLeft = 0;
+                down = Convert.ToInt32(panel20.Height * 0.075);
+                foreach (Panel pane2 in pane.Controls.OfType<Panel>())
+                {
+                    pane2.Height = sizePanelheight;
+                    pane2.Top = down;
+                    pane2.Width = sizePanelwidth;
+                    pane2.Left = ((setttingpanel / 2) - (pane2.Width / 2));
+                    down += (sizePanelheight * 2);
+                    foreach (Button button in pane2.Controls.OfType<Button>())
+                    {
 
-                                   button.Height = sizePanelheight - 6;
-                                   button.Width = sizePanelwidth - 6;
-                                   button.Font = new Font(button.Font.FontFamily, width / 50);
-                                }
-                        }
-             }
+                        button.Height = sizePanelheight - 6;
+                        button.Width = sizePanelwidth - 6;
+                        button.Font = new Font(button.Font.FontFamily, width / 50);
+                    }
+                }
+            }
 
             panel9.Left = 0;
-            panel22.Left = setttingpanel+ setttingpanel;
+            panel22.Left = setttingpanel + setttingpanel;
             //Button with painbrush Colour
             colourChangeButton.Height = Convert.ToInt32(panel20.Height * 0.25);
             colourChangeButton.Width = Convert.ToInt32(panel20.Height * 0.25);
@@ -188,13 +188,13 @@ namespace GazeToolBar
             label1.Left = ((half) - (label1.Width / 2));
 
             label2.Font = new Font(label2.Font.FontFamily, width / 20);
-            label2.Left = (half- (label2.Width / 2));
+            label2.Left = (half - (label2.Width / 2));
 
             //Brush Settings
             label3.Font = new Font(label3.Font.FontFamily, width / 40);
-            label3.Left = ((setttingpanel / 2)- (label3.Width / 2));
+            label3.Left = ((setttingpanel / 2) - (label3.Width / 2));
             label4.Font = new Font(label4.Font.FontFamily, width / 40);
-            label4.Left = ((setttingpanel / 2) + (setttingpanel*2) - (label4.Width / 2));
+            label4.Left = ((setttingpanel / 2) + (setttingpanel * 2) - (label4.Width / 2));
             label5.Font = new Font(label5.Font.FontFamily, width / 40);
             label5.Left = ((setttingpanel / 2) + setttingpanel - (label5.Width / 2));
 
@@ -245,7 +245,7 @@ namespace GazeToolBar
             int height = Convert.ToInt32(ClientSize.Height);
             int width = Convert.ToInt32(ClientSize.Width);
             bufferGraphics.FillRectangle(backgroundColor, canvasLeft, canvasTop, canvasWidth, canvasHeight);
-            foreach(PaintLines line in lines)
+            foreach (PaintLines line in lines)
             {
                 line.drawLine();
             }
@@ -432,7 +432,7 @@ namespace GazeToolBar
             newSize = selectedSize;
             colourChangeButton.BackColor = brushColour;
 
-            
+
         }
 
         private void button40_Click(object sender, EventArgs e)
@@ -603,7 +603,7 @@ namespace GazeToolBar
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if(!drawing)
+            if (!drawing)
             {
                 if (lines.Count >= 1)
                 {
