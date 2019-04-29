@@ -640,5 +640,10 @@ namespace GazeToolBar
             button39.BackColor = Color.LightGray;
             button37.BackColor = Color.FromArgb(115, 220, 255);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            lines = new List<PaintLines>();
+        }
     }
 }

@@ -33,7 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.brushPanel = new System.Windows.Forms.Panel();
             this.brushColours = new System.Windows.Forms.Panel();
@@ -112,6 +112,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5Panel = new System.Windows.Forms.Panel();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.clearPanel = new System.Windows.Forms.Panel();
             this.brushPanel.SuspendLayout();
             this.brushColours.SuspendLayout();
             this.colourOptionPanel1.SuspendLayout();
@@ -148,6 +149,7 @@
             this.buttonPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.button5Panel.SuspendLayout();
+            this.clearPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -180,14 +182,15 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // clearButton
             // 
-            this.button4.Location = new System.Drawing.Point(1365, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(143, 76);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Eraser";
-            this.button4.UseVisualStyleBackColor = true;
+            this.clearButton.Location = new System.Drawing.Point(3, 3);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(143, 76);
+            this.clearButton.TabIndex = 4;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -931,6 +934,7 @@
             // 
             // buttonPanel
             // 
+            this.buttonPanel.Controls.Add(this.clearPanel);
             this.buttonPanel.Controls.Add(this.panel1);
             this.buttonPanel.Controls.Add(this.button5Panel);
             this.buttonPanel.Controls.Add(this.button1);
@@ -944,7 +948,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.button16);
-            this.panel1.Location = new System.Drawing.Point(911, 4);
+            this.panel1.Location = new System.Drawing.Point(766, 11);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(188, 100);
             this.panel1.TabIndex = 14;
@@ -962,6 +966,14 @@
             this.timer2.Interval = 1;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // clearPanel
+            // 
+            this.clearPanel.Controls.Add(this.clearButton);
+            this.clearPanel.Location = new System.Drawing.Point(984, 20);
+            this.clearPanel.Name = "clearPanel";
+            this.clearPanel.Size = new System.Drawing.Size(149, 88);
+            this.clearPanel.TabIndex = 15;
+            // 
             // Paint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -971,7 +983,6 @@
             this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.backgroundPanel);
             this.Controls.Add(this.brushPanel);
-            this.Controls.Add(this.button4);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "Paint";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1015,6 +1026,7 @@
             this.buttonPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.button5Panel.ResumeLayout(false);
+            this.clearPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1024,7 +1036,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel brushPanel;
         private System.Windows.Forms.Panel colourOptionPanel12;
@@ -1103,5 +1115,6 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Panel button5Panel;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel clearPanel;
     }
 }
