@@ -40,7 +40,7 @@ namespace GazeToolBar
         private DemoHome parent;
         private bool shape;
         private int counting;
-
+        private int offScreen;
 
 
         public Paint(FormsEyeXHost EyeXHost, DemoHome parent)
@@ -51,13 +51,15 @@ namespace GazeToolBar
             connectBehaveMap();
 
             eyeFollower = new CustomFixationDataStream(eyeXHost);
+            int height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
+            int width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
+            offScreen = width + 2000;
             dynamicResize();
 
             ////////////////////////////////////////////////////////////////////////////////
             ///
 
-            int height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
-            int width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
+
             canvasTop = Convert.ToInt32(height * 0.15);
             canvasLeft = Convert.ToInt32(width * 0.1);
             canvasWidth = Convert.ToInt32(width * 0.9);
@@ -205,10 +207,10 @@ namespace GazeToolBar
             label5.Left = ((setttingpanel / 2) + setttingpanel - (label5.Width / 2));
 
             //Making invisible panels
-            brushPanel.Left = ClientSize.Width + 2000;
-            brushColours.Left = ClientSize.Width + 2000;
-            panel20.Left = ClientSize.Width + 2000;//brushSize
-            backgroundPanel.Left = ClientSize.Width + 2000;
+            brushPanel.Left = offScreen;
+            brushColours.Left = offScreen;
+            panel20.Left = offScreen;//brushSize
+            backgroundPanel.Left = offScreen;
 
 
             //Save Button
@@ -245,14 +247,13 @@ namespace GazeToolBar
 
 
             buttonPanel.Width = width;
-            int distance = (buttonPanel.Width / 7) - 180;
+            int distance = (buttonPanel.Width / 6) - 180;
             button2Panel.Left = button1Panel.Location.X + button1Panel.Width + distance;
             button3Panel.Left = button2Panel.Location.X + button2Panel.Width + distance;
             button5Panel.Left = button3Panel.Location.X + button3Panel.Width + distance;
             button16Panel.Left = button5Panel.Location.X + button5Panel.Width + distance;
-            stopPanel.Left = button16Panel.Location.X + button16Panel.Width + distance;
-            clearPanel.Left = stopPanel.Location.X + stopPanel.Width + distance;
-
+            clearPanel.Left = button16Panel.Location.X + button16Panel.Width + distance;
+            stopPanel.Left = offScreen;
 
 
         }
@@ -284,7 +285,6 @@ namespace GazeToolBar
             if (drawing)
             {
                 Point newPoint = new Point(Convert.ToInt32(eyeFollower.gPAverage.X), Convert.ToInt32(eyeFollower.gPAverage.Y));
-                //eyeXHost.CreateEyePositionDataStream();
 
                 //Point newPoint = eyeFollower.getXY();
                 if ((newPoint.X >= (canvasTop - brushSize)) && (newPoint.X + brushSize <= (canvasTop + canvasHeight)))
@@ -296,53 +296,35 @@ namespace GazeToolBar
         private void stopButton_Click(object sender, EventArgs e)
         {
             lines.Add(newLine);
-            button16.BackColor = Color.Red;
-            //timer2.Enabled = false;
+            button16Panel.Left = stopPanel.Left;
+            stopPanel.Left = offScreen;
             drawing = false;
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            //Start a new Line
-            //timer2.Enabled = true;
-            //newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
-            //drawing = true;
-            //button16.BackColor = Color.Aqua;
-            //if (counting > 10)
+            lines.Add(newLine);
+            drawing = false;
+            stopPanel.Left = button16Panel.Left;
+            button16Panel.Left = offScreen;
+
+            //if (drawing)
             //{
-            //    if (DEBUG == false)
-            //    {
-            //        newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
-            //        button16.BackColor = Color.Red;
-            //        //timer2.Enabled = true;
-            //        DEBUG = true;
-            //    }
-            //    else
-            //    {
-            //        //timer2.Enabled = false;
-
-            //    }
-            //    counting = 0;
+            //    lines.Add(newLine);
+            //    button16.BackColor = Color.Red;
+            //    //timer2.Enabled = false;
+            //    drawing = false;
+            //    //break;
             //}
-
-            if (drawing)
-            {
-                lines.Add(newLine);
-                button16.BackColor = Color.Red;
-                //timer2.Enabled = false;
-                drawing = false;
-                //break;
-            }
-            else
-            {
-                //Start a new Line
-                //timer2.Enabled = true;
-                newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
-                drawing = true;
-                button16.BackColor = Color.Aqua;
-                //return;
-            }
-            //label6.Text = lines.Count().ToString();
+            //else
+            //{
+            //    //Start a new Line
+            //    //timer2.Enabled = true;
+            //    newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
+            //    drawing = true;
+            //    button16.BackColor = Color.Aqua;
+            //    //return;
+            //}
         }
 
 
@@ -354,61 +336,61 @@ namespace GazeToolBar
         {
             drawing = false;
             backgroundPanel.Left = 0;
-            buttonPanel.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = offScreen;
         }
 
         private void backgroundColour1_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Left = ClientSize.Width + 2000;
+            backgroundPanel.Left = offScreen;
             buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour1.BackColor);
         }
 
         private void backgroundColour2_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Left = ClientSize.Width + 2000;
+            backgroundPanel.Left = offScreen;
             buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour2.BackColor);
         }
 
         private void backgroundColour3_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Left = ClientSize.Width + 2000;
+            backgroundPanel.Left = offScreen;
             buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour3.BackColor);
         }
 
         private void backgroundColour4_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Left = ClientSize.Width + 2000;
+            backgroundPanel.Left = offScreen;
             buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour4.BackColor);
         }
 
         private void backgroundColour5_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Left = ClientSize.Width + 2000;
+            backgroundPanel.Left = offScreen;
             buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour5.BackColor);
         }
 
         private void backgroundColour6_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Left = ClientSize.Width + 2000;
+            backgroundPanel.Left = offScreen;
             buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour6.BackColor);
         }
 
         private void backgroundColour7_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Left = ClientSize.Width + 2000;
+            backgroundPanel.Left = offScreen;
             buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour7.BackColor);
         }
 
         private void backgroundColour8_Click(object sender, EventArgs e)
         {
-            backgroundPanel.Left = ClientSize.Width + 2000;
+            backgroundPanel.Left = offScreen;
             buttonPanel.Left = 0;
             backgroundColor = new SolidBrush(backgroundColour8.BackColor);
         }
@@ -451,7 +433,7 @@ namespace GazeToolBar
         private void button2_Click(object sender, EventArgs e)
         {
             drawing = false;
-            buttonPanel.Left = ClientSize.Width + 2000;
+            buttonPanel.Left = offScreen;
             switch (selectedSize)
             {
                 case "large":
@@ -486,9 +468,9 @@ namespace GazeToolBar
         {
             selectedSize = newSize;
             //brushPanel.Visible = false;
-            brushPanel.Left = ClientSize.Width + 2000;
+            brushPanel.Left = offScreen;
             //brushColours.Visible = false;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             buttonPanel.Left = 0;
         }
 
@@ -496,7 +478,7 @@ namespace GazeToolBar
         {
             brushColours.Left = 0;
             brushColours.Visible = true;
-            panel20.Left = ClientSize.Width + 2000;
+            panel20.Left = offScreen;
         }
 
 
@@ -506,7 +488,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton1.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -514,7 +496,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton2.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -522,7 +504,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton3.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -530,7 +512,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton4.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -538,7 +520,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton16.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -546,7 +528,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton5.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -554,7 +536,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton6.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -562,7 +544,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton7.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -570,7 +552,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton8.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -578,7 +560,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton9.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -586,7 +568,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton10.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -594,7 +576,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton11.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -602,7 +584,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton12.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -610,7 +592,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton13.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -618,7 +600,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton14.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -626,7 +608,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton15.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -634,7 +616,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton17.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -642,7 +624,7 @@ namespace GazeToolBar
         {
             brushColour = colourOptionButton18.BackColor;
             colourChangeButton.BackColor = brushColour;
-            brushColours.Left = ClientSize.Width + 2000;
+            brushColours.Left = offScreen;
             panel20.Left = 0;
         }
 
@@ -693,7 +675,6 @@ namespace GazeToolBar
             
                 lines.Add(newLine);
                 button16.BackColor = Color.LightGray;
-                //timer2.Enabled = false;
                 drawing = false;
             
             //newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
