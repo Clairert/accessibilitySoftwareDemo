@@ -104,7 +104,6 @@ namespace GazeToolBar
             behavPaint.Add(button5, new GazeAwareBehavior(button5_Click) { DelayMilliseconds = buttonClickDelay });
             behavPaint.Add(button5Panel, new GazeAwareBehavior(OnGazeChangeBTColour));
             //Paint Button
-            //behavPaint.Add(button16, new GazeAwareBehavior(button16_Click) { DelayMilliseconds = buttonClickDelay });
             behavPaint.Add(button16, new GazeAwareBehavior(button16_Click) { DelayMilliseconds = buttonClickDelay });
             behavPaint.Add(button16Panel, new GazeAwareBehavior(OnGazeChangeBTColour));
 

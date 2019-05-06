@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EyeXFramework;
@@ -25,7 +26,7 @@ namespace GazeToolBar
         private List<PaintLines> lines;
         private PaintLines newLine;
         private bool drawing;
-        private bool DEBUG;
+        //private bool DEBUG;
         //FixationDetection eyeFollower;
         CustomFixationDataStream eyeFollower;
         private static FormsEyeXHost eyeXHost;
@@ -41,6 +42,7 @@ namespace GazeToolBar
         private bool shape;
         private int counting;
         private int offScreen;
+        private int onScreen;
 
 
         public Paint(FormsEyeXHost EyeXHost, DemoHome parent)
@@ -81,7 +83,7 @@ namespace GazeToolBar
             counting = 10;
             timer1.Enabled = true;
             //button16.BackColor = Color.Red;
-
+            onScreen = button16Panel.Left;
 
             //DEBUG = false;
 
@@ -296,18 +298,20 @@ namespace GazeToolBar
         private void stopButton_Click(object sender, EventArgs e)
         {
             lines.Add(newLine);
-            button16Panel.Left = stopPanel.Left;
+            button16Panel.Left = onScreen;
+            //stopPanel.Left = button16Panel.Left;
             stopPanel.Left = offScreen;
+            //button16Panel.Left = offScreen;
             drawing = false;
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            lines.Add(newLine);
-            drawing = false;
-            stopPanel.Left = button16Panel.Left;
+            newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
+            drawing = true;
+            button16.BackColor = Color.Aqua;
+            stopPanel.Left = onScreen;
             button16Panel.Left = offScreen;
-
             //if (drawing)
             //{
             //    lines.Add(newLine);
