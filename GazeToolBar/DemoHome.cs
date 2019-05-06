@@ -50,6 +50,7 @@ namespace GazeToolBar
 
         private void button4_Click(object sender, EventArgs e)
         {
+            paint.Close();
             paint = new Paint(eyeXHost, this);
             showPaint();
         }

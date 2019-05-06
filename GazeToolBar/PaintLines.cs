@@ -38,15 +38,15 @@ namespace GazeToolBar
             {
                 for (int i = 0; i < pointList.Count - 1; i++)
                 {
-                    graphics.DrawLine(pen, pointList[i], pointList[i + 1]);
-                    //if (shape)
-                    //{
-                    //    drawCircle(pointList[i]);
-                    //}
-                    //else
-                    //{
-                    //    drawSquare(pointList[i]);
-                    //}
+                    //graphics.DrawLine(pen, pointList[i], pointList[i + 1]);
+                    if (shape)
+                    {
+                        drawCircle(pointList[i]);
+                    }
+                    else
+                    {
+                        drawSquare(pointList[i]);
+                    }
                 }
             }
 

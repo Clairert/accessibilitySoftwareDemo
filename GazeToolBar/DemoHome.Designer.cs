@@ -130,7 +130,7 @@
             this.MasterPeoplePanel.Controls.Add(this.PeopleInfoPanel);
             this.MasterPeoplePanel.Location = new System.Drawing.Point(19, 150);
             this.MasterPeoplePanel.Name = "MasterPeoplePanel";
-            this.MasterPeoplePanel.Size = new System.Drawing.Size(49, 60);
+            this.MasterPeoplePanel.Size = new System.Drawing.Size(32, 40);
             this.MasterPeoplePanel.TabIndex = 9;
             // 
             // PeopleButtonPanel5
@@ -296,7 +296,7 @@
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeInfoPanel);
             this.MasterProgrammePanel.Location = new System.Drawing.Point(19, 93);
             this.MasterProgrammePanel.Name = "MasterProgrammePanel";
-            this.MasterProgrammePanel.Size = new System.Drawing.Size(49, 51);
+            this.MasterProgrammePanel.Size = new System.Drawing.Size(32, 39);
             this.MasterProgrammePanel.TabIndex = 10;
             // 
             // ProgrammeButtonPanel5

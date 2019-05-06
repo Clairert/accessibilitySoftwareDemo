@@ -103,9 +103,10 @@ namespace GazeToolBar
 
             behavPaint.Add(button5, new GazeAwareBehavior(button5_Click) { DelayMilliseconds = buttonClickDelay });
             behavPaint.Add(button5Panel, new GazeAwareBehavior(OnGazeChangeBTColour));
-
+            //Paint Button
+            //behavPaint.Add(button16, new GazeAwareBehavior(button16_Click) { DelayMilliseconds = buttonClickDelay });
             behavPaint.Add(button16, new GazeAwareBehavior(button16_Click) { DelayMilliseconds = buttonClickDelay });
-
+            behavPaint.Add(button16Panel, new GazeAwareBehavior(OnGazeChangeBTColour));
 
             behavPaint.Add(button37, new GazeAwareBehavior(button37_Click) { DelayMilliseconds = buttonClickDelay });
             behavPaint.Add(button37Panel, new GazeAwareBehavior(OnGazeChangeBTColour));
@@ -113,10 +114,25 @@ namespace GazeToolBar
             behavPaint.Add(button39Panel, new GazeAwareBehavior(OnGazeChangeBTColour));
 
             behavPaint.Add(button1, new GazeAwareBehavior(button1_Click) { DelayMilliseconds = buttonClickDelay });
-            //behavPaint.Add(button39Panel, new GazeAwareBehavior(OnGazeChangeBTColour));
+            behavPaint.Add(button1Panel, new GazeAwareBehavior(OnGazeChangeBTColour));
 
             behavPaint.Add(clearButton, new GazeAwareBehavior(button4_Click) { DelayMilliseconds = buttonClickDelay });
             behavPaint.Add(clearPanel, new GazeAwareBehavior(OnGazeChangeBTColour));
+
+            behavPaint.Add(stopButton, new GazeAwareBehavior(stopButton_Click) { DelayMilliseconds = buttonClickDelay });
+            behavPaint.Add(stopPanel, new GazeAwareBehavior(OnGazeChangeBTColour));
+
+
+
+
+
+
+
+
+
+
+
+
         }
 
 

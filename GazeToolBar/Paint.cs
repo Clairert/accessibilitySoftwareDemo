@@ -24,7 +24,8 @@ namespace GazeToolBar
         private int canvasWidth;
         private List<PaintLines> lines;
         private PaintLines newLine;
-        bool drawing;
+        private bool drawing;
+        private bool DEBUG;
         //FixationDetection eyeFollower;
         CustomFixationDataStream eyeFollower;
         private static FormsEyeXHost eyeXHost;
@@ -38,6 +39,7 @@ namespace GazeToolBar
         private Color brushColour;
         private DemoHome parent;
         private bool shape;
+        private int counting;
 
 
 
@@ -48,12 +50,7 @@ namespace GazeToolBar
             InitializeComponent();
             connectBehaveMap();
 
-            //eyeFollower = new FixationDetection(eyeXHost);\
             eyeFollower = new CustomFixationDataStream(eyeXHost);
-            //eyeXHost.CreateGazePointDataStream(GazePointDataMode.LightlyFiltered);
-            //eyeXHost.GazeTracking;
-            //eyeFollower = new GazePointDataStream(GazePointDataMode.LightlyFiltered);
-            //eyeXHost.Start();
             dynamicResize();
 
             ////////////////////////////////////////////////////////////////////////////////
@@ -77,7 +74,16 @@ namespace GazeToolBar
             brushSize = 40;
             selectedSize = "medium";
             newSize = "";
+            timer2.Enabled = true;
             brushColour = colourOptionButton12.BackColor;
+            counting = 10;
+            timer1.Enabled = true;
+            //button16.BackColor = Color.Red;
+
+
+            //DEBUG = false;
+
+
 
         }
 
@@ -237,6 +243,18 @@ namespace GazeToolBar
             }
             button37.BackColor = Color.FromArgb(115, 220, 255);
 
+
+            buttonPanel.Width = width;
+            int distance = (buttonPanel.Width / 7) - 180;
+            button2Panel.Left = button1Panel.Location.X + button1Panel.Width + distance;
+            button3Panel.Left = button2Panel.Location.X + button2Panel.Width + distance;
+            button5Panel.Left = button3Panel.Location.X + button3Panel.Width + distance;
+            button16Panel.Left = button5Panel.Location.X + button5Panel.Width + distance;
+            stopPanel.Left = button16Panel.Location.X + button16Panel.Width + distance;
+            clearPanel.Left = stopPanel.Location.X + stopPanel.Width + distance;
+
+
+
         }
 
 
@@ -255,6 +273,7 @@ namespace GazeToolBar
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            counting++;
             paintLines();
             graphics.DrawImage(bufferImage, 0, 0);
         }
@@ -274,28 +293,56 @@ namespace GazeToolBar
                 }
             }
         }
-
+        private void stopButton_Click(object sender, EventArgs e)
+        {
+            lines.Add(newLine);
+            button16.BackColor = Color.Red;
+            //timer2.Enabled = false;
+            drawing = false;
+        }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            if (!drawing)
+            //Start a new Line
+            //timer2.Enabled = true;
+            //newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
+            //drawing = true;
+            //button16.BackColor = Color.Aqua;
+            //if (counting > 10)
+            //{
+            //    if (DEBUG == false)
+            //    {
+            //        newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
+            //        button16.BackColor = Color.Red;
+            //        //timer2.Enabled = true;
+            //        DEBUG = true;
+            //    }
+            //    else
+            //    {
+            //        //timer2.Enabled = false;
+
+            //    }
+            //    counting = 0;
+            //}
+
+            if (drawing)
             {
-                //Start a new Line
-                newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
-                //eyeFollower.StartDetectingFixation();
-                //eyeFollower.ResetFixationDetectionState();
-                drawing = true;
-                timer2.Enabled = true;
-                button16.BackColor = Color.Aqua;
+                lines.Add(newLine);
+                button16.BackColor = Color.Red;
+                //timer2.Enabled = false;
+                drawing = false;
+                //break;
             }
             else
             {
-                lines.Add(newLine);
-                //eyeFollower = new FixationDetection(eyeXHost);
-                drawing = false;
-                timer2.Enabled = false;
-                button16.BackColor = Color.LightGray;
+                //Start a new Line
+                //timer2.Enabled = true;
+                newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
+                drawing = true;
+                button16.BackColor = Color.Aqua;
+                //return;
             }
+            //label6.Text = lines.Count().ToString();
         }
 
 
@@ -643,8 +690,16 @@ namespace GazeToolBar
 
         private void button4_Click(object sender, EventArgs e)
         {
-            newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
-            lines = new List<PaintLines>();
+            
+                lines.Add(newLine);
+                button16.BackColor = Color.LightGray;
+                //timer2.Enabled = false;
+                drawing = false;
+            
+            //newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
+            //lines = new List<PaintLines>();
         }
+
+
     }
 }

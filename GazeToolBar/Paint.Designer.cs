@@ -109,10 +109,13 @@
             this.button2Panel = new System.Windows.Forms.Panel();
             this.button3Panel = new System.Windows.Forms.Panel();
             this.buttonPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.stopPanel = new System.Windows.Forms.Panel();
+            this.stopButton = new System.Windows.Forms.Button();
+            this.button1Panel = new System.Windows.Forms.Panel();
+            this.clearPanel = new System.Windows.Forms.Panel();
+            this.button16Panel = new System.Windows.Forms.Panel();
             this.button5Panel = new System.Windows.Forms.Panel();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.clearPanel = new System.Windows.Forms.Panel();
             this.brushPanel.SuspendLayout();
             this.brushColours.SuspendLayout();
             this.colourOptionPanel1.SuspendLayout();
@@ -147,14 +150,17 @@
             this.button2Panel.SuspendLayout();
             this.button3Panel.SuspendLayout();
             this.buttonPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.button5Panel.SuspendLayout();
+            this.stopPanel.SuspendLayout();
+            this.button1Panel.SuspendLayout();
             this.clearPanel.SuspendLayout();
+            this.button16Panel.SuspendLayout();
+            this.button5Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 11);
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 80);
             this.button1.TabIndex = 0;
@@ -164,6 +170,7 @@
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(3, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 76);
@@ -174,9 +181,10 @@
             // 
             // button3
             // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(3, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 76);
+            this.button3.Size = new System.Drawing.Size(167, 76);
             this.button3.TabIndex = 3;
             this.button3.Text = "Background";
             this.button3.UseVisualStyleBackColor = true;
@@ -184,9 +192,10 @@
             // 
             // clearButton
             // 
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearButton.Location = new System.Drawing.Point(3, 3);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(143, 76);
+            this.clearButton.Size = new System.Drawing.Size(167, 76);
             this.clearButton.TabIndex = 4;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
@@ -194,9 +203,10 @@
             // 
             // button5
             // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(3, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(136, 76);
+            this.button5.Size = new System.Drawing.Size(167, 76);
             this.button5.TabIndex = 5;
             this.button5.Text = "Undo";
             this.button5.UseVisualStyleBackColor = true;
@@ -908,9 +918,10 @@
             // 
             // button16
             // 
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Location = new System.Drawing.Point(3, 3);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(182, 94);
+            this.button16.Size = new System.Drawing.Size(167, 76);
             this.button16.TabIndex = 10;
             this.button16.Text = "Paint";
             this.button16.UseVisualStyleBackColor = true;
@@ -919,60 +930,88 @@
             // button2Panel
             // 
             this.button2Panel.Controls.Add(this.button2);
-            this.button2Panel.Location = new System.Drawing.Point(169, 11);
+            this.button2Panel.Location = new System.Drawing.Point(192, 14);
             this.button2Panel.Name = "button2Panel";
-            this.button2Panel.Size = new System.Drawing.Size(173, 84);
+            this.button2Panel.Size = new System.Drawing.Size(173, 82);
             this.button2Panel.TabIndex = 11;
             // 
             // button3Panel
             // 
             this.button3Panel.Controls.Add(this.button3);
-            this.button3Panel.Location = new System.Drawing.Point(371, 14);
+            this.button3Panel.Location = new System.Drawing.Point(387, 14);
             this.button3Panel.Name = "button3Panel";
-            this.button3Panel.Size = new System.Drawing.Size(181, 82);
+            this.button3Panel.Size = new System.Drawing.Size(173, 82);
             this.button3Panel.TabIndex = 12;
             // 
             // buttonPanel
             // 
+            this.buttonPanel.Controls.Add(this.stopPanel);
+            this.buttonPanel.Controls.Add(this.button1Panel);
             this.buttonPanel.Controls.Add(this.clearPanel);
-            this.buttonPanel.Controls.Add(this.panel1);
+            this.buttonPanel.Controls.Add(this.button16Panel);
             this.buttonPanel.Controls.Add(this.button5Panel);
-            this.buttonPanel.Controls.Add(this.button1);
             this.buttonPanel.Controls.Add(this.button3Panel);
             this.buttonPanel.Controls.Add(this.button2Panel);
             this.buttonPanel.Location = new System.Drawing.Point(17, 1);
             this.buttonPanel.Name = "buttonPanel";
-            this.buttonPanel.Size = new System.Drawing.Size(1184, 117);
+            this.buttonPanel.Size = new System.Drawing.Size(1395, 117);
             this.buttonPanel.TabIndex = 13;
             // 
-            // panel1
+            // stopPanel
             // 
-            this.panel1.Controls.Add(this.button16);
-            this.panel1.Location = new System.Drawing.Point(766, 11);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 100);
-            this.panel1.TabIndex = 14;
+            this.stopPanel.Controls.Add(this.stopButton);
+            this.stopPanel.Location = new System.Drawing.Point(954, 14);
+            this.stopPanel.Name = "stopPanel";
+            this.stopPanel.Size = new System.Drawing.Size(173, 82);
+            this.stopPanel.TabIndex = 15;
+            // 
+            // stopButton
+            // 
+            this.stopButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stopButton.Location = new System.Drawing.Point(2, 3);
+            this.stopButton.Name = "stopButton";
+            this.stopButton.Size = new System.Drawing.Size(167, 76);
+            this.stopButton.TabIndex = 10;
+            this.stopButton.Text = "Stop";
+            this.stopButton.UseVisualStyleBackColor = true;
+            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
+            // 
+            // button1Panel
+            // 
+            this.button1Panel.Controls.Add(this.button1);
+            this.button1Panel.Location = new System.Drawing.Point(12, 14);
+            this.button1Panel.Name = "button1Panel";
+            this.button1Panel.Size = new System.Drawing.Size(149, 86);
+            this.button1Panel.TabIndex = 14;
+            // 
+            // clearPanel
+            // 
+            this.clearPanel.Controls.Add(this.clearButton);
+            this.clearPanel.Location = new System.Drawing.Point(1157, 14);
+            this.clearPanel.Name = "clearPanel";
+            this.clearPanel.Size = new System.Drawing.Size(173, 82);
+            this.clearPanel.TabIndex = 15;
+            // 
+            // button16Panel
+            // 
+            this.button16Panel.Controls.Add(this.button16);
+            this.button16Panel.Location = new System.Drawing.Point(766, 14);
+            this.button16Panel.Name = "button16Panel";
+            this.button16Panel.Size = new System.Drawing.Size(173, 82);
+            this.button16Panel.TabIndex = 14;
             // 
             // button5Panel
             // 
             this.button5Panel.Controls.Add(this.button5);
             this.button5Panel.Location = new System.Drawing.Point(579, 14);
             this.button5Panel.Name = "button5Panel";
-            this.button5Panel.Size = new System.Drawing.Size(142, 82);
+            this.button5Panel.Size = new System.Drawing.Size(173, 82);
             this.button5Panel.TabIndex = 13;
             // 
             // timer2
             // 
             this.timer2.Interval = 1;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // clearPanel
-            // 
-            this.clearPanel.Controls.Add(this.clearButton);
-            this.clearPanel.Location = new System.Drawing.Point(984, 20);
-            this.clearPanel.Name = "clearPanel";
-            this.clearPanel.Size = new System.Drawing.Size(149, 88);
-            this.clearPanel.TabIndex = 15;
             // 
             // Paint
             // 
@@ -1024,9 +1063,11 @@
             this.button2Panel.ResumeLayout(false);
             this.button3Panel.ResumeLayout(false);
             this.buttonPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.button5Panel.ResumeLayout(false);
+            this.stopPanel.ResumeLayout(false);
+            this.button1Panel.ResumeLayout(false);
             this.clearPanel.ResumeLayout(false);
+            this.button16Panel.ResumeLayout(false);
+            this.button5Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1114,7 +1155,10 @@
         private System.Windows.Forms.Panel buttonPanel;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Panel button5Panel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel button16Panel;
         private System.Windows.Forms.Panel clearPanel;
+        private System.Windows.Forms.Panel button1Panel;
+        private System.Windows.Forms.Panel stopPanel;
+        private System.Windows.Forms.Button stopButton;
     }
 }
