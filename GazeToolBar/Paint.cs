@@ -289,7 +289,7 @@ namespace GazeToolBar
                 Point newPoint = new Point(Convert.ToInt32(eyeFollower.gPAverage.X), Convert.ToInt32(eyeFollower.gPAverage.Y));
 
                 //Point newPoint = eyeFollower.getXY();
-                if ((newPoint.X >= (canvasTop - brushSize)) && (newPoint.X + brushSize <= (canvasTop + canvasHeight)))
+                if (((newPoint.Y >= (canvasTop)) && (newPoint.Y <= (canvasTop + canvasHeight-brushSize)))&&(newPoint.X>=canvasLeft))
                 {
                     newLine.addPoint(newPoint.X, newPoint.Y);
                 }
