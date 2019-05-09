@@ -159,57 +159,63 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 80);
             this.button1.TabIndex = 0;
             this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(3, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 76);
             this.button2.TabIndex = 2;
             this.button2.Text = "Brush";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button3.Location = new System.Drawing.Point(3, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(167, 76);
             this.button3.TabIndex = 3;
             this.button3.Text = "Background";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // clearButton
             // 
+            this.clearButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearButton.Location = new System.Drawing.Point(3, 3);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(167, 76);
             this.clearButton.TabIndex = 4;
             this.clearButton.Text = "Clear";
-            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(3, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(167, 76);
             this.button5.TabIndex = 5;
             this.button5.Text = "Undo";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // brushPanel
@@ -219,9 +225,9 @@
             this.brushPanel.Controls.Add(this.panel24);
             this.brushPanel.Controls.Add(this.panel20);
             this.brushPanel.Controls.Add(this.label2);
-            this.brushPanel.Location = new System.Drawing.Point(111, 237);
+            this.brushPanel.Location = new System.Drawing.Point(32, 186);
             this.brushPanel.Name = "brushPanel";
-            this.brushPanel.Size = new System.Drawing.Size(21, 29);
+            this.brushPanel.Size = new System.Drawing.Size(34, 41);
             this.brushPanel.TabIndex = 8;
             // 
             // brushColours
@@ -247,7 +253,7 @@
             this.brushColours.Controls.Add(this.colourOptionPanel18);
             this.brushColours.Location = new System.Drawing.Point(124, 120);
             this.brushColours.Name = "brushColours";
-            this.brushColours.Size = new System.Drawing.Size(131, 104);
+            this.brushColours.Size = new System.Drawing.Size(33, 29);
             this.brushColours.TabIndex = 14;
             // 
             // colourOptionPanel1
@@ -621,9 +627,9 @@
             this.panel20.Controls.Add(this.panel9);
             this.panel20.Controls.Add(this.label4);
             this.panel20.Controls.Add(this.label3);
-            this.panel20.Location = new System.Drawing.Point(245, 293);
+            this.panel20.Location = new System.Drawing.Point(208, 111);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(60, 47);
+            this.panel20.Size = new System.Drawing.Size(1041, 193);
             this.panel20.TabIndex = 15;
             // 
             // colourChangePanel
@@ -799,6 +805,7 @@
             // 
             // backgroundPanel
             // 
+            this.backgroundPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.backgroundPanel.Controls.Add(this.backgroundColour8);
             this.backgroundPanel.Controls.Add(this.backgroundColour7);
             this.backgroundPanel.Controls.Add(this.backgroundColour6);
@@ -808,9 +815,9 @@
             this.backgroundPanel.Controls.Add(this.backgroundColour2);
             this.backgroundPanel.Controls.Add(this.backgroundColour1);
             this.backgroundPanel.Controls.Add(this.label1);
-            this.backgroundPanel.Location = new System.Drawing.Point(52, 161);
+            this.backgroundPanel.Location = new System.Drawing.Point(12, 155);
             this.backgroundPanel.Name = "backgroundPanel";
-            this.backgroundPanel.Size = new System.Drawing.Size(23, 23);
+            this.backgroundPanel.Size = new System.Drawing.Size(23, 17);
             this.backgroundPanel.TabIndex = 9;
             // 
             // backgroundColour8
@@ -904,6 +911,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(541, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
@@ -918,13 +926,14 @@
             // 
             // button16
             // 
+            this.button16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Location = new System.Drawing.Point(3, 3);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(167, 76);
             this.button16.TabIndex = 10;
             this.button16.Text = "Paint";
-            this.button16.UseVisualStyleBackColor = true;
+            this.button16.UseVisualStyleBackColor = false;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button2Panel
@@ -967,19 +976,20 @@
             // 
             // stopButton
             // 
+            this.stopButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.stopButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stopButton.Location = new System.Drawing.Point(2, 3);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(167, 76);
             this.stopButton.TabIndex = 10;
             this.stopButton.Text = "Stop";
-            this.stopButton.UseVisualStyleBackColor = true;
+            this.stopButton.UseVisualStyleBackColor = false;
             this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
             // 
             // button1Panel
             // 
             this.button1Panel.Controls.Add(this.button1);
-            this.button1Panel.Location = new System.Drawing.Point(12, 14);
+            this.button1Panel.Location = new System.Drawing.Point(23, 14);
             this.button1Panel.Name = "button1Panel";
             this.button1Panel.Size = new System.Drawing.Size(149, 86);
             this.button1Panel.TabIndex = 14;
@@ -1017,6 +1027,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
             this.ClientSize = new System.Drawing.Size(1424, 604);
             this.ControlBox = false;
             this.Controls.Add(this.buttonPanel);

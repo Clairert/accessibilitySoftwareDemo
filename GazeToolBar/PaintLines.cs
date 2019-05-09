@@ -13,7 +13,6 @@ namespace GazeToolBar
         private List<Point> pointList;
         private int brushSize;
         private SolidBrush brush;
-        private Pen pen;
         private bool shape;
 
         public PaintLines(int brushSize, Color brushColour, Graphics graphics, bool shape)
@@ -23,7 +22,6 @@ namespace GazeToolBar
             this.shape = shape;
             pointList = new List<Point>();
             brush = new SolidBrush(brushColour);
-            pen = new Pen(brush, brushSize);
         }
 
 
@@ -32,13 +30,15 @@ namespace GazeToolBar
             pointList.Add(new Point(x, y));
         }
 
+        //Draws a circle/square at each location in list
         public void drawLine()
         {
+            //Checking list has started
             if (pointList.Count > 1)
             {
                 for (int i = 0; i < pointList.Count - 1; i++)
                 {
-                    //graphics.DrawLine(pen, pointList[i], pointList[i + 1]);
+                    //Checking shape of line
                     if (shape)
                     {
                         drawCircle(pointList[i]);
@@ -52,11 +52,13 @@ namespace GazeToolBar
 
         }
 
+        //Drawing Circle
         public void drawCircle(Point drawPoint)
         {
             graphics.FillEllipse(brush, new Rectangle(drawPoint, new Size(brushSize, brushSize)));
         }
 
+        //Drawing Square
         public void drawSquare(Point drawPoint)
         {
             graphics.FillRectangle(brush, new Rectangle(drawPoint, new Size(brushSize, brushSize)));

@@ -296,7 +296,7 @@
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeInfoPanel);
             this.MasterProgrammePanel.Location = new System.Drawing.Point(19, 93);
             this.MasterProgrammePanel.Name = "MasterProgrammePanel";
-            this.MasterProgrammePanel.Size = new System.Drawing.Size(32, 39);
+            this.MasterProgrammePanel.Size = new System.Drawing.Size(49, 31);
             this.MasterProgrammePanel.TabIndex = 10;
             // 
             // ProgrammeButtonPanel5
