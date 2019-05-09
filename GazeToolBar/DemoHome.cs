@@ -33,21 +33,25 @@ namespace GazeToolBar
 
         }
 
+        //Show People
         private void People_Click(object sender, EventArgs e)
         {
             showPeople();
         }
 
+        //Show Programme Panel
         private void button2_Click(object sender, EventArgs e)
         {
             showProgramme();
         }
 
+        //Show projects panel
         private void button3_Click(object sender, EventArgs e)
         {
             showProject();
         }
 
+        //Close any old paint forms. Create and show new Paint form.
         private void button4_Click(object sender, EventArgs e)
         {
             paint.Close();
@@ -55,6 +59,7 @@ namespace GazeToolBar
             showPaint();
         }
 
+        //Show paint. Relocate Panels
         private void showPaint()
         {
             paint.Show();
@@ -64,6 +69,7 @@ namespace GazeToolBar
             MasterProjectPanel.Location = new Point(5000, 5000);
         }
 
+        //Show master panel, hide all other panels
         public void showMaster()
         {
             setupMasterPanel();
@@ -74,6 +80,7 @@ namespace GazeToolBar
             MasterProjectPanel.Location = new Point(5000, 5000);
         }
 
+        //Show people panel. Hide other panels
         private void showPeople()
         {
             setupMasterPeoplePanel();
@@ -83,6 +90,7 @@ namespace GazeToolBar
             MasterProjectPanel.Location = new Point(5000, 5000);
         }
 
+        //Show programme panel. Hide other panels
         private void showProgramme()
         {
             setupMasterProgrammePanel();
@@ -92,6 +100,7 @@ namespace GazeToolBar
             MasterProjectPanel.Location = new Point(5000, 5000);
         }
 
+        //Show project panel. Hide other panels
         private void showProject()
         {
             setupMasterProjectPanel();
@@ -101,6 +110,7 @@ namespace GazeToolBar
             MasterProgrammePanel.Location = new Point(5000, 5000);
         }
 
+        //Set up master panel with buttons spaced evenly around the screen and the logo.
         private void setupMasterPanel()
         {
             MasterPanel.Top = 0;
@@ -131,7 +141,7 @@ namespace GazeToolBar
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
-
+        //Set up Panels and buttons for people panel
         private void setupMasterPeoplePanel()
         {
             MasterPeoplePanel.Top = 0;
@@ -175,9 +185,7 @@ namespace GazeToolBar
             People1.Width = PeopleButtonPanel2.Width - 4;
             People1.Text = "Person1";
             step += 0.25;
-
-
-
+            //Maths is hard
             PeopleButtonPanel3.Height = buttonHeight;
             PeopleButtonPanel3.Width = buttonWidth;
             PeopleButtonPanel3.Top = Convert.ToInt32((bottom * step) + top);
@@ -188,8 +196,6 @@ namespace GazeToolBar
             People2.Width = PeopleButtonPanel3.Width - 4;
             People2.Text = "Person2";
             step += 0.25;
-
-
 
             PeopleButtonPanel4.Height = buttonHeight;
             PeopleButtonPanel4.Width = buttonWidth;
@@ -238,6 +244,7 @@ namespace GazeToolBar
             peoplePictureBox1.Image = GazeToolBar.Properties.Resources.David_Rozado;
         }
 
+        //Set up Panels and buttons for programme panel
         private void setupMasterProgrammePanel()
         {
             double top = ClientSize.Height * 0.25;
@@ -252,9 +259,6 @@ namespace GazeToolBar
 
 
             //Back button - top,Left section
-
-
-
             MasterProgrammePanel.Top = 0;
             MasterProgrammePanel.Left = 0;
             MasterProgrammePanel.Height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
@@ -352,6 +356,7 @@ namespace GazeToolBar
 
         }
 
+        //Set up Panels and buttons for project panel
         private void setupMasterProjectPanel()
         {
             double top = ClientSize.Height * 0.25;
@@ -468,16 +473,16 @@ namespace GazeToolBar
 
         }
 
-        private void setupPanels()
-        {
 
-        }
-
+        //Back button
         private void PeopleBack_Click(object sender, EventArgs e)
         {
             showMaster();
         }
 
+
+        /////////////////////////////////////Clicking buttons////////////////////////////////////////
+        ///People
         private void People1_Click(object sender, EventArgs e)
         {
             PeopleRichTextbox1.Width = (PeopleInfoPanel.Width / 4 * 3) - 4;
@@ -532,6 +537,8 @@ namespace GazeToolBar
             peoplePictureBox1.Image = GazeToolBar.Properties.Resources.Dale_Parsons;
         }
 
+        /////////////////////////////////////Clicking buttons////////////////////////////////////////
+        ///Programme
         private void ProgrammeBackButton_Click(object sender, EventArgs e)
         {
             showMaster();
@@ -589,11 +596,10 @@ namespace GazeToolBar
             ProgrammePictureBox.Image = GazeToolBar.Properties.Resources.BIT_Image;
         }
 
-        private void DemoHome_Load(object sender, EventArgs e)
-        {
 
-        }
 
+        /////////////////////////////////////Clicking buttons////////////////////////////////////////
+        ///Project
         private void ProjectBack_Click(object sender, EventArgs e)
         {
             showMaster();

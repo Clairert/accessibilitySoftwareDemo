@@ -739,7 +739,6 @@
             this.Name = "DemoHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.DemoHome_Load);
             this.MasterPeoplePanel.ResumeLayout(false);
             this.MasterPeoplePanel.PerformLayout();
             this.PeopleButtonPanel5.ResumeLayout(false);
