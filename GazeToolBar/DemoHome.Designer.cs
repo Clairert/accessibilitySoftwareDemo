@@ -87,6 +87,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.People = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.programmePictureBox2 = new System.Windows.Forms.PictureBox();
+            this.peoplePictureBox2 = new System.Windows.Forms.PictureBox();
+            this.projectPictureBox2 = new System.Windows.Forms.PictureBox();
             this.MasterPeoplePanel.SuspendLayout();
             this.PeopleButtonPanel5.SuspendLayout();
             this.PeopleButtonPanel4.SuspendLayout();
@@ -117,6 +120,9 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.programmePictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplePictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // MasterPeoplePanel
@@ -128,9 +134,9 @@
             this.MasterPeoplePanel.Controls.Add(this.PeopleButtonPanel1);
             this.MasterPeoplePanel.Controls.Add(this.PeopleLabel);
             this.MasterPeoplePanel.Controls.Add(this.PeopleInfoPanel);
-            this.MasterPeoplePanel.Location = new System.Drawing.Point(19, 150);
+            this.MasterPeoplePanel.Location = new System.Drawing.Point(108, 175);
             this.MasterPeoplePanel.Name = "MasterPeoplePanel";
-            this.MasterPeoplePanel.Size = new System.Drawing.Size(32, 40);
+            this.MasterPeoplePanel.Size = new System.Drawing.Size(41, 42);
             this.MasterPeoplePanel.TabIndex = 9;
             // 
             // PeopleButtonPanel5
@@ -256,11 +262,12 @@
             // PeopleInfoPanel
             // 
             this.PeopleInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.PeopleInfoPanel.Controls.Add(this.peoplePictureBox2);
             this.PeopleInfoPanel.Controls.Add(this.peoplePictureBox1);
             this.PeopleInfoPanel.Controls.Add(this.PeopleRichTextbox1);
-            this.PeopleInfoPanel.Location = new System.Drawing.Point(449, 394);
+            this.PeopleInfoPanel.Location = new System.Drawing.Point(452, 275);
             this.PeopleInfoPanel.Name = "PeopleInfoPanel";
-            this.PeopleInfoPanel.Size = new System.Drawing.Size(653, 287);
+            this.PeopleInfoPanel.Size = new System.Drawing.Size(653, 358);
             this.PeopleInfoPanel.TabIndex = 12;
             // 
             // peoplePictureBox1
@@ -294,9 +301,9 @@
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeButtonPanel1);
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeLabel);
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeInfoPanel);
-            this.MasterProgrammePanel.Location = new System.Drawing.Point(19, 93);
+            this.MasterProgrammePanel.Location = new System.Drawing.Point(108, 118);
             this.MasterProgrammePanel.Name = "MasterProgrammePanel";
-            this.MasterProgrammePanel.Size = new System.Drawing.Size(49, 31);
+            this.MasterProgrammePanel.Size = new System.Drawing.Size(41, 36);
             this.MasterProgrammePanel.TabIndex = 10;
             // 
             // ProgrammeButtonPanel5
@@ -422,6 +429,7 @@
             // ProgrammeInfoPanel
             // 
             this.ProgrammeInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProgrammeInfoPanel.Controls.Add(this.programmePictureBox2);
             this.ProgrammeInfoPanel.Controls.Add(this.ProgrammePictureBox);
             this.ProgrammeInfoPanel.Controls.Add(this.ProgrammeRichTextBox);
             this.ProgrammeInfoPanel.Location = new System.Drawing.Point(420, 420);
@@ -459,9 +467,9 @@
             this.MasterProjectPanel.Controls.Add(this.ProjectButtonPanel1);
             this.MasterProjectPanel.Controls.Add(this.ProjectLabel);
             this.MasterProjectPanel.Controls.Add(this.ProjectInfoPanel);
-            this.MasterProjectPanel.Location = new System.Drawing.Point(19, 216);
+            this.MasterProjectPanel.Location = new System.Drawing.Point(111, 55);
             this.MasterProjectPanel.Name = "MasterProjectPanel";
-            this.MasterProjectPanel.Size = new System.Drawing.Size(49, 53);
+            this.MasterProjectPanel.Size = new System.Drawing.Size(38, 48);
             this.MasterProjectPanel.TabIndex = 12;
             // 
             // ProjectButtonPanel5
@@ -587,11 +595,12 @@
             // ProjectInfoPanel
             // 
             this.ProjectInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProjectInfoPanel.Controls.Add(this.projectPictureBox2);
             this.ProjectInfoPanel.Controls.Add(this.ProjectPictureBox);
             this.ProjectInfoPanel.Controls.Add(this.ProjectRichTextBox);
             this.ProjectInfoPanel.Location = new System.Drawing.Point(431, 456);
             this.ProjectInfoPanel.Name = "ProjectInfoPanel";
-            this.ProjectInfoPanel.Size = new System.Drawing.Size(653, 287);
+            this.ProjectInfoPanel.Size = new System.Drawing.Size(653, 321);
             this.ProjectInfoPanel.TabIndex = 26;
             // 
             // ProjectPictureBox
@@ -622,9 +631,9 @@
             this.MasterPanel.Controls.Add(this.panel2);
             this.MasterPanel.Controls.Add(this.panel1);
             this.MasterPanel.Controls.Add(this.pictureBox2);
-            this.MasterPanel.Location = new System.Drawing.Point(19, 12);
+            this.MasterPanel.Location = new System.Drawing.Point(12, 24);
             this.MasterPanel.Name = "MasterPanel";
-            this.MasterPanel.Size = new System.Drawing.Size(49, 75);
+            this.MasterPanel.Size = new System.Drawing.Size(39, 33);
             this.MasterPanel.TabIndex = 11;
             // 
             // panel4
@@ -725,6 +734,30 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // programmePictureBox2
+            // 
+            this.programmePictureBox2.Location = new System.Drawing.Point(298, 245);
+            this.programmePictureBox2.Name = "programmePictureBox2";
+            this.programmePictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.programmePictureBox2.TabIndex = 2;
+            this.programmePictureBox2.TabStop = false;
+            // 
+            // peoplePictureBox2
+            // 
+            this.peoplePictureBox2.Location = new System.Drawing.Point(347, 276);
+            this.peoplePictureBox2.Name = "peoplePictureBox2";
+            this.peoplePictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.peoplePictureBox2.TabIndex = 2;
+            this.peoplePictureBox2.TabStop = false;
+            // 
+            // projectPictureBox2
+            // 
+            this.projectPictureBox2.Location = new System.Drawing.Point(376, 239);
+            this.projectPictureBox2.Name = "projectPictureBox2";
+            this.projectPictureBox2.Size = new System.Drawing.Size(168, 79);
+            this.projectPictureBox2.TabIndex = 2;
+            this.projectPictureBox2.TabStop = false;
+            // 
             // DemoHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -772,6 +805,9 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.programmePictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.peoplePictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -834,5 +870,8 @@
         private System.Windows.Forms.PictureBox peoplePictureBox1;
         private System.Windows.Forms.PictureBox ProgrammePictureBox;
         private System.Windows.Forms.PictureBox ProjectPictureBox;
+        private System.Windows.Forms.PictureBox programmePictureBox2;
+        private System.Windows.Forms.PictureBox peoplePictureBox2;
+        private System.Windows.Forms.PictureBox projectPictureBox2;
     }
 }

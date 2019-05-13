@@ -348,6 +348,33 @@
     <None Include="Resources\BIT_Image.jpg" />
     <None Include="Resources\CIT Image.jpg" />
     <None Include="Resources\Graduate_Diploma.JPG" />
+    <None Include="Resources\20190502_140411.jpg" />
+    <None Include="Resources\CORP-staff-DaleParsonsKrissiWood-001__FillWzYyNiwzNDRd.jpg" />
+    <None Include="Resources\CORP-staff-DavidRozado-3__FillWzk1MCw1MzRd.jpg" />
+    <None Include="Resources\CORP-staff-KWood-DParsons-002__FillWzYyNiwzNDRd.jpg" />
+    <None Include="Resources\20190502_140415.jpg" />
+    <None Include="Resources\20190502_140420.jpg" />
+    <None Include="Resources\20190502_140423.jpg" />
+    <None Include="Resources\20190502_140424.jpg" />
+    <None Include="Resources\20190502_130418.jpg" />
+    <None Include="Resources\20190502_130421.jpg" />
+    <None Include="Resources\20190502_130427.jpg" />
+    <None Include="Resources\20190502_130429.jpg" />
+    <None Include="Resources\20190502_130432.jpg" />
+    <None Include="Resources\Volunteer Website.png" />
+    <None Include="Resources\Adon.jpg" />
+    <None Include="Resources\back2.png" />
+    <None Include="Resources\Dale.jpg" />
+    <None Include="Resources\David.jpg" />
+    <None Include="Resources\Krissi.jpg" />
+    <None Include="Resources\20190502_142717%280%29.jpg" />
+    <None Include="Resources\20190502_142717.jpg" />
+    <None Include="Resources\20190502_142720%280%29.jpg" />
+    <None Include="Resources\20190502_142720.jpg" />
+    <None Include="Resources\20190502_142735.jpg" />
+    <None Include="Resources\20190502_142737.jpg" />
+    <None Include="Resources\20190502_142739.jpg" />
+    <None Include="Resources\pastedImage.png" />
     <Content Include="Tobii.EyeX.Client.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

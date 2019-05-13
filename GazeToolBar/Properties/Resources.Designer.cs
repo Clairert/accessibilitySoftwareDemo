@@ -19,7 +19,7 @@ namespace GazeToolBar.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,6 +63,186 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _20190502_130418 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_130418", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_130421 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_130421", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_130427 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_130427", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_130429 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_130429", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_130432 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_130432", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_140411 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_140411", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_140415 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_140415", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_140420 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_140420", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_140423 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_140423", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_140424 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_140424", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_142717 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_142717", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_142717_0_ {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_142717_0_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_142720 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_142720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_142720_0_ {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_142720_0_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_142735 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_142735", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_142737 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_142737", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20190502_142739 {
+            get {
+                object obj = ResourceManager.GetObject("_20190502_142739", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Adon {
+            get {
+                object obj = ResourceManager.GetObject("Adon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Adon_Moskal {
             get {
                 object obj = ResourceManager.GetObject("Adon_Moskal", resourceCulture);
@@ -79,6 +259,16 @@ namespace GazeToolBar.Properties {
         internal static string Adon_Moskal_Text {
             get {
                 return ResourceManager.GetString("Adon_Moskal_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back2 {
+            get {
+                object obj = ResourceManager.GetObject("back2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -169,6 +359,36 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CORP_staff_DaleParsonsKrissiWood_001__FillWzYyNiwzNDRd {
+            get {
+                object obj = ResourceManager.GetObject("CORP_staff_DaleParsonsKrissiWood_001__FillWzYyNiwzNDRd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CORP_staff_DavidRozado_3__FillWzk1MCw1MzRd {
+            get {
+                object obj = ResourceManager.GetObject("CORP_staff_DavidRozado_3__FillWzk1MCw1MzRd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CORP_staff_KWood_DParsons_002__FillWzYyNiwzNDRd {
+            get {
+                object obj = ResourceManager.GetObject("CORP_staff_KWood_DParsons_002__FillWzYyNiwzNDRd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap crosshair_1 {
             get {
                 object obj = ResourceManager.GetObject("crosshair_1", resourceCulture);
@@ -249,6 +469,16 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dale {
+            get {
+                object obj = ResourceManager.GetObject("Dale", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dale_Parsons {
             get {
                 object obj = ResourceManager.GetObject("Dale_Parsons", resourceCulture);
@@ -265,6 +495,16 @@ namespace GazeToolBar.Properties {
         internal static string Dale_Parsons_Text {
             get {
                 return ResourceManager.GetString("Dale_Parsons_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap David {
+            get {
+                object obj = ResourceManager.GetObject("David", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -345,6 +585,16 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Krissi {
+            get {
+                object obj = ResourceManager.GetObject("Krissi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Krissi_Wood {
             get {
                 object obj = ResourceManager.GetObject("Krissi_Wood", resourceCulture);
@@ -387,6 +637,16 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pastedImage {
+            get {
+                object obj = ResourceManager.GetObject("pastedImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Right_Click_icon {
             get {
                 object obj = ResourceManager.GetObject("Right_Click_icon", resourceCulture);
@@ -410,6 +670,16 @@ namespace GazeToolBar.Properties {
         internal static System.Drawing.Bitmap settings_icon {
             get {
                 object obj = ResourceManager.GetObject("settings_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Volunteer_Website {
+            get {
+                object obj = ResourceManager.GetObject("Volunteer_Website", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
