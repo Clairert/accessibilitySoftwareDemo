@@ -375,6 +375,11 @@
     <None Include="Resources\20190502_142737.jpg" />
     <None Include="Resources\20190502_142739.jpg" />
     <None Include="Resources\pastedImage.png" />
+    <None Include="Resources\IOT.txt" />
+    <None Include="Resources\MobileVR.txt" />
+    <None Include="Resources\Volunteering.txt" />
+    <None Include="Resources\GazeToolBar.txt" />
+    <None Include="Resources\IOT2.txt" />
     <Content Include="Tobii.EyeX.Client.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -1,0 +1,4 @@
+How do computers interact with everyday objects? How can you automate processes and control them from your phone? These are the kinds of questions addressed in the internet of things project.
+The internet of things project gives you the opportunity to work with a client, practice your skills in networking and embedded systems. You will get to work with a real client and watch as your ideas are implemented in real time.
+
+Some examples of what our Internet of Things teams are working on:

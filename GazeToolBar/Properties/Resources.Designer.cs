@@ -551,6 +551,16 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Accessibility Software
+        ///Interaction with electronic devices is challenging or unfeasible for people suffering from upper limb motor impairment. Accessibility assistive technologies for computer control strive to provide motor impaired subjects with practical solutions to interact with electronic devices or communicate. Hence, promoting greater independence and quality-of-life since electronic devices have become ubiquitous to accomplish everyday tasks in modern societies. The Otago Polytechnic Accessibility [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string GazeToolBar {
+            get {
+                return ResourceManager.GetString("GazeToolBar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Graduate Diploma
         ///
         ///Achieved a degree in another discipline and now searching for a way to intensively develop your computing skills? Are you an IT graduate who is seeking to increase your knowledge in specialist areas?
@@ -569,6 +579,30 @@ namespace GazeToolBar.Properties {
             get {
                 object obj = ResourceManager.GetObject("Graduate_Diploma1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Internet of Things
+        ///How do computers interact with everyday objects? How can you automate processes and control them from your phone? These are the kinds of questions addressed in the internet of things project.
+        ///The internet of things project gives you the opportunity to work with a client, practice your skills in networking and embedded systems. You will get to work with a real client and watch as your ideas are implemented in real time.
+        ///Some examples of what our Internet of Things teams are working on:        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string IOT {
+            get {
+                return ResourceManager.GetString("IOT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to •	Creating a sensor for the Orokonui Eco Sanctuary to alert them when gates have been left open.
+        ///•	A system to teachers to alert them when the classroom noise has gone above a certain level.
+        ///•	A control system to moniter and adjust the temperature in a classrooms and turning off when no students are present.
+        ///.
+        /// </summary>
+        internal static string IOT2 {
+            get {
+                return ResourceManager.GetString("IOT2", resourceCulture);
             }
         }
         
@@ -635,6 +669,18 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mobile Development
+        ///In the mobile development project you are given the opportunity to work with clients to create mobile applications that will be implemented in a real world situation. You will meet with clients on a regular basis and help them turn their ideas into a reality. The mobile team works with students from the design school. You will also be given the option to create your own virtual reality applications.
+        ///Some of the current projects being worked on are:
+        ///•	Creating a VR app where you can exp [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string MobileVR {
+            get {
+                return ResourceManager.GetString("MobileVR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap pastedImage {
@@ -681,6 +727,17 @@ namespace GazeToolBar.Properties {
             get {
                 object obj = ResourceManager.GetObject("Volunteer_Website", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Volunteering
+        ///Volunteering Management is for people who are more interested in the social side instead of technical and enjoy helping out in the community. As part of project, all students participate in volunteer work in the community. As the coordinator, you will be the go between, organising the opportunities and matching students with an appropriate job. 
+        ///Volunteering Management also maintains a help website for students and the public alike to learn technology basic, including tutorials. The website i [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Volunteering {
+            get {
+                return ResourceManager.GetString("Volunteering", resourceCulture);
             }
         }
     }

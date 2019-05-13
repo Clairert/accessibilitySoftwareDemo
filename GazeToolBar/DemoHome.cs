@@ -409,7 +409,7 @@ namespace GazeToolBar
             ProjectButton1.Location = new Point(2, 2);
             ProjectButton1.Height = ProjectButtonPanel2.Height - 4;
             ProjectButton1.Width = ProjectButtonPanel2.Width - 4;
-            ProjectButton1.Text = "Project1";
+            ProjectButton1.Text = "Internet of Things";
             step += 0.25;
 
 
@@ -453,7 +453,7 @@ namespace GazeToolBar
             ProjectButton4.Text = "Project4";
 
             //title - top,right section
-            ProjectLabel.Text = "Projects";
+            ProjectLabel.Text = "Internet of Things";
             ProjectLabel.Font = new Font(ProjectLabel.Font.FontFamily, Convert.ToInt32(right) / 20);
             ProjectLabel.Left = ((Convert.ToInt32(right) - ProjectLabel.Width) / 2) + Convert.ToInt32(left);
 
@@ -466,14 +466,27 @@ namespace GazeToolBar
             ProjectInfoPanel.Size = ProjectInfoPanel.Size;
 
             ProjectRichTextBox.Width = (ProjectInfoPanel.Width / 4 * 3) - 4;
-            ProjectRichTextBox.Height = ProjectInfoPanel.Height - 4;
+            ProjectRichTextBox.Height = ProjectInfoPanel.Height / 2 - 4;
             ProjectRichTextBox.Location = new Point(2, 2);
-            ProjectRichTextBox.Text = GazeToolBar.Properties.Resources.David_Rozado_text;
+            ProjectRichTextBox.Text = GazeToolBar.Properties.Resources.IOT;
+            ProjectRichTextBox.Font = new Font(ProjectRichTextBox.Font.FontFamily, 23);
+
+            ProjectRichTextBox2.Width = (ProjectInfoPanel.Width / 4 * 3) - 4;
+            ProjectRichTextBox2.Height = ProjectInfoPanel.Height / 2 ;
+            ProjectRichTextBox2.Location = new Point(projectPictureBox2.Width + 50, ProjectInfoPanel.Height / 2 + 10);
+            ProjectRichTextBox2.Text = GazeToolBar.Properties.Resources.IOT2;
+            ProjectRichTextBox2.Font = new Font(ProjectRichTextBox.Font.FontFamily, 23);
 
 
             ProjectPictureBox.Location = new Point((ProjectInfoPanel.Width / 4 * 3) + 2, 2);
-            ProjectPictureBox.Width = (ProjectInfoPanel.Width / 4);
+            ProjectPictureBox.Size = new Size(200,400);
             ProjectPictureBox.Image = GazeToolBar.Properties.Resources._20190502_142720;
+
+            projectPictureBox2.Location = new Point(10, ProjectInfoPanel.Height / 2);
+            projectPictureBox2.Size = (ProjectPictureBox.Size);
+            projectPictureBox2.Image = GazeToolBar.Properties.Resources.pastedImage;
+
+
 
 
 
@@ -615,14 +628,16 @@ namespace GazeToolBar
         private void ProjectButton1_Click(object sender, EventArgs e)
         {
             ProjectRichTextBox.Width = (ProjectInfoPanel.Width / 4 * 3) - 4;
-            ProjectRichTextBox.Height = ProjectInfoPanel.Height - 4;
+            ProjectRichTextBox.Height = ProjectInfoPanel.Height / 2 - 4;
             ProjectRichTextBox.Location = new Point(2, 2);
-            ProjectRichTextBox.Text = GazeToolBar.Properties.Resources.David_Rozado_text;
+            ProjectRichTextBox.Text = GazeToolBar.Properties.Resources.MobileVR;
 
 
             ProjectPictureBox.Location = new Point((ProjectInfoPanel.Width / 4 * 3) + 2, 2);
             ProjectPictureBox.Width = (ProjectInfoPanel.Width / 4);
             ProjectPictureBox.Image = GazeToolBar.Properties.Resources._20190502_142720;
+
+            ProjectLabel.Text = ProjectButton1.Text;
 
 
         }
@@ -632,7 +647,7 @@ namespace GazeToolBar
             ProjectRichTextBox.Width = (ProjectInfoPanel.Width / 4 * 3) - 4;
             ProjectRichTextBox.Height = ProjectInfoPanel.Height - 4;
             ProjectRichTextBox.Location = new Point(2, 2);
-            ProjectRichTextBox.Text = GazeToolBar.Properties.Resources.David_Rozado_text;
+            ProjectRichTextBox.Text = GazeToolBar.Properties.Resources.Volunteering;
 
 
             ProjectPictureBox.Location = new Point((ProjectInfoPanel.Width / 4 * 3) + 2, 2);
@@ -646,7 +661,7 @@ namespace GazeToolBar
             ProjectRichTextBox.Width = (ProjectInfoPanel.Width / 4 * 3) - 4;
             ProjectRichTextBox.Height = ProjectInfoPanel.Height - 4;
             ProjectRichTextBox.Location = new Point(2, 2);
-            ProjectRichTextBox.Text = GazeToolBar.Properties.Resources.David_Rozado_text;
+            ProjectRichTextBox.Text = GazeToolBar.Properties.Resources.IOT;
 
 
             ProjectPictureBox.Location = new Point((ProjectInfoPanel.Width / 4 * 3) + 2, 2);
@@ -659,7 +674,7 @@ namespace GazeToolBar
             ProjectRichTextBox.Width = (ProjectInfoPanel.Width / 4 * 3) - 4;
             ProjectRichTextBox.Height = ProjectInfoPanel.Height - 4;
             ProjectRichTextBox.Location = new Point(2, 2);
-            ProjectRichTextBox.Text = GazeToolBar.Properties.Resources.David_Rozado_text;
+            ProjectRichTextBox.Text = GazeToolBar.Properties.Resources.GazeToolBar;
 
 
             ProjectPictureBox.Location = new Point((ProjectInfoPanel.Width / 4 * 3) + 2, 2);
