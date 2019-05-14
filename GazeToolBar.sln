@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GazeToolBar", "GazeToolBar\GazeToolBar.csproj", "{21A92735-DEFF-4DFF-A550-D974DCDDC484}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessibilityDemo", "GazeToolBar\AccessibilityDemo.csproj", "{21A92735-DEFF-4DFF-A550-D974DCDDC484}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C9BBFBAC-FD0F-46DE-843F-F3620BF79DC2} = {C9BBFBAC-FD0F-46DE-843F-F3620BF79DC2}
 	EndProjectSection
