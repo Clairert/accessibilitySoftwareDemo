@@ -12,7 +12,11 @@ using GazeToolBar;
 
 namespace GazeToolBar
 {
-    
+    public enum SystemState { Wait, ActionButtonSelected, Zooming, ZoomWait, ApplyAction, ScrollWait }
+
+    //The actions that can be performed by the program
+    public enum ActionToBePerformed { RightClick, LeftClick, DoubleClick, Scroll, none }
+
     public partial class DemoHome : Form
     {
         Paint paint;

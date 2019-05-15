@@ -151,12 +151,6 @@
     <Compile Include="DemoHome.Designer.cs">
       <DependentUpon>DemoHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="DrawingForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DrawingForm.Designer.cs">
-      <DependentUpon>DrawingForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="FixationDetection.cs" />
     <Compile Include="CustomFixationEventArgs.cs" />
     <Compile Include="FixationProgressEventArgs.cs" />
@@ -164,30 +158,6 @@
     <Compile Include="FixationSmootherBase.cs" />
     <Compile Include="FixationSmootherExponential.cs" />
     <Compile Include="FixationSmootherNone.cs" />
-    <Compile Include="Form1.BehavMap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InformationPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InformationPage.Designer.cs">
-      <DependentUpon>InformationPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Keyboard.BehavMap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Keyboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Keyboard.Designer.cs">
-      <DependentUpon>Keyboard.cs</DependentUpon>
-    </Compile>
     <Compile Include="GazePoint.cs" />
     <Compile Include="HookedKeyboardEventArgs.cs" />
     <Compile Include="IFixationSmoother.cs" />
@@ -208,43 +178,16 @@
     <Compile Include="ReletiveSize.cs" />
     <Compile Include="ScrollControl.cs" />
     <Compile Include="SettingJSON.cs" />
-    <Compile Include="Settings.BehavMap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Settings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
-    </Compile>
     <Compile Include="ShortcutKeyWorker.cs" />
-    <Compile Include="StateManager.cs" />
     <Compile Include="SystemFlags.cs" />
     <Compile Include="TrayMenu.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="VirtualMouse.cs" />
-    <Compile Include="ZoomLens.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ZoomLens.Designer.cs">
-      <DependentUpon>ZoomLens.cs</DependentUpon>
-    </Compile>
     <Compile Include="ZoomMagnifier.cs" />
     <Compile Include="ZoomMagnifierCentered.cs" />
     <EmbeddedResource Include="DemoHome.resx">
       <DependentUpon>DemoHome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DrawingForm.resx">
-      <DependentUpon>DrawingForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InformationPage.resx">
-      <DependentUpon>InformationPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paint.resx">
       <DependentUpon>Paint.cs</DependentUpon>
@@ -259,13 +202,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ZoomLens.resx">
-      <DependentUpon>ZoomLens.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="app.manifest">
       <SubType>Designer</SubType>
     </None>
