@@ -320,6 +320,7 @@
     <None Include="Resources\Volunteering2.txt" />
     <None Include="Resources\MobileVR2.txt" />
     <None Include="Resources\GazeToolBar2.txt" />
+    <None Include="Resources\CIT3.txt" />
     <Content Include="Tobii.EyeX.Client.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

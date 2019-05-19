@@ -491,6 +491,8 @@ namespace GazeToolBar
             projectPictureBox2.Size = (ProjectPictureBox.Size);
             projectPictureBox2.Image = GazeToolBar.Properties.Resources.pastedImage;
 
+            ProjectLabel.Text = "Internet of Things";
+
 
 
 
@@ -539,7 +541,7 @@ namespace GazeToolBar
 
         private void peopleButtonClick(String title, Bitmap picture, String changeText)
         {
-            //changeDisplay(title, changeText, PeopleLabel, PeopleRichTextbox1, peoplePictureBox1, picture, PeopleInfoPanel.Width);
+            changeDisplay(title, changeText, PeopleLabel, PeopleRichTextbox1, peoplePictureBox1, picture, PeopleInfoPanel.Width);
             peoplePictureBox1.Location = new Point((PeopleInfoPanel.Width / 4 * 3) + 2, 2);
             peoplePictureBox1.Width = (PeopleInfoPanel.Width / 4);
         }
@@ -589,7 +591,7 @@ namespace GazeToolBar
 
         private void ProgrammeButton1_Click(object sender, EventArgs e)
         {
-            programmeButtonClick(Programme1.Text, GazeToolBar.Properties.Resources.CIT_Image, GazeToolBar.Properties.Resources.Certificate_Programme);
+            programmeButtonClick(Programme1.Text, GazeToolBar.Properties.Resources.CIT_Image, GazeToolBar.Properties.Resources.CIT3);
         }
 
         private void ProgrammeButton2_Click(object sender, EventArgs e)

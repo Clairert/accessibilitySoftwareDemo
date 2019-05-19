@@ -357,6 +357,19 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The IT industry may be constantly evolving, but one thing is certain - it is definitely here to stay - and this programme will enable you to gain knowledge of the industry.
+        ///
+        ///Learn about a variety of topics within the computer field, acquire essential skills towards becoming an IT professional and take the opportunity to explore and establish an understanding of a range of computer concepts.
+        ///
+        ///Computing skills are now fundamental life skills and there are currently far more IT-related jobs than there are  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CIT3 {
+            get {
+                return ResourceManager.GetString("CIT3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap CORP_staff_DaleParsonsKrissiWood_001__FillWzYyNiwzNDRd {
