@@ -19,7 +19,7 @@ namespace GazeToolBar.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -552,11 +552,22 @@ namespace GazeToolBar.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to Accessibility Software
-        ///Interaction with electronic devices is challenging or unfeasible for people suffering from upper limb motor impairment. Accessibility assistive technologies for computer control strive to provide motor impaired subjects with practical solutions to interact with electronic devices or communicate. Hence, promoting greater independence and quality-of-life since electronic devices have become ubiquitous to accomplish everyday tasks in modern societies. The Otago Polytechnic Accessibility [rest of string was truncated]&quot;;.
+        ///Interaction with electronic devices is challenging or unfeasible for people suffering from upper limb motor impairment. Accessibility assistive technologies for computer control strive to provide motor impaired subjects with practical solutions to interact with electronic devices or communicate. Hence, promoting greater independence and quality-of-life since electronic devices have become ubiquitous to accomplish everyday tasks in modern societies..
         /// </summary>
         internal static string GazeToolBar {
             get {
                 return ResourceManager.GetString("GazeToolBar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Otago Polytechnic Accessibility Software project provides open source accessibility software solutions for users with motor impairment regardless of their financial circumstances. 
+        ///The Accessibility Software Project works with eye tracking technology and gives you an opportunity to join a pre-existing software like in a real world situation.
+        ///.
+        /// </summary>
+        internal static string GazeToolBar2 {
+            get {
+                return ResourceManager.GetString("GazeToolBar2", resourceCulture);
             }
         }
         
@@ -583,10 +594,11 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Internet of Things
-        ///How do computers interact with everyday objects? How can you automate processes and control them from your phone? These are the kinds of questions addressed in the internet of things project.
+        ///   Looks up a localized string similar to How do computers interact with everyday objects? How can you automate processes and control them from your phone? These are the kinds of questions addressed in the internet of things project.
         ///The internet of things project gives you the opportunity to work with a client, practice your skills in networking and embedded systems. You will get to work with a real client and watch as your ideas are implemented in real time.
-        ///Some examples of what our Internet of Things teams are working on:        /// [rest of string was truncated]&quot;;.
+        ///
+        ///Some examples of what our Internet of Things teams are working on:
+        ///.
         /// </summary>
         internal static string IOT {
             get {
@@ -595,9 +607,11 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to •	Creating a sensor for the Orokonui Eco Sanctuary to alert them when gates have been left open.
-        ///•	A system to teachers to alert them when the classroom noise has gone above a certain level.
-        ///•	A control system to moniter and adjust the temperature in a classrooms and turning off when no students are present.
+        ///   Looks up a localized string similar to 1)	Creating a sensor for the Orokonui Eco Sanctuary to alert them when gates have been left open.
+        ///
+        ///2)	A system to teachers to alert them when the classroom noise has gone above a certain level.
+        ///
+        ///3)	A control system to moniter and adjust the temperature in a classrooms and turning off when no students are present.
         ///.
         /// </summary>
         internal static string IOT2 {
@@ -671,12 +685,24 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Mobile Development
         ///In the mobile development project you are given the opportunity to work with clients to create mobile applications that will be implemented in a real world situation. You will meet with clients on a regular basis and help them turn their ideas into a reality. The mobile team works with students from the design school. You will also be given the option to create your own virtual reality applications.
-        ///Some of the current projects being worked on are:
-        ///•	Creating a VR app where you can exp [rest of string was truncated]&quot;;.
+        ///.
         /// </summary>
         internal static string MobileVR {
             get {
                 return ResourceManager.GetString("MobileVR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Some of the current projects being worked on are:
+        ///•	Creating a VR app where you can experience visual impairments and how it effects your daily life.
+        ///•	An app that recreates historic locations so you can experience them for yourself.
+        ///•	An app that gets your location and shows you locations where the natives birds have been spotted and allow you to report your own sightings.
+        ///.
+        /// </summary>
+        internal static string MobileVR2 {
+            get {
+                return ResourceManager.GetString("MobileVR2", resourceCulture);
             }
         }
         
@@ -733,11 +759,30 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Volunteering
         ///Volunteering Management is for people who are more interested in the social side instead of technical and enjoy helping out in the community. As part of project, all students participate in volunteer work in the community. As the coordinator, you will be the go between, organising the opportunities and matching students with an appropriate job. 
-        ///Volunteering Management also maintains a help website for students and the public alike to learn technology basic, including tutorials. The website i [rest of string was truncated]&quot;;.
+        ///.
         /// </summary>
         internal static string Volunteering {
             get {
                 return ResourceManager.GetString("Volunteering", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Volunteering Management also maintains a help website for students and the public alike to learn technology basic, including tutorials. The website is also a hub for students to sign up for volunteering opportunities and to view other information relating to the BIT..
+        /// </summary>
+        internal static string Volunteering2 {
+            get {
+                return ResourceManager.GetString("Volunteering2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VRHeadSet {
+            get {
+                object obj = ResourceManager.GetObject("VRHeadSet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

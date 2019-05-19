@@ -1,3 +1,2 @@
 Volunteering
 Volunteering Management is for people who are more interested in the social side instead of technical and enjoy helping out in the community. As part of project, all students participate in volunteer work in the community. As the coordinator, you will be the go between, organising the opportunities and matching students with an appropriate job. 
-Volunteering Management also maintains a help website for students and the public alike to learn technology basic, including tutorials. The website is also a hub for students to sign up for volunteering opportunities and to view other information relating to the BIT.

@@ -1,6 +1,2 @@
 Mobile Development
 In the mobile development project you are given the opportunity to work with clients to create mobile applications that will be implemented in a real world situation. You will meet with clients on a regular basis and help them turn their ideas into a reality. The mobile team works with students from the design school. You will also be given the option to create your own virtual reality applications.
-Some of the current projects being worked on are:
-•	Creating a VR app where you can experience visual impairments and how it effects your daily life.
-•	An app that recreates historic locations so you can experience them for yourself.
-•	An app that gets your location and shows you locations where the natives birds have been spotted and allow you to report your own sightings.
