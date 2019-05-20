@@ -329,6 +329,8 @@
     <None Include="Resources\CIT3Image2.jpg" />
     <None Include="Resources\CIT4Image2.jpg" />
     <None Include="Resources\GraduateImage2.png" />
+    <None Include="Resources\DaleP.png" />
+    <None Include="Resources\KrissiW.png" />
     <Content Include="Tobii.EyeX.Client.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -31,7 +31,13 @@ namespace GazeToolBar
             connectBehaveMap();
             paint = new Paint(eyeXHost, this);
 
-
+            foreach (Control control  in this.Controls)
+            {
+                foreach (RichTextBox richT in control.Controls.OfType<RichTextBox>())
+                {
+                    richT.ReadOnly = true;
+                }                   
+            }
             //Create Panels
             showMaster();
 
@@ -367,21 +373,21 @@ namespace GazeToolBar
             ProgrammeRichTextBox.Height = ProgrammeInfoPanel.Height - 4;
             ProgrammeRichTextBox.Location = new Point(2, 2);
             ProgrammeRichTextBox.Font = new Font(ProgrammeRichTextBox.Font.FontFamily, 21);
-            ProgrammeRichTextBox.Text = GazeToolBar.Properties.Resources.BIT_Programme;
+            ProgrammeRichTextBox.Text = GazeToolBar.Properties.Resources.CIT3;
 
             programmePictureBox2.Width = (ProgrammeInfoPanel.Width / 4);
             programmePictureBox2.Height = (ProgrammeInfoPanel.Height / 4);
             programmePictureBox2.Left = 0;
             programmePictureBox2.Top = (ProgrammeInfoPanel.Height - programmePictureBox2.Height) - 200;
-            programmePictureBox2.Image = GazeToolBar.Properties.Resources.CIT_Image;
+            programmePictureBox2.Image = GazeToolBar.Properties.Resources.CIT3Image2;
             ProgrammePictureBox.Location = new Point((ProgrammeInfoPanel.Width / 4 * 3) + 2, 2);
             ProgrammePictureBox.Width = (ProgrammeInfoPanel.Width / 4);
-            programmePictureBox2.Location = new Point(10, ProgrammeInfoPanel.Height / 2);
+            programmePictureBox2.Location = new Point(0, ProgrammeInfoPanel.Height / 2);
             programmePictureBox2.Size = (ProgrammePictureBox.Size);
 
             ProgrammeRichTextBox2.Width = (ProgrammeInfoPanel.Width - programmePictureBox2.Width - 10);
             ProgrammeRichTextBox2.Height = ProgrammeInfoPanel.Height / 2;
-            ProgrammeRichTextBox2.Location = new Point(programmePictureBox2.Width + 50, ProgrammeInfoPanel.Height / 2 + 10);
+            ProgrammeRichTextBox2.Location = new Point(programmePictureBox2.Width + 60, ProgrammeInfoPanel.Height / 2 + 10);
             ProgrammeRichTextBox2.Text = GazeToolBar.Properties.Resources.CIT32;
             ProgrammeRichTextBox2.Font = new Font(ProgrammeRichTextBox2.Font.FontFamily, 21);
             ProgrammeRichTextBox2.Left = (programmePictureBox2.Width + 10);
@@ -389,7 +395,7 @@ namespace GazeToolBar
 
             ProgrammePictureBox.Location = new Point((ProgrammeInfoPanel.Width / 4 * 2) + (ProgrammeInfoPanel.Height / 2));
             ProgrammePictureBox.Size = programmePictureBox2.Size;
-            ProgrammePictureBox.Image = GazeToolBar.Properties.Resources.BIT_Image;
+            ProgrammePictureBox.Image = GazeToolBar.Properties.Resources.CIT_Image;
             ProgrammePictureBox.Left = (ProgrammeInfoPanel.Width - ProgrammePictureBox.Width);
             ProgrammePictureBox.Top = (ProgrammePictureBox.Top + 75);
             programmePictureBox2.Top = (programmePictureBox2.Top + 75);
@@ -584,7 +590,7 @@ namespace GazeToolBar
 
         private void People2_Click(object sender, EventArgs e)
         {
-            peopleButtonClick(People2.Text, GazeToolBar.Properties.Resources.Krissi, GazeToolBar.Properties.Resources.Krissi_Wood_Text);
+            peopleButtonClick(People2.Text, GazeToolBar.Properties.Resources.KrissiW, GazeToolBar.Properties.Resources.Krissi_Wood_Text);
             //PeopleRichTextbox1.Width = (PeopleInfoPanel.Width / 4 * 3) - 4;
             //PeopleRichTextbox1.Height = PeopleInfoPanel.Height - 4;
             //PeopleRichTextbox1.Location = new Point(2, 2);
@@ -603,7 +609,7 @@ namespace GazeToolBar
 
         private void People4_Click(object sender, EventArgs e)
         {
-            peopleButtonClick(People4.Text, GazeToolBar.Properties.Resources.Dale, GazeToolBar.Properties.Resources.Dale_Parsons_Text);
+            peopleButtonClick(People4.Text, GazeToolBar.Properties.Resources.Dale_Parsons, GazeToolBar.Properties.Resources.Dale_Parsons_Text);
         }
 
         /////////////////////////////////////Clicking buttons////////////////////////////////////////
@@ -618,6 +624,7 @@ namespace GazeToolBar
         {
             changeDisplay(title, changeText, ProgrammeLabel, ProgrammeRichTextBox, ProgrammePictureBox, picture, ProgrammeInfoPanel.Width, programmePictureBox2, picture2);
             ProgrammeRichTextBox2.Text = changeText2;
+            
 
         }
 

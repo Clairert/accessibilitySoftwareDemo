@@ -578,6 +578,16 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DaleP {
+            get {
+                object obj = ResourceManager.GetObject("DaleP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap David {
             get {
                 object obj = ResourceManager.GetObject("David", resourceCulture);
@@ -761,6 +771,16 @@ namespace GazeToolBar.Properties {
         internal static string Krissi_Wood_Text {
             get {
                 return ResourceManager.GetString("Krissi_Wood_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap KrissiW {
+            get {
+                object obj = ResourceManager.GetObject("KrissiW", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
