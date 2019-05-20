@@ -91,6 +91,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.People = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ProgrammeRichTextBox2 = new System.Windows.Forms.RichTextBox();
             this.MasterPeoplePanel.SuspendLayout();
             this.PeopleButtonPanel5.SuspendLayout();
             this.PeopleButtonPanel4.SuspendLayout();
@@ -310,9 +311,9 @@
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeButtonPanel1);
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeLabel);
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeInfoPanel);
-            this.MasterProgrammePanel.Location = new System.Drawing.Point(108, 118);
+            this.MasterProgrammePanel.Location = new System.Drawing.Point(28, 24);
             this.MasterProgrammePanel.Name = "MasterProgrammePanel";
-            this.MasterProgrammePanel.Size = new System.Drawing.Size(37, 33);
+            this.MasterProgrammePanel.Size = new System.Drawing.Size(1235, 805);
             this.MasterProgrammePanel.TabIndex = 10;
             // 
             // ProgrammeButtonPanel5
@@ -438,6 +439,7 @@
             // ProgrammeInfoPanel
             // 
             this.ProgrammeInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProgrammeInfoPanel.Controls.Add(this.ProgrammeRichTextBox2);
             this.ProgrammeInfoPanel.Controls.Add(this.programmePictureBox2);
             this.ProgrammeInfoPanel.Controls.Add(this.ProgrammePictureBox);
             this.ProgrammeInfoPanel.Controls.Add(this.ProgrammeRichTextBox);
@@ -773,6 +775,18 @@
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // ProgrammeRichTextBox2
+            // 
+            this.ProgrammeRichTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
+            this.ProgrammeRichTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ProgrammeRichTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProgrammeRichTextBox2.ForeColor = System.Drawing.SystemColors.Info;
+            this.ProgrammeRichTextBox2.Location = new System.Drawing.Point(521, 155);
+            this.ProgrammeRichTextBox2.Name = "ProgrammeRichTextBox2";
+            this.ProgrammeRichTextBox2.Size = new System.Drawing.Size(100, 96);
+            this.ProgrammeRichTextBox2.TabIndex = 3;
+            this.ProgrammeRichTextBox2.Text = "";
+            // 
             // DemoHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -889,5 +903,6 @@
         private System.Windows.Forms.PictureBox peoplePictureBox2;
         private System.Windows.Forms.PictureBox projectPictureBox2;
         private System.Windows.Forms.RichTextBox ProjectRichTextBox2;
+        private System.Windows.Forms.RichTextBox ProgrammeRichTextBox2;
     }
 }

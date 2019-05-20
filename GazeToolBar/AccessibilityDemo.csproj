@@ -321,6 +321,14 @@
     <None Include="Resources\MobileVR2.txt" />
     <None Include="Resources\GazeToolBar2.txt" />
     <None Include="Resources\CIT3.txt" />
+    <None Include="Resources\CIT32.txt" />
+    <None Include="Resources\Certificate_Programme2.txt" />
+    <None Include="Resources\BIT_Programme2.txt" />
+    <None Include="Resources\Graduate_Diploma2.txt" />
+    <None Include="Resources\BITImage2.jpg" />
+    <None Include="Resources\CIT3Image2.jpg" />
+    <None Include="Resources\CIT4Image2.jpg" />
+    <None Include="Resources\GraduateImage2.png" />
     <Content Include="Tobii.EyeX.Client.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

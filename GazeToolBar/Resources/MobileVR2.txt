@@ -1,3 +1,4 @@
+
 Some of the current projects being worked on are:
 •	Creating a VR app where you can experience visual impairments and how it effects your daily life.
 •	An app that recreates historic locations so you can experience them for yourself.

@@ -1,2 +1,3 @@
+
 Accessibility Software
 Interaction with electronic devices is challenging or unfeasible for people suffering from upper limb motor impairment. Accessibility assistive technologies for computer control strive to provide motor impaired subjects with practical solutions to interact with electronic devices or communicate. Hence, promoting greater independence and quality-of-life since electronic devices have become ubiquitous to accomplish everyday tasks in modern societies.

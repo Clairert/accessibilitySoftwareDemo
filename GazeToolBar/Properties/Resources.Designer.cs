@@ -19,7 +19,7 @@ namespace GazeToolBar.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -295,6 +295,27 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Become a Web Developer, Systems Administrator, Software Developer, Programmer, Business Analyst, Database Administrator or Computing Services Manager, amongst many others! 
+        ///
+        ///Study in a supportive and innovative environment and develop high-level technical abilities and a strong theoretical understanding of IT concepts while exercising your problem-solving skills and creativity. Focus on the professional communication skills required for working effectively in the industry and gain valuable, practical expe [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BIT_Programme2 {
+            get {
+                return ResourceManager.GetString("BIT_Programme2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BITImage2 {
+            get {
+                object obj = ResourceManager.GetObject("BITImage2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap button_down {
@@ -338,11 +359,22 @@ namespace GazeToolBar.Properties {
         ///   Looks up a localized string similar to Certificate in IT
         ///
         ///Want to continue developing solid foundational IT skills whilst gaining valuable practical experience? Decided you want to pursue a computing career in the IT industry and wondering what your next step should be?
-        ///Then this is the programme for you! There are currently far more IT-related jobs than there are graduates and employers are desperate for individuals with a good awareness of the industry and a willingness to continue developing new skills. IT is a global industry and the righ [rest of string was truncated]&quot;;.
+        ///Then this is the programme for you! .
         /// </summary>
         internal static string Certificate_Programme {
             get {
                 return ResourceManager.GetString("Certificate_Programme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There are currently far more IT-related jobs than there are graduates and employers are desperate for individuals with a good awareness of the industry and a willingness to continue developing new skills. IT is a global industry and the right qualification will create a whole world of opportunities for you. With further study, career possibilities are exciting and diverse and include business computing, technical support, hardware, software, database, web development and much more.
+        ///
+        ///You can study this pro [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Certificate_Programme2 {
+            get {
+                return ResourceManager.GetString("Certificate_Programme2", resourceCulture);
             }
         }
         
@@ -357,15 +389,47 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The IT industry may be constantly evolving, but one thing is certain - it is definitely here to stay - and this programme will enable you to gain knowledge of the industry.
+        ///   Looks up a localized string similar to Certificate In Computing
+        ///
+        ///
+        ///The IT industry may be constantly evolving, but one thing is certain - it is definitely here to stay - and this programme will enable you to gain knowledge of the industry.
         ///
         ///Learn about a variety of topics within the computer field, acquire essential skills towards becoming an IT professional and take the opportunity to explore and establish an understanding of a range of computer concepts.
         ///
-        ///Computing skills are now fundamental life skills and there are currently far more IT-related jobs than there are  [rest of string was truncated]&quot;;.
+        ///.
         /// </summary>
         internal static string CIT3 {
             get {
                 return ResourceManager.GetString("CIT3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Computing skills are now fundamental life skills and there are currently far more IT-related jobs than there are graduates. Employers are desperate for individuals with a good awareness of the industry and a willingness to continue developing new skills. IT is a global industry and the right qualification will create a whole world of opportunities for you. With further study, career possibilities are diverse and include business computing, network administration, technical support, hardware, software, datab [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CIT32 {
+            get {
+                return ResourceManager.GetString("CIT32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CIT3Image2 {
+            get {
+                object obj = ResourceManager.GetObject("CIT3Image2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CIT4Image2 {
+            get {
+                object obj = ResourceManager.GetObject("CIT4Image2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -564,7 +628,8 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Accessibility Software
+        ///   Looks up a localized string similar to 
+        ///Accessibility Software
         ///Interaction with electronic devices is challenging or unfeasible for people suffering from upper limb motor impairment. Accessibility assistive technologies for computer control strive to provide motor impaired subjects with practical solutions to interact with electronic devices or communicate. Hence, promoting greater independence and quality-of-life since electronic devices have become ubiquitous to accomplish everyday tasks in modern societies..
         /// </summary>
         internal static string GazeToolBar {
@@ -574,7 +639,9 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The Otago Polytechnic Accessibility Software project provides open source accessibility software solutions for users with motor impairment regardless of their financial circumstances. 
+        ///   Looks up a localized string similar to 
+        ///
+        ///The Otago Polytechnic Accessibility Software project provides open source accessibility software solutions for users with motor impairment regardless of their financial circumstances. 
         ///The Accessibility Software Project works with eye tracking technology and gives you an opportunity to join a pre-existing software like in a real world situation.
         ///.
         /// </summary>
@@ -607,6 +674,27 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to There are currently far more IT jobs than there are graduates and employers are desperate for individuals with a good understanding of the industry. Consider a career as a Programmer, Software Developer, Systems Administrator or Computing Services Manager, amongst many others.
+        ///
+        ///Tailored to meet your requirements, create a customised path of study that focuses on your desired outcome. Specialist areas for IT graduates include interactive media, hardware, programming, databases, communications, business or  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Graduate_Diploma2 {
+            get {
+                return ResourceManager.GetString("Graduate_Diploma2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GraduateImage2 {
+            get {
+                object obj = ResourceManager.GetObject("GraduateImage2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to How do computers interact with everyday objects? How can you automate processes and control them from your phone? These are the kinds of questions addressed in the internet of things project.
         ///The internet of things project gives you the opportunity to work with a client, practice your skills in networking and embedded systems. You will get to work with a real client and watch as your ideas are implemented in real time.
         ///
@@ -620,7 +708,8 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1)	Creating a sensor for the Orokonui Eco Sanctuary to alert them when gates have been left open.
+        ///   Looks up a localized string similar to 
+        ///1)	Creating a sensor for the Orokonui Eco Sanctuary to alert them when gates have been left open.
         ///
         ///2)	A system to teachers to alert them when the classroom noise has gone above a certain level.
         ///
@@ -696,7 +785,9 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mobile Development
+        ///   Looks up a localized string similar to 
+        ///
+        ///Mobile Development
         ///In the mobile development project you are given the opportunity to work with clients to create mobile applications that will be implemented in a real world situation. You will meet with clients on a regular basis and help them turn their ideas into a reality. The mobile team works with students from the design school. You will also be given the option to create your own virtual reality applications.
         ///.
         /// </summary>
@@ -707,7 +798,8 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Some of the current projects being worked on are:
+        ///   Looks up a localized string similar to 
+        ///Some of the current projects being worked on are:
         ///•	Creating a VR app where you can experience visual impairments and how it effects your daily life.
         ///•	An app that recreates historic locations so you can experience them for yourself.
         ///•	An app that gets your location and shows you locations where the natives birds have been spotted and allow you to report your own sightings.
@@ -770,7 +862,9 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volunteering
+        ///   Looks up a localized string similar to 
+        ///
+        ///Volunteering
         ///Volunteering Management is for people who are more interested in the social side instead of technical and enjoy helping out in the community. As part of project, all students participate in volunteer work in the community. As the coordinator, you will be the go between, organising the opportunities and matching students with an appropriate job. 
         ///.
         /// </summary>
@@ -781,7 +875,10 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volunteering Management also maintains a help website for students and the public alike to learn technology basic, including tutorials. The website is also a hub for students to sign up for volunteering opportunities and to view other information relating to the BIT..
+        ///   Looks up a localized string similar to 
+        ///
+        ///
+        ///Volunteering Management also maintains a help website for students and the public alike to learn technology basic, including tutorials. The website is also a hub for students to sign up for volunteering opportunities and to view other information relating to the BIT..
         /// </summary>
         internal static string Volunteering2 {
             get {
