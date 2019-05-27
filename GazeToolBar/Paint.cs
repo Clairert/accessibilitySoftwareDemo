@@ -17,6 +17,7 @@ namespace GazeToolBar
 {
     public partial class Paint : Form
     {
+        private DemoHome parent;
         //Bounds on screen
         private int canvasTop;
         private int canvasLeft;
@@ -39,7 +40,6 @@ namespace GazeToolBar
         //Brush Settings
         private int brushSize;
         private Color brushColour;
-        private DemoHome parent;
         private bool shape;
         //Screen colours
         private Color mainColour;

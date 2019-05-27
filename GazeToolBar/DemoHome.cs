@@ -20,6 +20,7 @@ namespace GazeToolBar
     public partial class DemoHome : Form
     {
         Paint paint;
+        SimplePaint simplePaint;
         private static FormsEyeXHost eyeXHost;
         private double right;
         private double left;
@@ -30,7 +31,7 @@ namespace GazeToolBar
             InitializeComponent();
             connectBehaveMap();
             paint = new Paint(eyeXHost, this);
-
+            simplePaint = new SimplePaint(eyeXHost, this);
             foreach (Control control  in this.Controls)
             {
                 foreach (RichTextBox richT in control.Controls.OfType<RichTextBox>())
@@ -73,7 +74,8 @@ namespace GazeToolBar
         //Show paint. Relocate Panels
         private void showPaint()
         {
-            paint.Show();
+            //paint.Show();
+            simplePaint.Show();
             MasterPanel.Location = new Point(5000, 5000);
             MasterPeoplePanel.Location = new Point(5000, 5000);
             MasterProgrammePanel.Location = new Point(5000, 5000);

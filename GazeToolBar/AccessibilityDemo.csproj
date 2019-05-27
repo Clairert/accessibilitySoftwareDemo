@@ -172,6 +172,7 @@
     <Compile Include="Paint.Designer.cs">
       <DependentUpon>Paint.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaintDot.cs" />
     <Compile Include="PaintLines.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -179,6 +180,12 @@
     <Compile Include="ScrollControl.cs" />
     <Compile Include="SettingJSON.cs" />
     <Compile Include="ShortcutKeyWorker.cs" />
+    <Compile Include="SimplePaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimplePaint.Designer.cs">
+      <DependentUpon>SimplePaint.cs</DependentUpon>
+    </Compile>
     <Compile Include="SystemFlags.cs" />
     <Compile Include="TrayMenu.cs" />
     <Compile Include="Utils.cs" />
@@ -202,6 +209,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SimplePaint.resx">
+      <DependentUpon>SimplePaint.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.manifest">
       <SubType>Designer</SubType>
     </None>
