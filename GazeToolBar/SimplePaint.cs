@@ -33,7 +33,7 @@ namespace GazeToolBar
             eyeXHost = EyeXHost;
             eyeFollower = new CustomFixationDataStream(eyeXHost);
             InitializeComponent();
-            //connectBehaveMap();
+            connectBehaveMap();
             height = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenHeight));
             width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
             lines = new List<PaintDot>();

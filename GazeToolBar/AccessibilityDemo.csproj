@@ -180,6 +180,9 @@
     <Compile Include="ScrollControl.cs" />
     <Compile Include="SettingJSON.cs" />
     <Compile Include="ShortcutKeyWorker.cs" />
+    <Compile Include="SimplePaint.BehavMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SimplePaint.cs">
       <SubType>Form</SubType>
     </Compile>

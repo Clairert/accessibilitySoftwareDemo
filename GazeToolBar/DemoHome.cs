@@ -66,8 +66,11 @@ namespace GazeToolBar
         //Close any old paint forms. Create and show new Paint form.
         private void button4_Click(object sender, EventArgs e)
         {
-            paint.Close();
-            paint = new Paint(eyeXHost, this);
+            //paint.Close();
+            //paint = new Paint(eyeXHost, this);
+            //showPaint();
+            simplePaint.Close();
+            simplePaint = new SimplePaint(eyeXHost, this);
             showPaint();
         }
 

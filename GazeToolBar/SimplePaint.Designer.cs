@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimplePaint));
+            this.behaviorMap = new EyeXFramework.Forms.BehaviorMap(this.components);
+            this.components = new System.ComponentModel.Container();
             this.backPanel = new System.Windows.Forms.Panel();
             this.backButton = new System.Windows.Forms.Button();
             this.redPanel = new System.Windows.Forms.Panel();
@@ -294,5 +297,6 @@
         private System.Windows.Forms.Button whiteButton;
         private System.Windows.Forms.Timer refreshTimer;
         private System.Windows.Forms.Timer trackingTimer;
+        private EyeXFramework.Forms.BehaviorMap behaviorMap;
     }
 }

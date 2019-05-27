@@ -10,7 +10,7 @@ namespace GazeToolBar
     class PaintDot
     {
         private Graphics graphics;
-        private int brushSize = 20;
+        private int brushSize = 40;
         private SolidBrush brush;
         private Point location;
 
