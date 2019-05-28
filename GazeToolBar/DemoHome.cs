@@ -24,6 +24,7 @@ namespace GazeToolBar
         private static FormsEyeXHost eyeXHost;
         private double right;
         private double left;
+        private ScrollControl scroll;
         public DemoHome()
         {
             eyeXHost = new FormsEyeXHost();
@@ -41,7 +42,8 @@ namespace GazeToolBar
             }
             //Create Panels
             showMaster();
-
+            trialPanel.Width = 0;
+            trialPanel.Height = 0;
 
         }
 
@@ -124,6 +126,20 @@ namespace GazeToolBar
             MasterPeoplePanel.Location = new Point(5000, 5000);
             MasterPanel.Location = new Point(5000, 5000);
             MasterProgrammePanel.Location = new Point(5000, 5000);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            paint.Location = new Point(5000, 5000);
+            MasterPeoplePanel.Location = new Point(5000, 5000);
+            MasterPanel.Location = new Point(5000, 5000);
+            MasterProgrammePanel.Location = new Point(5000, 5000);
+            MasterProjectPanel.Location = new Point(5000, 5000);
+            trialPanel.Width = 1000;
+            trialPanel.Height = 1000;
+            trialPanel.Focus();
+            scroll = new ScrollControl(eyeXHost);
+            scroll.StartScroll();
         }
 
         //Set up master panel with buttons spaced evenly around the screen and the logo.
@@ -699,6 +715,11 @@ namespace GazeToolBar
         private void ProjectButton4_Click(object sender, EventArgs e)
         {
             projectButtonClick(ProjectButton4.Text, GazeToolBar.Properties.Resources.pastedImage, GazeToolBar.Properties.Resources.GazeToolBar, GazeToolBar.Properties.Resources.GazeToolBar2, GazeToolBar.Properties.Resources.Volunteer_Website);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

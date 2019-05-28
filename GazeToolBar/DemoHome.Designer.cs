@@ -92,6 +92,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.People = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.trialPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MasterPeoplePanel.SuspendLayout();
             this.PeopleButtonPanel5.SuspendLayout();
             this.PeopleButtonPanel4.SuspendLayout();
@@ -125,6 +127,8 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.trialPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MasterPeoplePanel
@@ -136,9 +140,9 @@
             this.MasterPeoplePanel.Controls.Add(this.PeopleButtonPanel1);
             this.MasterPeoplePanel.Controls.Add(this.PeopleLabel);
             this.MasterPeoplePanel.Controls.Add(this.PeopleInfoPanel);
-            this.MasterPeoplePanel.Location = new System.Drawing.Point(108, 82);
+            this.MasterPeoplePanel.Location = new System.Drawing.Point(112, 82);
             this.MasterPeoplePanel.Name = "MasterPeoplePanel";
-            this.MasterPeoplePanel.Size = new System.Drawing.Size(42, 39);
+            this.MasterPeoplePanel.Size = new System.Drawing.Size(53, 39);
             this.MasterPeoplePanel.TabIndex = 9;
             // 
             // PeopleButtonPanel5
@@ -312,9 +316,9 @@
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeButtonPanel1);
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeLabel);
             this.MasterProgrammePanel.Controls.Add(this.ProgrammeInfoPanel);
-            this.MasterProgrammePanel.Location = new System.Drawing.Point(112, 43);
+            this.MasterProgrammePanel.Location = new System.Drawing.Point(132, 44);
             this.MasterProgrammePanel.Name = "MasterProgrammePanel";
-            this.MasterProgrammePanel.Size = new System.Drawing.Size(34, 33);
+            this.MasterProgrammePanel.Size = new System.Drawing.Size(30, 32);
             this.MasterProgrammePanel.TabIndex = 10;
             // 
             // ProgrammeButtonPanel5
@@ -689,9 +693,9 @@
             this.MasterPanel.Controls.Add(this.panel2);
             this.MasterPanel.Controls.Add(this.panel1);
             this.MasterPanel.Controls.Add(this.pictureBox2);
-            this.MasterPanel.Location = new System.Drawing.Point(12, 24);
+            this.MasterPanel.Location = new System.Drawing.Point(40, 44);
             this.MasterPanel.Name = "MasterPanel";
-            this.MasterPanel.Size = new System.Drawing.Size(39, 33);
+            this.MasterPanel.Size = new System.Drawing.Size(48, 47);
             this.MasterPanel.TabIndex = 11;
             // 
             // panel4
@@ -791,6 +795,27 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // trialPanel
+            // 
+            this.trialPanel.AutoScroll = true;
+            this.trialPanel.Controls.Add(this.pictureBox1);
+            this.trialPanel.Location = new System.Drawing.Point(12, 12);
+            this.trialPanel.Name = "trialPanel";
+            this.trialPanel.Size = new System.Drawing.Size(13, 11);
+            this.trialPanel.TabIndex = 13;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-333, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1282, 2878);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // DemoHome
             // 
@@ -799,6 +824,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(165)))));
             this.ClientSize = new System.Drawing.Size(1444, 904);
             this.ControlBox = false;
+            this.Controls.Add(this.trialPanel);
             this.Controls.Add(this.MasterProjectPanel);
             this.Controls.Add(this.MasterPanel);
             this.Controls.Add(this.MasterProgrammePanel);
@@ -842,6 +868,9 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.trialPanel.ResumeLayout(false);
+            this.trialPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -909,5 +938,7 @@
         private System.Windows.Forms.PictureBox projectPictureBox2;
         private System.Windows.Forms.RichTextBox ProjectRichTextBox2;
         private System.Windows.Forms.RichTextBox ProgrammeRichTextBox2;
+        private System.Windows.Forms.Panel trialPanel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
