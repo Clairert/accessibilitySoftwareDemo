@@ -69,42 +69,42 @@ namespace GazeToolBar
             double sectionWidth = quarterScreen / 2;
             double sectionHeight = height / 4;
 
-            redPanel.Width = Convert.ToInt32(sectionWidth * 0.75);
+            redPanel.Width = Convert.ToInt32(sectionWidth * 0.70);
             redButton.Width = redPanel.Width - 6;
-            yellowPanel.Width = Convert.ToInt32(sectionWidth * 0.75);
+            yellowPanel.Width = Convert.ToInt32(sectionWidth * 0.70);
             yellowButton.Width = yellowPanel.Width - 6;
-            purplePanel.Width = Convert.ToInt32(sectionWidth * 0.75);
+            purplePanel.Width = Convert.ToInt32(sectionWidth * 0.70);
             purpleButton.Width = purplePanel.Width - 6;
-            blackPanel.Width = Convert.ToInt32(sectionWidth * 0.75);
+            blackPanel.Width = Convert.ToInt32(sectionWidth * 0.70);
             blackButton.Width = blackPanel.Width - 6;
 
 
-            bluePanel.Width = Convert.ToInt32(sectionWidth * 0.75);
+            bluePanel.Width = Convert.ToInt32(sectionWidth * 0.70);
             blueButton.Width = bluePanel.Width - 6;
-            greenPanel.Width = Convert.ToInt32(sectionWidth * 0.75);
+            greenPanel.Width = Convert.ToInt32(sectionWidth * 0.70);
             greenButton.Width = greenPanel.Width - 6;
-            orangePanel.Width = Convert.ToInt32(sectionWidth * 0.75);
+            orangePanel.Width = Convert.ToInt32(sectionWidth * 0.70);
             orangeButton.Width = orangePanel.Width - 6;
-            whitePanel.Width = Convert.ToInt32(sectionWidth * 0.75);
+            whitePanel.Width = Convert.ToInt32(sectionWidth * 0.70);
             whiteButton.Width = whitePanel.Width - 6;
 
             //Height Buttons
-            redPanel.Height = Convert.ToInt32(sectionHeight * 0.75);
+            redPanel.Height = Convert.ToInt32(sectionHeight * 0.70);
             redButton.Height = redPanel.Height - 6;
-            yellowPanel.Height = Convert.ToInt32(sectionHeight * 0.75);
+            yellowPanel.Height = Convert.ToInt32(sectionHeight * 0.70);
             yellowButton.Height = yellowPanel.Height - 6;
-            purplePanel.Height = Convert.ToInt32(sectionHeight * 0.75);
+            purplePanel.Height = Convert.ToInt32(sectionHeight * 0.70);
             purpleButton.Height = purplePanel.Height - 6;
-            blackPanel.Height = Convert.ToInt32(sectionHeight * 0.75);
+            blackPanel.Height = Convert.ToInt32(sectionHeight * 0.70);
             blackButton.Height = blackPanel.Height - 6;
 
-            bluePanel.Height = Convert.ToInt32(sectionHeight * 0.75);
+            bluePanel.Height = Convert.ToInt32(sectionHeight * 0.70);
             blueButton.Height = bluePanel.Height - 6;
-            greenPanel.Height = Convert.ToInt32(sectionHeight * 0.75);
+            greenPanel.Height = Convert.ToInt32(sectionHeight * 0.70);
             greenButton.Height = greenPanel.Height - 6;
-            orangePanel.Height = Convert.ToInt32(sectionHeight * 0.75);
+            orangePanel.Height = Convert.ToInt32(sectionHeight * 0.70);
             orangeButton.Height = orangePanel.Height - 6;
-            whitePanel.Height = Convert.ToInt32(sectionHeight * 0.75);
+            whitePanel.Height = Convert.ToInt32(sectionHeight * 0.70);
             whiteButton.Height = whitePanel.Height - 6;
 
             repositionButtons(emptyScreen, sectionHeight, sectionWidth);

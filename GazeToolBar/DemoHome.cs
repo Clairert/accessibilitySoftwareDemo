@@ -137,7 +137,7 @@ namespace GazeToolBar
             MasterProjectPanel.Location = new Point(5000, 5000);
             trialPanel.Width = 1000;
             trialPanel.Height = 1000;
-            trialPanel.Focus();
+            //trialPanel.Focus();
             scroll = new ScrollControl(eyeXHost);
             scroll.StartScroll();
         }
