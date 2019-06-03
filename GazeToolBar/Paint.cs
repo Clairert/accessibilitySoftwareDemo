@@ -39,6 +39,7 @@ namespace GazeToolBar
         private bool drawing;
         //Brush Settings
         private int brushSize;
+        private int brushHalf;
         private Color brushColour;
         private bool shape;
         //Screen colours
@@ -78,6 +79,7 @@ namespace GazeToolBar
             newLine = new PaintLines(brushSize, brushColour, bufferGraphics, shape);
             backgroundColor = new SolidBrush(mainColour);
             brushSize = 40;
+            brushHalf = brushSize / 2;
             brushColour = colourOptionButton12.BackColor;
             //starting timers
             timer2.Enabled = true;
@@ -343,7 +345,7 @@ namespace GazeToolBar
                 Point newPoint = new Point(Convert.ToInt32(eyeFollower.gPAverage.X), Convert.ToInt32(eyeFollower.gPAverage.Y));
                 if (((newPoint.Y >= (canvasTop)) && (newPoint.Y <= (canvasTop + canvasHeight-brushSize)))&&(newPoint.X>=canvasLeft))
                 {
-                    newLine.addPoint(newPoint.X, newPoint.Y);
+                    newLine.addPoint(newPoint.X-brushHalf, newPoint.Y-brushHalf);
                 }
             }
         }
@@ -538,6 +540,7 @@ namespace GazeToolBar
         private void smallBrush_Click(object sender, EventArgs e)
         {
             brushSize = 20;                                 //Change size
+            brushHalf = 10;
             smallBrushPanel.BackColor = accentColour;       //Highlight burron selected
             largeBrushPanel.BackColor = mainColour;         //Change other buttons to normal colour
             medBrushPanel.BackColor = mainColour;           //Change other buttons to normal colour
@@ -550,6 +553,7 @@ namespace GazeToolBar
             smallBrushPanel.BackColor = mainColour;
             largeBrushPanel.BackColor = mainColour;
             brushSize = 40;
+            brushHalf = 20;
         }
 
         //Large
@@ -559,6 +563,7 @@ namespace GazeToolBar
             smallBrushPanel.BackColor = mainColour;
             medBrushPanel.BackColor = mainColour;
             brushSize = 60;
+            brushHalf = 30;
         }
 
         /////////////////////////////Brush Size///////////////////////////////////

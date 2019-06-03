@@ -177,7 +177,7 @@ namespace GazeToolBar
 
         private void trackingTimer_Tick(object sender, EventArgs e)
         {
-            lines.Add(new PaintDot(brushColour, bufferGraphics, new Point(Convert.ToInt32(eyeFollower.gPAverage.X), Convert.ToInt32(eyeFollower.gPAverage.Y))));
+            lines.Add(new PaintDot(brushColour, bufferGraphics, new Point(Convert.ToInt32(eyeFollower.gPAverage.X-20), Convert.ToInt32(eyeFollower.gPAverage.Y-20))));
         }
 
         private void refreshTimer_Tick(object sender, EventArgs e)
