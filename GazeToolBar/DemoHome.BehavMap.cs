@@ -44,47 +44,12 @@ namespace GazeToolBar
             bhavFORMMap.Add(PeopleBack, new GazeAwareBehavior(PeopleBack_Click) { DelayMilliseconds = buttonClickDelay });
             bhavFORMMap.Add(PeopleButtonPanel1, new GazeAwareBehavior(OnGazeChangeBTColour));
 
-            bhavFORMMap.Add(People1, new GazeAwareBehavior(People1_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(PeopleButtonPanel2, new GazeAwareBehavior(OnGazeChangeBTColour));
-
-            bhavFORMMap.Add(People2, new GazeAwareBehavior(People2_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(PeopleButtonPanel3, new GazeAwareBehavior(OnGazeChangeBTColour));
-
-            bhavFORMMap.Add(People3, new GazeAwareBehavior(People3_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(PeopleButtonPanel4, new GazeAwareBehavior(OnGazeChangeBTColour));
-
-            bhavFORMMap.Add(People4, new GazeAwareBehavior(People4_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(PeopleButtonPanel5, new GazeAwareBehavior(OnGazeChangeBTColour));
-
             bhavFORMMap.Add(ProgrammeBack, new GazeAwareBehavior(ProgrammeBackButton_Click) { DelayMilliseconds = buttonClickDelay });
             bhavFORMMap.Add(ProgrammeButtonPanel1, new GazeAwareBehavior(OnGazeChangeBTColour));
 
-            bhavFORMMap.Add(Programme1, new GazeAwareBehavior(ProgrammeButton1_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(ProgrammeButtonPanel2, new GazeAwareBehavior(OnGazeChangeBTColour));
-
-            bhavFORMMap.Add(Programme2, new GazeAwareBehavior(ProgrammeButton2_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(ProgrammeButtonPanel3, new GazeAwareBehavior(OnGazeChangeBTColour));
-
-            bhavFORMMap.Add(Programme3, new GazeAwareBehavior(ProgrammeButton3_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(ProgrammeButtonPanel4, new GazeAwareBehavior(OnGazeChangeBTColour));
-
-            bhavFORMMap.Add(Programme4, new GazeAwareBehavior(ProgrammeButton4_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(ProgrammeButtonPanel5, new GazeAwareBehavior(OnGazeChangeBTColour));
 
             bhavFORMMap.Add(ProjectBack, new GazeAwareBehavior(ProjectBack_Click) { DelayMilliseconds = buttonClickDelay });
             bhavFORMMap.Add(ProjectButtonPanel1, new GazeAwareBehavior(OnGazeChangeBTColour));
-
-            bhavFORMMap.Add(ProjectButton1, new GazeAwareBehavior(ProjectButton1_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(ProjectButtonPanel2, new GazeAwareBehavior(OnGazeChangeBTColour));
-
-            bhavFORMMap.Add(ProjectButton2, new GazeAwareBehavior(ProjectButton2_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(ProjectButtonPanel3, new GazeAwareBehavior(OnGazeChangeBTColour));
-
-            bhavFORMMap.Add(ProjectButton3, new GazeAwareBehavior(ProjectButton3_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(ProjectButtonPanel4, new GazeAwareBehavior(OnGazeChangeBTColour));
-
-            bhavFORMMap.Add(ProjectButton4, new GazeAwareBehavior(ProjectButton4_Click) { DelayMilliseconds = buttonClickDelay });
-            bhavFORMMap.Add(ProjectButtonPanel5, new GazeAwareBehavior(OnGazeChangeBTColour));
 
         }
 
