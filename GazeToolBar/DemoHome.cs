@@ -222,10 +222,6 @@ namespace GazeToolBar
             PeoplePictureBox.Height = (PeopleInfoPanel.Height - 2);
             PeoplePictureBox.Image = GazeToolBar.Properties.Resources.David;
 
-            //peoplePictureBox2.Location = new Point((PeopleInfoPanel.Width / 4 * 0) + 2, PeopleInfoPanel.Height / 2);
-            //peoplePictureBox2.Size = new Size(300, 300);
-            //peoplePictureBox2.Width = (PeopleInfoPanel.Width / 4);
-            //peoplePictureBox2.Image = GazeToolBar.Properties.Resources.David;
         }
 
         //Set up Panels and buttons for programme panel
@@ -387,89 +383,12 @@ namespace GazeToolBar
 
         }
 
-
-
-        /////////////////////////////////////Clicking buttons////////////////////////////////////////
-        ///People
-        ///
-
-        private void peopleButtonClick(String title, Bitmap picture, String changeText)
-        {
-            //changeDisplay(title, changeText, PeopleLabel, PeopleRichTextbox1, peoplePictureBox1, picture, PeopleInfoPanel.Width);
-            //peoplePictureBox1.Location = new Point((PeopleInfoPanel.Width / 4 * 3) + 2,PeopleRichTextbox1.Top);
-            //peoplePictureBox1.Width = (PeopleInfoPanel.Width / 4);
-        }
-
-        private void People1_Click(object sender, EventArgs e)
-        {
-            //peopleButtonClick(People1.Text, GazeToolBar.Properties.Resources.David, GazeToolBar.Properties.Resources.David_Rozado_text);
-        }
-
-        private void People2_Click(object sender, EventArgs e)
-        {
-            //peopleButtonClick(People2.Text, GazeToolBar.Properties.Resources.KrissiW, GazeToolBar.Properties.Resources.Krissi_Wood_Text);
-            //PeopleRichTextbox1.Width = (PeopleInfoPanel.Width / 4 * 3) - 4;
-            //PeopleRichTextbox1.Height = PeopleInfoPanel.Height - 4;
-            //PeopleRichTextbox1.Location = new Point(2, 2);
-            //PeopleRichTextbox1.Text = GazeToolBar.Properties.Resources.Krissi_Wood_Text;
-
-
-            //peoplePictureBox1.Location = new Point((PeopleInfoPanel.Width / 4 * 3) + 2, 2);
-            //peoplePictureBox1.Width = (PeopleInfoPanel.Width / 4);
-            //peoplePictureBox1.Image = GazeToolBar.Properties.Resources.Krissi;
-        }
-
-        private void People3_Click(object sender, EventArgs e)
-        {
-            //peopleButtonClick(People3.Text, GazeToolBar.Properties.Resources.Adon_Moskal, GazeToolBar.Properties.Resources.Adon_Moskal_Text);
-        }
-
-        private void People4_Click(object sender, EventArgs e)
-        {
-            //peopleButtonClick(People4.Text, GazeToolBar.Properties.Resources.Dale_Parsons, GazeToolBar.Properties.Resources.Dale_Parsons_Text);
-        }
-
         /////////////////////////////////////Clicking buttons////////////////////////////////////////
         ///Programme
         private void ProgrammeBackButton_Click(object sender, EventArgs e)
         {
             showMaster();
         }
-
-
-        private void programmeButtonClick(String title, Bitmap picture, String changeText, String changeText2, Bitmap picture2)
-        {
-            //changeDisplay(title, changeText, ProgrammeLabel, ProgrammeRichTextBox, ProgrammePictureBox, picture, ProgrammeInfoPanel.Width, programmePictureBox2, picture2);
-            //ProgrammeRichTextBox2.Text = changeText2;
-            
-
-        }
-
-        private void ProgrammeButton1_Click(object sender, EventArgs e)
-        {
-            //programmeButtonClick(Programme1.Text, GazeToolBar.Properties.Resources.CIT_Image, GazeToolBar.Properties.Resources.CIT3, GazeToolBar.Properties.Resources.CIT32, GazeToolBar.Properties.Resources.CIT3Image2);
-        }
-
-        private void ProgrammeButton2_Click(object sender, EventArgs e)
-        {
-            //programmeButtonClick(Programme2.Text, GazeToolBar.Properties.Resources.CIT_Image, GazeToolBar.Properties.Resources.Certificate_Programme, GazeToolBar.Properties.Resources.Certificate_Programme2, GazeToolBar.Properties.Resources.CIT4Image2);
-        }
-
-        private void ProgrammeButton3_Click(object sender, EventArgs e)
-        {
-            //programmeButtonClick(Programme3.Text, GazeToolBar.Properties.Resources.BIT_Image, GazeToolBar.Properties.Resources.BIT_Programme, GazeToolBar.Properties.Resources.BIT_Programme2, GazeToolBar.Properties.Resources.BITImage2);
-        }
-
-        private void ProgrammeButton4_Click(object sender, EventArgs e)
-        {
-            //programmeButtonClick(Programme4.Text, GazeToolBar.Properties.Resources.Graduate_Diploma1, GazeToolBar.Properties.Resources.Graduate_Diploma, GazeToolBar.Properties.Resources.Graduate_Diploma2, GazeToolBar.Properties.Resources.GraduateImage2);
-            //ProgrammeRichTextBox.Text = GazeToolBar.Properties.Resources.Graduate_Diploma;
-            ////ProgrammePictureBox.Location = new Point((ProgrammeInfoPanel.Width / 4 * 3) + 2, 2);
-            //ProgrammePictureBox.Width = (ProgrammeInfoPanel.Width / 4);
-            //ProgrammePictureBox.Image = GazeToolBar.Properties.Resources.Graduate_Diploma1;
-        }
-
-
 
         /////////////////////////////////////Clicking buttons////////////////////////////////////////
         ///Project
@@ -481,37 +400,6 @@ namespace GazeToolBar
 
 
 
-
-
-        /*private void projectButtonClick(String title, Bitmap picture, String changeText, String changeText2, Bitmap picture2)
-        {
-            changeDisplay(title, changeText, ProjectLabel, ProjectRichTextBox, ProjectPictureBox, picture, ProjectInfoPanel.Width, projectPictureBox2, picture2);
-            ProjectPictureBox.Location = new Point((ProjectInfoPanel.Width / 4 * 3) + 2, 2);
-            ProjectPictureBox.Width = (ProjectInfoPanel.Width / 4);
-            projectPictureBox2.Location = new Point(10, ProjectInfoPanel.Height / 2);
-            projectPictureBox2.Size = (ProjectPictureBox.Size);
-            ProjectRichTextBox2.Text = changeText2;
-        }
-
-        private void ProjectButton1_Click(object sender, EventArgs e)
-        {
-            projectButtonClick(ProjectButton1.Text, GazeToolBar.Properties.Resources._20190502_140411, GazeToolBar.Properties.Resources.MobileVR, GazeToolBar.Properties.Resources.MobileVR2, GazeToolBar.Properties.Resources.VRHeadSet);
-        }
-
-        private void ProjectButton2_Click(object sender, EventArgs e)
-        {
-            projectButtonClick(ProjectButton2.Text, GazeToolBar.Properties.Resources._20190502_130432, GazeToolBar.Properties.Resources.Volunteering, GazeToolBar.Properties.Resources.Volunteering2, GazeToolBar.Properties.Resources.Volunteer_Website);
-        }
-
-        private void ProjectButton3_Click(object sender, EventArgs e)
-        {
-            projectButtonClick(ProjectButton3.Text, GazeToolBar.Properties.Resources._20190502_142720, GazeToolBar.Properties.Resources.IOT, GazeToolBar.Properties.Resources.IOT2, GazeToolBar.Properties.Resources.pastedImage);
-        }
-
-        private void ProjectButton4_Click(object sender, EventArgs e)
-        {
-            projectButtonClick(ProjectButton4.Text, GazeToolBar.Properties.Resources.pastedImage, GazeToolBar.Properties.Resources.GazeToolBar, GazeToolBar.Properties.Resources.GazeToolBar2, GazeToolBar.Properties.Resources.Volunteer_Website);
-        }*/
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
