@@ -63,281 +63,6 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _20190502_130418 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_130418", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_130421 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_130421", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_130427 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_130427", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_130429 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_130429", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_130432 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_130432", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_140411 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_140411", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_140415 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_140415", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_140420 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_140420", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_140423 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_140423", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_140424 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_140424", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_142717 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_142717", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_142717_0_ {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_142717_0_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_142720 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_142720", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_142720_0_ {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_142720_0_", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_142735 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_142735", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_142737 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_142737", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _20190502_142739 {
-            get {
-                object obj = ResourceManager.GetObject("_20190502_142739", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Adon {
-            get {
-                object obj = ResourceManager.GetObject("Adon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Adon_Moskal {
-            get {
-                object obj = ResourceManager.GetObject("Adon_Moskal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Adon Moskal
-        ///Senior Lecturer
-        ///Adon.Moskal@op.ac.nz
-        ///My profile....
-        /// </summary>
-        internal static string Adon_Moskal_Text {
-            get {
-                return ResourceManager.GetString("Adon_Moskal_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap back2 {
-            get {
-                object obj = ResourceManager.GetObject("back2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BIT_Image {
-            get {
-                object obj = ResourceManager.GetObject("BIT_Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to BIT
-        ///
-        ///Pursuing a career in Information Technology and keen to advance your skills and deepen your understanding of this diverse industry?
-        ///Discover the power of computing technology and how it can help you develop real world solutions and innovations with this stimulating, hands-on programme. Every industry, organisation and business in the world relies on computer technology in one way or another and the right qualification will create numerous employment opportunities for you, both here and overseas. The [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string BIT_Programme {
-            get {
-                return ResourceManager.GetString("BIT_Programme", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Become a Web Developer, Systems Administrator, Software Developer, Programmer, Business Analyst, Database Administrator or Computing Services Manager, amongst many others! 
-        ///
-        ///Study in a supportive and innovative environment and develop high-level technical abilities and a strong theoretical understanding of IT concepts while exercising your problem-solving skills and creativity. Focus on the professional communication skills required for working effectively in the industry and gain valuable, practical expe [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string BIT_Programme2 {
-            get {
-                return ResourceManager.GetString("BIT_Programme2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BITImage2 {
-            get {
-                object obj = ResourceManager.GetObject("BITImage2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap button_down {
-            get {
-                object obj = ResourceManager.GetObject("button_down", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap button_left {
-            get {
-                object obj = ResourceManager.GetObject("button_left", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap button_right {
             get {
                 object obj = ResourceManager.GetObject("button_right", resourceCulture);
@@ -351,114 +76,6 @@ namespace GazeToolBar.Properties {
         internal static System.Drawing.Bitmap button_up {
             get {
                 object obj = ResourceManager.GetObject("button_up", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Certificate in IT
-        ///
-        ///Want to continue developing solid foundational IT skills whilst gaining valuable practical experience? Decided you want to pursue a computing career in the IT industry and wondering what your next step should be?
-        ///Then this is the programme for you! .
-        /// </summary>
-        internal static string Certificate_Programme {
-            get {
-                return ResourceManager.GetString("Certificate_Programme", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to There are currently far more IT-related jobs than there are graduates and employers are desperate for individuals with a good awareness of the industry and a willingness to continue developing new skills. IT is a global industry and the right qualification will create a whole world of opportunities for you. With further study, career possibilities are exciting and diverse and include business computing, technical support, hardware, software, database, web development and much more.
-        ///
-        ///You can study this pro [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string Certificate_Programme2 {
-            get {
-                return ResourceManager.GetString("Certificate_Programme2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CIT_Image {
-            get {
-                object obj = ResourceManager.GetObject("CIT_Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Certificate In Computing
-        ///
-        ///
-        ///The IT industry may be constantly evolving, but one thing is certain - it is definitely here to stay - and this programme will enable you to gain knowledge of the industry.
-        ///
-        ///Learn about a variety of topics within the computer field, acquire essential skills towards becoming an IT professional and take the opportunity to explore and establish an understanding of a range of computer concepts.
-        ///
-        ///.
-        /// </summary>
-        internal static string CIT3 {
-            get {
-                return ResourceManager.GetString("CIT3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Computing skills are now fundamental life skills and there are currently far more IT-related jobs than there are graduates. Employers are desperate for individuals with a good awareness of the industry and a willingness to continue developing new skills. IT is a global industry and the right qualification will create a whole world of opportunities for you. With further study, career possibilities are diverse and include business computing, network administration, technical support, hardware, software, datab [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string CIT32 {
-            get {
-                return ResourceManager.GetString("CIT32", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CIT3Image2 {
-            get {
-                object obj = ResourceManager.GetObject("CIT3Image2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CIT4Image2 {
-            get {
-                object obj = ResourceManager.GetObject("CIT4Image2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CORP_staff_DaleParsonsKrissiWood_001__FillWzYyNiwzNDRd {
-            get {
-                object obj = ResourceManager.GetObject("CORP_staff_DaleParsonsKrissiWood_001__FillWzYyNiwzNDRd", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CORP_staff_DavidRozado_3__FillWzk1MCw1MzRd {
-            get {
-                object obj = ResourceManager.GetObject("CORP_staff_DavidRozado_3__FillWzk1MCw1MzRd", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap CORP_staff_KWood_DParsons_002__FillWzYyNiwzNDRd {
-            get {
-                object obj = ResourceManager.GetObject("CORP_staff_KWood_DParsons_002__FillWzYyNiwzNDRd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -546,9 +163,9 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dale {
+        internal static System.Drawing.Bitmap Demo_People_2 {
             get {
-                object obj = ResourceManager.GetObject("Dale", resourceCulture);
+                object obj = ResourceManager.GetObject("Demo_People_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -556,31 +173,9 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dale_Parsons {
+        internal static System.Drawing.Bitmap Demo_People_3 {
             get {
-                object obj = ResourceManager.GetObject("Dale_Parsons", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to  Dale Parsons
-        ///Principal Lecturer
-        ///Dale.Parsons@op.ac.nz
-        ///Dale is a Principal Lecturer in the School of Information Technology. She teaches programming in the Bachelor of Information Technology. Her main area of research is in Computing Education..
-        /// </summary>
-        internal static string Dale_Parsons_Text {
-            get {
-                return ResourceManager.GetString("Dale_Parsons_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap DaleP {
-            get {
-                object obj = ResourceManager.GetObject("DaleP", resourceCulture);
+                object obj = ResourceManager.GetObject("Demo_People_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -588,41 +183,9 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap David {
+        internal static System.Drawing.Bitmap Demo_People_4 {
             get {
-                object obj = ResourceManager.GetObject("David", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap David_Rozado {
-            get {
-                object obj = ResourceManager.GetObject("David_Rozado", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to David Rozado
-        ///Principal Lecturer
-        ///David.Rozado@op.ac.nz
-        ///David Rozado holds a B.Sc. in Information Systems from Boston University, a M.Sc. in Bioinformatics from the Free University of Berlin and a Ph.D in Computer Science from the Autonomous University of Madrid. David joined Otago Polytechnic early in 2015. His main areas of research are Machine Learning and Accessibility software for users with motor impairment. He currently teaches Data Science &amp;amp; Machine Intelligence, Algorithms &amp;amp; Data Structure [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string David_Rozado_text {
-            get {
-                return ResourceManager.GetString("David_Rozado_text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Double_Click_icon {
-            get {
-                object obj = ResourceManager.GetObject("Double_Click_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("Demo_People_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -638,148 +201,11 @@ namespace GazeToolBar.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///Accessibility Software
-        ///Interaction with electronic devices is challenging or unfeasible for people suffering from upper limb motor impairment. Accessibility assistive technologies for computer control strive to provide motor impaired subjects with practical solutions to interact with electronic devices or communicate. Hence, promoting greater independence and quality-of-life since electronic devices have become ubiquitous to accomplish everyday tasks in modern societies..
-        /// </summary>
-        internal static string GazeToolBar {
-            get {
-                return ResourceManager.GetString("GazeToolBar", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///
-        ///The Otago Polytechnic Accessibility Software project provides open source accessibility software solutions for users with motor impairment regardless of their financial circumstances. 
-        ///The Accessibility Software Project works with eye tracking technology and gives you an opportunity to join a pre-existing software like in a real world situation.
-        ///.
-        /// </summary>
-        internal static string GazeToolBar2 {
-            get {
-                return ResourceManager.GetString("GazeToolBar2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Graduate Diploma
-        ///
-        ///Achieved a degree in another discipline and now searching for a way to intensively develop your computing skills? Are you an IT graduate who is seeking to increase your knowledge in specialist areas?
-        ///Look no further! Study IT in this flexible programme which is the perfect way to add computing skills to your CV while engaged in full-time employment. Enhance your knowledge and skills in your own domain of study, or develop expertise in a new but complementary area of information technolo [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string Graduate_Diploma {
-            get {
-                return ResourceManager.GetString("Graduate_Diploma", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Graduate_Diploma1 {
-            get {
-                object obj = ResourceManager.GetObject("Graduate_Diploma1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to There are currently far more IT jobs than there are graduates and employers are desperate for individuals with a good understanding of the industry. Consider a career as a Programmer, Software Developer, Systems Administrator or Computing Services Manager, amongst many others.
-        ///
-        ///Tailored to meet your requirements, create a customised path of study that focuses on your desired outcome. Specialist areas for IT graduates include interactive media, hardware, programming, databases, communications, business or  [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string Graduate_Diploma2 {
-            get {
-                return ResourceManager.GetString("Graduate_Diploma2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap GraduateImage2 {
-            get {
-                object obj = ResourceManager.GetObject("GraduateImage2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to How do computers interact with everyday objects? How can you automate processes and control them from your phone? These are the kinds of questions addressed in the internet of things project.
-        ///The internet of things project gives you the opportunity to work with a client, practice your skills in networking and embedded systems. You will get to work with a real client and watch as your ideas are implemented in real time.
-        ///
-        ///Some examples of what our Internet of Things teams are working on:
-        ///.
-        /// </summary>
-        internal static string IOT {
-            get {
-                return ResourceManager.GetString("IOT", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///1)	Creating a sensor for the Orokonui Eco Sanctuary to alert them when gates have been left open.
-        ///
-        ///2)	A system to teachers to alert them when the classroom noise has gone above a certain level.
-        ///
-        ///3)	A control system to moniter and adjust the temperature in a classrooms and turning off when no students are present.
-        ///.
-        /// </summary>
-        internal static string IOT2 {
-            get {
-                return ResourceManager.GetString("IOT2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Keyboard_icon {
             get {
                 object obj = ResourceManager.GetObject("Keyboard_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Krissi {
-            get {
-                object obj = ResourceManager.GetObject("Krissi", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Krissi_Wood {
-            get {
-                object obj = ResourceManager.GetObject("Krissi_Wood", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Krissi Wood
-        ///Lecturer
-        ///Krissi.Wood@op.ac.nz
-        ///Krissi is a BIT graduate from 2005, who has returned to the Polytechnic after a number of years in Industry. She is a lecturer in the School of Information Technology, where she teaches Programming, PC Maintenance and Web programming in first year and Databases in second year. Her main area of research is in Computing Education; and the focus for 2012 was pair programming and version control software..
-        /// </summary>
-        internal static string Krissi_Wood_Text {
-            get {
-                return ResourceManager.GetString("Krissi_Wood_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap KrissiW {
-            get {
-                object obj = ResourceManager.GetObject("KrissiW", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -797,46 +223,29 @@ namespace GazeToolBar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mic_icon {
+        internal static System.Drawing.Bitmap Programmes_2 {
             get {
-                object obj = ResourceManager.GetObject("Mic-icon", resourceCulture);
+                object obj = ResourceManager.GetObject("Programmes_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///
-        ///Mobile Development
-        ///In the mobile development project you are given the opportunity to work with clients to create mobile applications that will be implemented in a real world situation. You will meet with clients on a regular basis and help them turn their ideas into a reality. The mobile team works with students from the design school. You will also be given the option to create your own virtual reality applications.
-        ///.
-        /// </summary>
-        internal static string MobileVR {
-            get {
-                return ResourceManager.GetString("MobileVR", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///Some of the current projects being worked on are:
-        ///•	Creating a VR app where you can experience visual impairments and how it effects your daily life.
-        ///•	An app that recreates historic locations so you can experience them for yourself.
-        ///•	An app that gets your location and shows you locations where the natives birds have been spotted and allow you to report your own sightings.
-        ///.
-        /// </summary>
-        internal static string MobileVR2 {
-            get {
-                return ResourceManager.GetString("MobileVR2", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pastedImage {
+        internal static System.Drawing.Bitmap Project_1 {
             get {
-                object obj = ResourceManager.GetObject("pastedImage", resourceCulture);
+                object obj = ResourceManager.GetObject("Project_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Project_2 {
+            get {
+                object obj = ResourceManager.GetObject("Project_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -867,51 +276,6 @@ namespace GazeToolBar.Properties {
         internal static System.Drawing.Bitmap settings_icon {
             get {
                 object obj = ResourceManager.GetObject("settings_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Volunteer_Website {
-            get {
-                object obj = ResourceManager.GetObject("Volunteer_Website", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///
-        ///Volunteering
-        ///Volunteering Management is for people who are more interested in the social side instead of technical and enjoy helping out in the community. As part of project, all students participate in volunteer work in the community. As the coordinator, you will be the go between, organising the opportunities and matching students with an appropriate job. 
-        ///.
-        /// </summary>
-        internal static string Volunteering {
-            get {
-                return ResourceManager.GetString("Volunteering", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 
-        ///
-        ///
-        ///Volunteering Management also maintains a help website for students and the public alike to learn technology basic, including tutorials. The website is also a hub for students to sign up for volunteering opportunities and to view other information relating to the BIT..
-        /// </summary>
-        internal static string Volunteering2 {
-            get {
-                return ResourceManager.GetString("Volunteering2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap VRHeadSet {
-            get {
-                object obj = ResourceManager.GetObject("VRHeadSet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

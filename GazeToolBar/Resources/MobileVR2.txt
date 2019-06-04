@@ -1,5 +1,0 @@
-
-Some of the current projects being worked on are:
-•	Creating a VR app where you can experience visual impairments and how it effects your daily life.
-•	An app that recreates historic locations so you can experience them for yourself.
-•	An app that gets your location and shows you locations where the natives birds have been spotted and allow you to report your own sightings.

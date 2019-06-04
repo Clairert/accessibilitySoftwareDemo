@@ -45,6 +45,9 @@ namespace GazeToolBar
             trialPanel.Width = 0;
             trialPanel.Height = 0;
 
+            scroll = new ScrollControl(eyeXHost);
+            scroll.StartScroll();
+
         }
 
         //Show People
@@ -71,6 +74,7 @@ namespace GazeToolBar
             //paint.Close();
             //paint = new Paint(eyeXHost, this);
             //showPaint();
+            scroll.stopScroll();
             simplePaint.Close();
             simplePaint = new SimplePaint(eyeXHost, this);
             showPaint();
@@ -138,8 +142,7 @@ namespace GazeToolBar
             trialPanel.Width = 1000;
             trialPanel.Height = 1000;
             //trialPanel.Focus();
-            scroll = new ScrollControl(eyeXHost);
-            scroll.StartScroll();
+            
         }
 
         //Set up master panel with buttons spaced evenly around the screen and the logo.
@@ -220,7 +223,7 @@ namespace GazeToolBar
             PeoplePictureBox.Location = new Point(2, 2);
             PeoplePictureBox.Width = (PeopleInfoPanel.Width - 2);
             PeoplePictureBox.Height = (PeopleInfoPanel.Height - 2);
-            PeoplePictureBox.Image = GazeToolBar.Properties.Resources.David;
+            //PeoplePictureBox.Image = GazeToolBar.Properties.Resources.David;
 
         }
 
@@ -245,7 +248,7 @@ namespace GazeToolBar
             MasterProgrammePanel.Width = Convert.ToInt32(Math.Abs(System.Windows.SystemParameters.PrimaryScreenWidth));
 
 
-            //Back button - top,Left section
+            //Back button - top,Left sectionC:\Users\hanspj2\Desktop\Demo\accessibilitySoftwareDemo\GazeToolBar\Resources\20190502_140420.jpg
             ProgrammeButtonPanel1.Height = buttonHeight;
             ProgrammeButtonPanel1.Width = buttonWidth;
             ProgrammeButtonPanel1.Top = Convert.ToInt32(top * 0.1);
@@ -279,7 +282,7 @@ namespace GazeToolBar
             ProgrammePictureBox.Location = new Point(2, 2);
             ProgrammePictureBox.Width = (ProgrammeInfoPanel.Width - 2);
             ProgrammePictureBox.Height = (ProgrammeInfoPanel.Height - 2);
-            ProgrammePictureBox.Image = GazeToolBar.Properties.Resources.David;
+            ProgrammeInfoPanel.Focus();
 
 
 
@@ -341,7 +344,7 @@ namespace GazeToolBar
             ProjectPictureBox.Location = new Point(2, 2);
             ProjectPictureBox.Width = (ProjectInfoPanel.Width - 2);
             ProjectPictureBox.Height = (ProjectInfoPanel.Height - 2);
-            ProjectPictureBox.Image = GazeToolBar.Properties.Resources.David;
+            //ProjectPictureBox.Image = GazeToolBar.Properties.Resources.David;
 
 
 

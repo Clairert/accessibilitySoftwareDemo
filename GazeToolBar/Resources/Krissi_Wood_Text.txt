@@ -1,4 +1,0 @@
-Krissi Wood
-Lecturer
-Krissi.Wood@op.ac.nz
-Krissi is a BIT graduate from 2005, who has returned to the Polytechnic after a number of years in Industry. She is a lecturer in the School of Information Technology, where she teaches Programming, PC Maintenance and Web programming in first year and Databases in second year. Her main area of research is in Computing Education; and the focus for 2012 was pair programming and version control software.

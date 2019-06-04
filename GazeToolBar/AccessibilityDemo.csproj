@@ -176,6 +176,11 @@
     <Compile Include="PaintLines.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ReletiveSize.cs" />
     <Compile Include="ScrollControl.cs" />
     <Compile Include="SettingJSON.cs" />
@@ -204,14 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SimplePaint.resx">
       <DependentUpon>SimplePaint.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,12 +270,9 @@
     <None Include="Images\Scroll-icon.png" />
     <Content Include="Images\settings-icon-selected.fw.png" />
     <Content Include="Images\settings-icon.png" />
-    <None Include="Resources\DavidRozado.bmp" />
     <None Include="Resources\crosshair_2.png" />
     <None Include="Resources\button_right.png" />
     <None Include="Resources\button_up.png" />
-    <None Include="Resources\button_down.png" />
-    <None Include="Resources\button_left.png" />
     <None Include="Resources\crosshair_None.png" />
     <None Include="Resources\crosshair_7.png" />
     <None Include="Resources\crosshair_6.png" />
@@ -283,67 +280,14 @@
     <None Include="Resources\crosshair_4.png" />
     <None Include="Resources\crosshair_3.png" />
     <None Include="Resources\crosshair_8.png" />
-    <None Include="Resources\David_Rozado.jpg" />
-    <None Include="Resources\David_Rozado_text.txt" />
-    <None Include="Resources\Krissi_Wood_Text.txt" />
-    <None Include="Resources\Krissi_Wood.jpg" />
-    <None Include="Resources\Dale_Parsons_Text.txt" />
-    <None Include="Resources\Dale_Parsons.gif" />
-    <None Include="Resources\Adon_Moskal.jpg" />
-    <None Include="Resources\Adon_Moskal_Text.txt" />
-    <None Include="Resources\BIT_Programme.txt" />
-    <None Include="Resources\Certificate_Programme.txt" />
-    <None Include="Resources\Graduate_Diploma.txt" />
-    <None Include="Resources\BIT_Image.jpg" />
-    <None Include="Resources\CIT Image.jpg" />
-    <None Include="Resources\Graduate_Diploma.JPG" />
-    <None Include="Resources\20190502_140411.jpg" />
-    <None Include="Resources\CORP-staff-DaleParsonsKrissiWood-001__FillWzYyNiwzNDRd.jpg" />
-    <None Include="Resources\CORP-staff-DavidRozado-3__FillWzk1MCw1MzRd.jpg" />
-    <None Include="Resources\CORP-staff-KWood-DParsons-002__FillWzYyNiwzNDRd.jpg" />
-    <None Include="Resources\20190502_140415.jpg" />
-    <None Include="Resources\20190502_140420.jpg" />
-    <None Include="Resources\20190502_140423.jpg" />
-    <None Include="Resources\20190502_140424.jpg" />
-    <None Include="Resources\20190502_130418.jpg" />
-    <None Include="Resources\20190502_130421.jpg" />
-    <None Include="Resources\20190502_130427.jpg" />
-    <None Include="Resources\20190502_130429.jpg" />
-    <None Include="Resources\20190502_130432.jpg" />
-    <None Include="Resources\Volunteer Website.png" />
-    <None Include="Resources\Adon.jpg" />
-    <None Include="Resources\back2.png" />
-    <None Include="Resources\Dale.jpg" />
-    <None Include="Resources\David.jpg" />
-    <None Include="Resources\Krissi.jpg" />
-    <None Include="Resources\20190502_142717%280%29.jpg" />
-    <None Include="Resources\20190502_142717.jpg" />
-    <None Include="Resources\20190502_142720%280%29.jpg" />
-    <None Include="Resources\20190502_142720.jpg" />
-    <None Include="Resources\20190502_142735.jpg" />
-    <None Include="Resources\20190502_142737.jpg" />
-    <None Include="Resources\20190502_142739.jpg" />
     <None Include="Resources\pastedImage.png" />
-    <None Include="Resources\IOT.txt" />
-    <None Include="Resources\MobileVR.txt" />
-    <None Include="Resources\Volunteering.txt" />
-    <None Include="Resources\GazeToolBar.txt" />
-    <None Include="Resources\IOT2.txt" />
-    <None Include="Resources\VRHeadSet.png" />
-    <None Include="Resources\Volunteering2.txt" />
-    <None Include="Resources\MobileVR2.txt" />
-    <None Include="Resources\GazeToolBar2.txt" />
-    <None Include="Resources\CIT3.txt" />
-    <None Include="Resources\CIT32.txt" />
-    <None Include="Resources\Certificate_Programme2.txt" />
-    <None Include="Resources\BIT_Programme2.txt" />
-    <None Include="Resources\Graduate_Diploma2.txt" />
-    <None Include="Resources\BITImage2.jpg" />
-    <None Include="Resources\CIT3Image2.jpg" />
-    <None Include="Resources\CIT4Image2.jpg" />
-    <None Include="Resources\GraduateImage2.png" />
-    <None Include="Resources\DaleP.png" />
-    <None Include="Resources\KrissiW.png" />
+    <None Include="Resources\testing_demo.jpg" />
+    <None Include="Resources\Demo_People_2.jpg" />
+    <None Include="Resources\Programmes-2.jpg" />
+    <None Include="Resources\Project-1.jpg" />
+    <None Include="Resources\Demo_People_3.jpg" />
+    <None Include="Resources\Demo_People_4.jpg" />
+    <None Include="Resources\Project-2.jpg" />
     <Content Include="Tobii.EyeX.Client.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -1,4 +1,0 @@
-
-
-The Otago Polytechnic Accessibility Software project provides open source accessibility software solutions for users with motor impairment regardless of their financial circumstances. 
-The Accessibility Software Project works with eye tracking technology and gives you an opportunity to join a pre-existing software like in a real world situation.
