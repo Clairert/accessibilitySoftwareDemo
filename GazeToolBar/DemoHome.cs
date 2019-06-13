@@ -426,7 +426,7 @@ namespace GazeToolBar
 
         private void adonButton_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://kate.ict.op.ac.nz/~toshcr1/PotteryAndTees/");
+            System.Diagnostics.Process.Start("https://clairert.github.io/PotterTees/");
             this.Hide();
         }
     }
