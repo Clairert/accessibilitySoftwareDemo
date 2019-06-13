@@ -33,20 +33,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DemoHome));
             this.bhavFORMMap = new EyeXFramework.Forms.BehaviorMap(this.components);
             this.MasterPeoplePanel = new System.Windows.Forms.Panel();
+            this.adonPanel = new System.Windows.Forms.Panel();
+            this.adonButton = new System.Windows.Forms.Button();
             this.PeopleButtonPanel1 = new System.Windows.Forms.Panel();
             this.PeopleBack = new System.Windows.Forms.Button();
             this.PeopleLabel = new System.Windows.Forms.Label();
             this.PeopleInfoPanel = new System.Windows.Forms.Panel();
+            this.PeoplePictureBox = new System.Windows.Forms.PictureBox();
             this.MasterProgrammePanel = new System.Windows.Forms.Panel();
             this.ProgrammeButtonPanel1 = new System.Windows.Forms.Panel();
             this.ProgrammeBack = new System.Windows.Forms.Button();
             this.ProgrammeLabel = new System.Windows.Forms.Label();
             this.ProgrammeInfoPanel = new System.Windows.Forms.Panel();
+            this.ProgrammePictureBox = new System.Windows.Forms.PictureBox();
             this.MasterProjectPanel = new System.Windows.Forms.Panel();
             this.ProjectButtonPanel1 = new System.Windows.Forms.Panel();
             this.ProjectBack = new System.Windows.Forms.Button();
             this.ProjectLabel = new System.Windows.Forms.Label();
             this.ProjectInfoPanel = new System.Windows.Forms.Panel();
+            this.ProjectPictureBox = new System.Windows.Forms.PictureBox();
             this.MasterPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
@@ -56,43 +61,61 @@
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.People = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.trialPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ProjectPictureBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ProgrammePictureBox = new System.Windows.Forms.PictureBox();
-            this.PeoplePictureBox = new System.Windows.Forms.PictureBox();
             this.MasterPeoplePanel.SuspendLayout();
+            this.adonPanel.SuspendLayout();
             this.PeopleButtonPanel1.SuspendLayout();
             this.PeopleInfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PeoplePictureBox)).BeginInit();
             this.MasterProgrammePanel.SuspendLayout();
             this.ProgrammeButtonPanel1.SuspendLayout();
             this.ProgrammeInfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProgrammePictureBox)).BeginInit();
             this.MasterProjectPanel.SuspendLayout();
             this.ProjectButtonPanel1.SuspendLayout();
             this.ProjectInfoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProjectPictureBox)).BeginInit();
             this.MasterPanel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.trialPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProjectPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProgrammePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PeoplePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // MasterPeoplePanel
             // 
+            this.MasterPeoplePanel.Controls.Add(this.adonPanel);
             this.MasterPeoplePanel.Controls.Add(this.PeopleButtonPanel1);
             this.MasterPeoplePanel.Controls.Add(this.PeopleLabel);
             this.MasterPeoplePanel.Controls.Add(this.PeopleInfoPanel);
             this.MasterPeoplePanel.Location = new System.Drawing.Point(180, 26);
             this.MasterPeoplePanel.Name = "MasterPeoplePanel";
-            this.MasterPeoplePanel.Size = new System.Drawing.Size(37, 42);
+            this.MasterPeoplePanel.Size = new System.Drawing.Size(37, 40);
             this.MasterPeoplePanel.TabIndex = 9;
+            // 
+            // adonPanel
+            // 
+            this.adonPanel.Controls.Add(this.adonButton);
+            this.adonPanel.Location = new System.Drawing.Point(102, 372);
+            this.adonPanel.Name = "adonPanel";
+            this.adonPanel.Size = new System.Drawing.Size(89, 39);
+            this.adonPanel.TabIndex = 15;
+            // 
+            // adonButton
+            // 
+            this.adonButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.adonButton.Location = new System.Drawing.Point(4, 4);
+            this.adonButton.Name = "adonButton";
+            this.adonButton.Size = new System.Drawing.Size(75, 23);
+            this.adonButton.TabIndex = 0;
+            this.adonButton.Text = "Shop Now!!";
+            this.adonButton.UseVisualStyleBackColor = true;
+            this.adonButton.Click += new System.EventHandler(this.adonButton_Click);
             // 
             // PeopleButtonPanel1
             // 
@@ -135,6 +158,17 @@
             this.PeopleInfoPanel.Name = "PeopleInfoPanel";
             this.PeopleInfoPanel.Size = new System.Drawing.Size(653, 358);
             this.PeopleInfoPanel.TabIndex = 12;
+            // 
+            // PeoplePictureBox
+            // 
+            this.PeoplePictureBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.PeoplePictureBox.Image = global::GazeToolBar.Properties.Resources.PeoplePotterTees;
+            this.PeoplePictureBox.Location = new System.Drawing.Point(3, 3);
+            this.PeoplePictureBox.Name = "PeoplePictureBox";
+            this.PeoplePictureBox.Size = new System.Drawing.Size(1136, 3037);
+            this.PeoplePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.PeoplePictureBox.TabIndex = 0;
+            this.PeoplePictureBox.TabStop = false;
             // 
             // MasterProgrammePanel
             // 
@@ -188,6 +222,18 @@
             this.ProgrammeInfoPanel.Size = new System.Drawing.Size(653, 287);
             this.ProgrammeInfoPanel.TabIndex = 19;
             // 
+            // ProgrammePictureBox
+            // 
+            this.ProgrammePictureBox.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ProgrammePictureBox.ErrorImage")));
+            this.ProgrammePictureBox.Image = global::GazeToolBar.Properties.Resources.Programmes_2;
+            this.ProgrammePictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("ProgrammePictureBox.InitialImage")));
+            this.ProgrammePictureBox.Location = new System.Drawing.Point(3, 3);
+            this.ProgrammePictureBox.Name = "ProgrammePictureBox";
+            this.ProgrammePictureBox.Size = new System.Drawing.Size(1316, 4412);
+            this.ProgrammePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ProgrammePictureBox.TabIndex = 0;
+            this.ProgrammePictureBox.TabStop = false;
+            // 
             // MasterProjectPanel
             // 
             this.MasterProjectPanel.Controls.Add(this.ProjectButtonPanel1);
@@ -195,7 +241,7 @@
             this.MasterProjectPanel.Controls.Add(this.ProjectInfoPanel);
             this.MasterProjectPanel.Location = new System.Drawing.Point(223, 12);
             this.MasterProjectPanel.Name = "MasterProjectPanel";
-            this.MasterProjectPanel.Size = new System.Drawing.Size(55, 39);
+            this.MasterProjectPanel.Size = new System.Drawing.Size(38, 39);
             this.MasterProjectPanel.TabIndex = 12;
             // 
             // ProjectButtonPanel1
@@ -239,6 +285,16 @@
             this.ProjectInfoPanel.Name = "ProjectInfoPanel";
             this.ProjectInfoPanel.Size = new System.Drawing.Size(653, 321);
             this.ProjectInfoPanel.TabIndex = 26;
+            // 
+            // ProjectPictureBox
+            // 
+            this.ProjectPictureBox.Image = global::GazeToolBar.Properties.Resources.Project_2;
+            this.ProjectPictureBox.Location = new System.Drawing.Point(3, 3);
+            this.ProjectPictureBox.Name = "ProjectPictureBox";
+            this.ProjectPictureBox.Size = new System.Drawing.Size(1039, 3071);
+            this.ProjectPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ProjectPictureBox.TabIndex = 0;
+            this.ProjectPictureBox.TabStop = false;
             // 
             // MasterPanel
             // 
@@ -340,6 +396,17 @@
             this.People.UseVisualStyleBackColor = false;
             this.People.Click += new System.EventHandler(this.People_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(100, 215);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1059, 382);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // trialPanel
             // 
             this.trialPanel.AutoScroll = true;
@@ -360,50 +427,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // ProjectPictureBox
-            // 
-            this.ProjectPictureBox.Image = global::GazeToolBar.Properties.Resources.Project_2;
-            this.ProjectPictureBox.Location = new System.Drawing.Point(3, 3);
-            this.ProjectPictureBox.Name = "ProjectPictureBox";
-            this.ProjectPictureBox.Size = new System.Drawing.Size(1039, 3071);
-            this.ProjectPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.ProjectPictureBox.TabIndex = 0;
-            this.ProjectPictureBox.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(100, 215);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1059, 382);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // ProgrammePictureBox
-            // 
-            this.ProgrammePictureBox.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ProgrammePictureBox.ErrorImage")));
-            this.ProgrammePictureBox.Image = global::GazeToolBar.Properties.Resources.Programmes_2;
-            this.ProgrammePictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("ProgrammePictureBox.InitialImage")));
-            this.ProgrammePictureBox.Location = new System.Drawing.Point(3, 3);
-            this.ProgrammePictureBox.Name = "ProgrammePictureBox";
-            this.ProgrammePictureBox.Size = new System.Drawing.Size(1316, 4412);
-            this.ProgrammePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.ProgrammePictureBox.TabIndex = 0;
-            this.ProgrammePictureBox.TabStop = false;
-            // 
-            // PeoplePictureBox
-            // 
-            this.PeoplePictureBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.PeoplePictureBox.Image = global::GazeToolBar.Properties.Resources.Demo_People_4;
-            this.PeoplePictureBox.Location = new System.Drawing.Point(3, 3);
-            this.PeoplePictureBox.Name = "PeoplePictureBox";
-            this.PeoplePictureBox.Size = new System.Drawing.Size(1476, 3653);
-            this.PeoplePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.PeoplePictureBox.TabIndex = 0;
-            this.PeoplePictureBox.TabStop = false;
-            // 
             // DemoHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -421,31 +444,32 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MasterPeoplePanel.ResumeLayout(false);
             this.MasterPeoplePanel.PerformLayout();
+            this.adonPanel.ResumeLayout(false);
             this.PeopleButtonPanel1.ResumeLayout(false);
             this.PeopleInfoPanel.ResumeLayout(false);
             this.PeopleInfoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PeoplePictureBox)).EndInit();
             this.MasterProgrammePanel.ResumeLayout(false);
             this.MasterProgrammePanel.PerformLayout();
             this.ProgrammeButtonPanel1.ResumeLayout(false);
             this.ProgrammeInfoPanel.ResumeLayout(false);
             this.ProgrammeInfoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProgrammePictureBox)).EndInit();
             this.MasterProjectPanel.ResumeLayout(false);
             this.MasterProjectPanel.PerformLayout();
             this.ProjectButtonPanel1.ResumeLayout(false);
             this.ProjectInfoPanel.ResumeLayout(false);
             this.ProjectInfoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProjectPictureBox)).EndInit();
             this.MasterPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.trialPanel.ResumeLayout(false);
             this.trialPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProjectPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProgrammePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PeoplePictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -483,5 +507,7 @@
         private System.Windows.Forms.PictureBox PeoplePictureBox;
         private System.Windows.Forms.PictureBox ProgrammePictureBox;
         private System.Windows.Forms.PictureBox ProjectPictureBox;
+        private System.Windows.Forms.Panel adonPanel;
+        private System.Windows.Forms.Button adonButton;
     }
 }

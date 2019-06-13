@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimplePaint));
             this.behaviorMap = new EyeXFramework.Forms.BehaviorMap(this.components);
-            this.components = new System.ComponentModel.Container();
             this.backPanel = new System.Windows.Forms.Panel();
             this.backButton = new System.Windows.Forms.Button();
             this.redPanel = new System.Windows.Forms.Panel();
@@ -52,6 +50,8 @@
             this.whiteButton = new System.Windows.Forms.Button();
             this.refreshTimer = new System.Windows.Forms.Timer(this.components);
             this.trackingTimer = new System.Windows.Forms.Timer(this.components);
+            this.clearPanel = new System.Windows.Forms.Panel();
+            this.clearButton = new System.Windows.Forms.Button();
             this.backPanel.SuspendLayout();
             this.redPanel.SuspendLayout();
             this.bluePanel.SuspendLayout();
@@ -61,6 +61,7 @@
             this.orangePanel.SuspendLayout();
             this.blackPanel.SuspendLayout();
             this.whitePanel.SuspendLayout();
+            this.clearPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // backPanel
@@ -244,6 +245,24 @@
             this.trackingTimer.Interval = 1;
             this.trackingTimer.Tick += new System.EventHandler(this.trackingTimer_Tick);
             // 
+            // clearPanel
+            // 
+            this.clearPanel.Controls.Add(this.clearButton);
+            this.clearPanel.Location = new System.Drawing.Point(12, 111);
+            this.clearPanel.Name = "clearPanel";
+            this.clearPanel.Size = new System.Drawing.Size(110, 58);
+            this.clearPanel.TabIndex = 9;
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(4, 4);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 0;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
             // SimplePaint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -251,6 +270,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1203, 621);
             this.ControlBox = false;
+            this.Controls.Add(this.clearPanel);
             this.Controls.Add(this.whitePanel);
             this.Controls.Add(this.blackPanel);
             this.Controls.Add(this.orangePanel);
@@ -271,6 +291,7 @@
             this.orangePanel.ResumeLayout(false);
             this.blackPanel.ResumeLayout(false);
             this.whitePanel.ResumeLayout(false);
+            this.clearPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -298,5 +319,7 @@
         private System.Windows.Forms.Timer refreshTimer;
         private System.Windows.Forms.Timer trackingTimer;
         private EyeXFramework.Forms.BehaviorMap behaviorMap;
+        private System.Windows.Forms.Panel clearPanel;
+        private System.Windows.Forms.Button clearButton;
     }
 }

@@ -207,6 +207,21 @@ namespace GazeToolBar
             PeopleBack.Text = "Back";
 
 
+            adonPanel.Height = PeopleButtonPanel1.Height;
+            adonPanel.Width = PeopleButtonPanel1.Width;
+            adonPanel.Top = Convert.ToInt32((bottom+top)-(adonPanel.Height+30));
+            adonPanel.Left = PeopleButtonPanel1.Left;
+
+            adonButton.Location = new Point(2, 2);
+            adonButton.Height = adonPanel.Height - 4;
+            adonButton.Width = adonPanel.Width - 4;
+            Random rgen = new Random();
+            adonButton.BackColor = Color.FromArgb(rgen.Next(255), rgen.Next(255), rgen.Next(255));
+            adonButton.Font = new Font(adonButton.Font.FontFamily, Convert.ToInt32(right) / 40);
+
+
+
+
             //title - top,right section
             PeopleLabel.Text = "People";
             PeopleLabel.Font = new Font(PeopleLabel.Font.FontFamily, Convert.ToInt32(right) / 20);
@@ -407,6 +422,12 @@ namespace GazeToolBar
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void adonButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://kate.ict.op.ac.nz/~toshcr1/PotteryAndTees/");
+            this.Hide();
         }
     }
 }

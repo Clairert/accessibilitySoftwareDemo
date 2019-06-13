@@ -32,6 +32,8 @@ namespace GazeToolBar
         {
             behaviorMap.Add(backButton, new GazeAwareBehavior(backButton_Click) { DelayMilliseconds = buttonClickDelay });
             behaviorMap.Add(backPanel, new GazeAwareBehavior(OnGazeChangeBTColour));
+            behaviorMap.Add(clearButton, new GazeAwareBehavior(clearButton_Click) { DelayMilliseconds = buttonClickDelay });
+            behaviorMap.Add(clearPanel, new GazeAwareBehavior(OnGazeChangeBTColour));
 
             behaviorMap.Add(redButton, new GazeAwareBehavior(redButton_Click) { DelayMilliseconds = buttonClickDelay });
             behaviorMap.Add(redPanel, new GazeAwareBehavior(OnGazeChangeBTColour));

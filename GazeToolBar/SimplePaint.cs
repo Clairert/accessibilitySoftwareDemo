@@ -56,6 +56,14 @@ namespace GazeToolBar
             backButton.Height = backPanel.Height - 6;
             backButton.Font = new Font(backButton.Font.FontFamily, Convert.ToInt32(width / 40));
 
+            clearPanel.Width = backPanel.Width;
+            clearPanel.Height = backPanel.Height;
+            clearButton.Height = backButton.Height;
+            clearButton.Width = backButton.Width;
+            clearButton.Font = new Font(clearButton.Font.FontFamily, Convert.ToInt32(width / 40));
+
+            clearPanel.Top = backPanel.Top + backPanel.Height + 20;
+
             resizeButtons(height, width);
         }
 
@@ -194,6 +202,11 @@ namespace GazeToolBar
                 line.drawCircle();
             }
             graphics.DrawImage(bufferImage, 0, 0);
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            lines = new List<PaintDot>();
         }
     }
 }

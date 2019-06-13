@@ -32,6 +32,7 @@ namespace GazeToolBar
             bhavFORMMap.Add(People, new GazeAwareBehavior(People_Click) { DelayMilliseconds = buttonClickDelay });
             bhavFORMMap.Add(panel1, new GazeAwareBehavior(OnGazeChangeBTColour));
 
+
             bhavFORMMap.Add(button2, new GazeAwareBehavior(button2_Click) { DelayMilliseconds = buttonClickDelay });
             bhavFORMMap.Add(panel2, new GazeAwareBehavior(OnGazeChangeBTColour));
 
@@ -43,6 +44,9 @@ namespace GazeToolBar
 
             bhavFORMMap.Add(PeopleBack, new GazeAwareBehavior(PeopleBack_Click) { DelayMilliseconds = buttonClickDelay });
             bhavFORMMap.Add(PeopleButtonPanel1, new GazeAwareBehavior(OnGazeChangeBTColour));
+
+            bhavFORMMap.Add(adonButton, new GazeAwareBehavior(adonButton_Click) { DelayMilliseconds = buttonClickDelay });
+            bhavFORMMap.Add(adonPanel, new GazeAwareBehavior(OnGazeChangeAdonColour));
 
             bhavFORMMap.Add(ProgrammeBack, new GazeAwareBehavior(ProgrammeBackButton_Click) { DelayMilliseconds = buttonClickDelay });
             bhavFORMMap.Add(ProgrammeButtonPanel1, new GazeAwareBehavior(OnGazeChangeBTColour));
@@ -63,7 +67,17 @@ namespace GazeToolBar
             }
         }
 
+        private void OnGazeChangeAdonColour(object s, GazeAwareEventArgs e)
+        {
+            var sentButton = s as Panel;
+            Random rgen = new Random();
+            if (sentButton != null)
+            {
+                sentButton.BackColor = (e.HasGaze) ? Color.FromArgb(rgen.Next(255), rgen.Next(255), rgen.Next(255)) : Color.FromArgb(14, 90, 165);
+            }
+        }
 
+        
 
 
 

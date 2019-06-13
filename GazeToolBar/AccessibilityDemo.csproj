@@ -288,6 +288,7 @@
     <None Include="Resources\Demo_People_3.jpg" />
     <None Include="Resources\Demo_People_4.jpg" />
     <None Include="Resources\Project-2.jpg" />
+    <None Include="Resources\PeoplePotterTees.png" />
     <Content Include="Tobii.EyeX.Client.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
