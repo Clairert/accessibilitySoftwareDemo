@@ -1,4 +1,4 @@
-# Open Source Gaze Control Toolbar
+# Accessibility Software Demo
 
 ## Download Here
 https://github.com/accessibilitysoftwarehub/OpenSourceWindowsGazeControl/releases
